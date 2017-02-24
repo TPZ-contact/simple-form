@@ -432,7 +432,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-step{\n  -webkit-transition: 0.5s all linear;\n  transition: 0.5s all linear;\n}\n\n.form-step-left{\n  -webkit-transform: translateX(-1300px);\n          transform: translateX(-1300px);\n  height: 0px;\n  position: absolute;\n  top: -1000px;\n}\n\n.form-step-right{\n  -webkit-transform: translateX(1300px);\n          transform: translateX(1300px);\n  height: 0px;\n  position: absolute;\n  top: -1000px;\n}\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
+exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-step{\n  -webkit-transition: 0.5s all linear;\n  transition: 0.5s all linear;\n}\n\n.form-step-left{\n  -webkit-transform: translateX(-1300px);\n          transform: translateX(-1300px);\n  height: 0px;\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n}\n\n.form-step-right{\n  -webkit-transform: translateX(1300px);\n          transform: translateX(1300px);\n  height: 0px;\n  position: absolute;\n  top: -1000px;\n  left: -1000px;\n}\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
 
 // exports
 
