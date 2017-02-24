@@ -98,18 +98,12 @@ var AppComponent = (function () {
         };
         this.goStep2 = function (postData) {
             _this.dataStep1 = postData;
-            _this.stepsValid[1] = true;
-            _this.postData = null;
-            _this.fullData = Object.assign(_this.dataStep1, _this.dataStep2);
-            _this.postData = _this.fullData;
+            _this.postData = Object.assign(_this.dataStep1, _this.dataStep2);
             _this.step = 2;
         };
         this.goStep3 = function (postData) {
             _this.dataStep2 = postData;
-            _this.stepsValid[2] = true;
-            _this.postData = null;
-            _this.fullData = Object.assign(_this.dataStep1, _this.dataStep2);
-            _this.postData = _this.fullData;
+            _this.postData = Object.assign(_this.dataStep1, _this.dataStep2);
             _this.step = 3;
         };
         this.handleStepValid = function (val, stepIndex) {
@@ -438,7 +432,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}", ""]);
+exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-step{\n  -webkit-transition: 0.5s all linear;\n  transition: 0.5s all linear;\n  height: 0px;\n}\n\n.form-step-left{\n  -webkit-transform: translateX(-1300px);\n          transform: translateX(-1300px);\n  height: 0px;\n}\n\n.form-step-right{\n  -webkit-transform: translateX(1300px);\n          transform: translateX(1300px);\n  height: 0px;\n}\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
 
 // exports
 
@@ -505,7 +499,7 @@ module.exports = module.exports.toString();
 /***/ 615:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"goStep(1)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div>\n    <app-form1 [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" [hidden]=\"step !== 1\" (stepValid)=\"handleStepValid($event, 0)\"  ></app-form1>\n  </div>\n\n  <div>\n    <app-form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\" [hidden]=\"step !== 2\" (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n  </div>\n  \n  <div>\n    <app-form3 [postData]=\"postData\" [hidden]=\"step !== 3\"></app-form3>\n  </div>\n\n</div>\n"
+module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"goStep(1)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div class=\"form-step\" [ngClass]=\"{'form-step-left': step === 2 || step === 3}\">\n    <app-form1  [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" (stepValid)=\"handleStepValid($event, 0)\"  ></app-form1>\n  </div>\n\n  <div class=\"form-step\" [ngClass]=\"{'form-step-right': step === 1, 'form-step-left': step === 3}\">\n    <app-form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\"  (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n  </div>\n  \n  <div class=\"form-step\" [ngClass]=\"{'form-step-right': step === 2 || step === 1}\">\n    <app-form3 [postData]=\"postData\"></app-form3>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -526,7 +520,7 @@ module.exports = "<div class=\"container white\">\n  <div class=\"card left-alig
 /***/ 618:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container white\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n      <h4>Récapitulatif :</h4>\n      <ul>           \n        <li *ngFor=\"let key of arrayKeys \"><strong>{{key}} :</strong> {{postData[key]}}</li>\n      </ul>\n      <div class=\"right-align\">\n        <button \n          class=\"btn waves-effect waves-light  teal lighten-2\" \n          type=\"submit\"\n        >\n          Envoyer\n        </button>\n      \n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container white\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n      <h4>Récapitulatif :</h4>\n      <ul>           \n        <li *ngFor=\"let key of arrayKeys \"><strong>{{key}} :</strong> {{postData[key]}}</li>\n      </ul>\n      <div class=\"right-align\">\n        <button \n          id=\"button-tpz\"\n          class=\"btn waves-effect waves-light  teal lighten-2\" \n          type=\"button\"\n        >\n          Envoyer\n        </button>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
