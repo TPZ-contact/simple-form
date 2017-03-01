@@ -45,7 +45,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(434);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(455);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(460);
 
 
 
@@ -117,8 +117,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(619),
-            styles: [__webpack_require__(612)]
+            template: __webpack_require__(620),
+            styles: [__webpack_require__(613)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -138,9 +138,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__(148);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form1_form1_component__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__form2_form2_component__ = __webpack_require__(457);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__form3_form3_component__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form1_form1_component__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__form2_form2_component__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__form3_form3_component__ = __webpack_require__(459);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -189,6 +189,30 @@ var AppModule = (function () {
 /***/ }),
 
 /***/ 456:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPolyfills; });
+var CustomPolyfills = (function () {
+    function CustomPolyfills() {
+    }
+    CustomPolyfills.createNewEvent = function (eventName) {
+        if (typeof (Event) === 'function') {
+            var event = new Event(eventName);
+        }
+        else {
+            var event = document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+        }
+        return event;
+    };
+    return CustomPolyfills;
+}());
+//# sourceMappingURL=/Users/Nicow/Dev/HSBC/POC/simple-form/src/custom-polyfills.js.map
+
+/***/ }),
+
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -247,8 +271,8 @@ var Form1Component = (function () {
     Form1Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-form1',
-            template: __webpack_require__(620),
-            styles: [__webpack_require__(613)],
+            template: __webpack_require__(621),
+            styles: [__webpack_require__(614)],
             animations: [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* trigger */])('slideState', [
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
@@ -272,7 +296,7 @@ var Form1Component = (function () {
 
 /***/ }),
 
-/***/ 457:
+/***/ 458:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -349,8 +373,8 @@ var Form2Component = (function () {
     Form2Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-form2',
-            template: __webpack_require__(621),
-            styles: [__webpack_require__(614)],
+            template: __webpack_require__(622),
+            styles: [__webpack_require__(615)],
             animations: [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* trigger */])('slideState', [
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactivePrevious', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
@@ -381,11 +405,12 @@ var Form2Component = (function () {
 
 /***/ }),
 
-/***/ 458:
+/***/ 459:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__custom_polyfills__ = __webpack_require__(456);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Form3Component; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -396,6 +421,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 var Form3Component = (function () {
     function Form3Component() {
@@ -411,7 +437,9 @@ var Form3Component = (function () {
         this.arrayKeys = Object.keys(this.postData);
     };
     Form3Component.prototype.submitForm = function () {
-        window.dispatchEvent(new Event('submit-ng'));
+        var customEvent = __WEBPACK_IMPORTED_MODULE_1__custom_polyfills__["a" /* CustomPolyfills */].createNewEvent('submit-ng');
+        console.log('-> Event :', customEvent);
+        window.dispatchEvent(customEvent);
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Input */])(), 
@@ -424,8 +452,8 @@ var Form3Component = (function () {
     Form3Component = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app-form3',
-            template: __webpack_require__(622),
-            styles: [__webpack_require__(615)],
+            template: __webpack_require__(623),
+            styles: [__webpack_require__(616)],
             animations: [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* trigger */])('slideState', [
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
@@ -448,7 +476,7 @@ var Form3Component = (function () {
 
 /***/ }),
 
-/***/ 459:
+/***/ 460:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -464,7 +492,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 612:
+/***/ 613:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(74)();
@@ -482,24 +510,6 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 613:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(74)();
-// imports
-
-
-// module
-exports.push([module.i, ".ng-valid:not(div).ng-dirty  {\n  border-left: 5px solid #42A948; /* green */\n}\n\n.ng-invalid:not(div).ng-dirty  {\n  border-left: 5px solid #a94442; /* red */\n}\n\n\ninput[type=\"text\"] {\n  padding-left: 5px;\n}\n\n.label-padded{\n  padding-left: 10px;\n}\n\ntextarea{\n  padding-left: 5px;\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 614:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -508,7 +518,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".form-step{\n  /*position: absolute;\n  top: 0;*/\n}", ""]);
+exports.push([module.i, ".ng-valid:not(div).ng-dirty  {\n  border-left: 5px solid #42A948; /* green */\n}\n\n.ng-invalid:not(div).ng-dirty  {\n  border-left: 5px solid #a94442; /* red */\n}\n\n\ninput[type=\"text\"] {\n  padding-left: 5px;\n}\n\n.label-padded{\n  padding-left: 10px;\n}\n\ntextarea{\n  padding-left: 5px;\n}", ""]);
 
 // exports
 
@@ -536,35 +546,53 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 619:
-/***/ (function(module, exports) {
+/***/ 616:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"form1.validStep1()\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div>\n  <div class=\"form-steps\" style=\"width: 100%; overflow-x: hidden;\">\n  \n    <div style=\"\">\n      <app-form1 #form1 [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 0)\" [hidden]=\"step != 1\" ></app-form1>\n      \n      <app-form2 #form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\" [hidden]=\"step != 2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n      \n      <app-form3 [currentStep]=\"step\" [postData]=\"postData\" [hidden]=\"step != 3\"></app-form3>\n    </div>\n\n  </div>\n  </div>\n\n</div>\n"
+exports = module.exports = __webpack_require__(74)();
+// imports
+
+
+// module
+exports.push([module.i, ".form-step{\n  /*position: absolute;\n  top: 0;*/\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 620:
 /***/ (function(module, exports) {
 
-module.exports = " \n  <div [@slideState]=\"currentStep == 1 ? 'active' : 'inactive'\" class=\"container white\">\n    <div class=\"card left-align\">\n      <div class=\"card-content\">\n          <h4>{{formTitle}}</h4>\n          <div class=\"row\">\n        \n        <!--   <button (click)=\"testFct()\"> Test </button> -->\n            <!-- Start form -->\n            <div \n              name=\"testForm\" \n              #testForm \n              class=\"col s12\"\n              [formGroup]=\"step1Form\"\n            >\n          \n              <!-- Text input field -->\n              <div class=\"row\">\n                <div class=\"input-field col s12\">\n                  \n                  <input \n                    id=\"lstName\"\n                    type=\"text\" \n                    name=\"lstName-tpz\" \n                    formControlName=\"lstName\"\n                  />\n                  <label for=\"lstName\" class=\"label-padded\">Nom : *</label>\n                  <div [hidden]=\"step1Form.controls.lstName.valid || step1Form.controls.lstName.pristine\" class=\"red-text\">\n                    Votre nom est requis.\n                  </div>\n\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"input-field col s12\">\n                  \n                  <input \n                    id=\"fstName\"\n                    type=\"text\" \n                    name=\"fstName-tpz\" \n                    formControlName=\"fstName\"\n                  />\n                  <label for=\"fstName\" class=\"label-padded\">Prénom : </label>\n                </div>\n              </div>\n\n             \n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step1Form.valid\"\n                  (click)=\"validStep1()\"\n                >\n                  Suivant\n                </button>\n                  <!-- <button \n                    class=\"btn waves-effect waves-light  teal lighten-2\" \n                    type=\"submit\" \n                    name=\"action\"\n                    [disabled]=\"!step1Form.valid\"\n                  >\n                    Envoyer\n                  </button> -->\n                  <!-- <input type=\"submit\" value=\"Envoyer\"> -->\n              </div>\n            </div>\n            <!-- /End form -->\n            \n          </div>\n\n      </div>\n    </div>\n  </div>\n"
+module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"form1.validStep1()\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div>\n  <div class=\"form-steps\" style=\"width: 100%; overflow-x: hidden;\">\n  \n    <div style=\"\">\n      <app-form1 #form1 [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 0)\" [hidden]=\"step != 1\" ></app-form1>\n      \n      <app-form2 #form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\" [hidden]=\"step != 2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n      \n      <app-form3 [currentStep]=\"step\" [postData]=\"postData\" [hidden]=\"step != 3\"></app-form3>\n    </div>\n\n  </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 621:
 /***/ (function(module, exports) {
 
-module.exports = "<div [@slideState]=\"slideState\" class=\"container  form-step\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n\n        <div class=\"row\"> \n\n          <div \n              name=\"step2\" \n              #step2 \n              class=\"col s12\"\n              [formGroup]=\"step2Form\"\n            >\n\n            <!-- Radio input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <p>Vous êtes : *</p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender1\" \n                    value=\"h\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender1\">Un homme</label>\n                </p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender2\" \n                    value=\"f\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender2\">Une femme</label>\n                </p>\n                <div [hidden]=\"step2Form.controls['gender-tpz'].valid || step2Form.controls['gender-tpz'].pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n            <!-- Select input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <label for=\"power\">Emploi : *</label>\n                <br><br>\n                <select \n                  class=\"browser-default\"\n                  id=\"power\" \n                  name=\"power-tpz\"\n                  formControlName=\"power\"\n                >\n                  <option value=\"\" disabled selected>Choisissez votre option</option>\n                  <option *ngFor=\"let pow of powers\" [value]=\"pow.value\" [attr.selected]=\"pow.value == '2' ? true : null\">{{pow.label}}</option>\n                </select>\n                \n                <div [hidden]=\"step2Form.controls.power.valid || step2Form.controls.power.pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n\n            <!-- Text area input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <textarea \n                  id=\"comments\" \n                  name=\"comments-tpz\"\n                  class=\"materialize-textarea\" \n                  formControlName=\"comments\"\n                >\n                </textarea>\n                <label for=\"comments\" class=\"label-padded\">Commentaires</label>\n                <div [hidden]=\"step2Form.controls.comments.valid || step2Form.controls.comments.pristine\" class=\"red-text\">\n                  Les commentaires sont requis.\n                </div>\n              </div>\n            </div>\n              \n            <!-- Checkbox input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <input \n                  type=\"checkbox\" \n                  class=\"filled-in\" \n                  id=\"filled-in-box\" \n                  name=\"newsletter-tpz\"\n                  formControlName=\"newsletter\"\n                />\n                <label for=\"filled-in-box\">M'inscire à la newsletter</label>\n              </div>\n            </div>\n\n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step2Form.valid\"\n                  (click)=\"validStep2()\"\n                >\n                  Suivant\n                </button>\n              \n              </div>\n\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = " \n  <div [@slideState]=\"currentStep == 1 ? 'active' : 'inactive'\" class=\"container white\">\n    <div class=\"card left-align\">\n      <div class=\"card-content\">\n          <h4>{{formTitle}}</h4>\n          <div class=\"row\">\n        \n        <!--   <button (click)=\"testFct()\"> Test </button> -->\n            <!-- Start form -->\n            <div \n              name=\"testForm\" \n              #testForm \n              class=\"col s12\"\n              [formGroup]=\"step1Form\"\n            >\n          \n              <!-- Text input field -->\n              <div class=\"row\">\n                <div class=\"input-field col s12\">\n                  \n                  <input \n                    id=\"lstName\"\n                    type=\"text\" \n                    name=\"lstName-tpz\" \n                    formControlName=\"lstName\"\n                  />\n                  <label for=\"lstName\" class=\"label-padded\">Nom : *</label>\n                  <div [hidden]=\"step1Form.controls.lstName.valid || step1Form.controls.lstName.pristine\" class=\"red-text\">\n                    Votre nom est requis.\n                  </div>\n\n                </div>\n              </div>\n\n              <div class=\"row\">\n                <div class=\"input-field col s12\">\n                  \n                  <input \n                    id=\"fstName\"\n                    type=\"text\" \n                    name=\"fstName-tpz\" \n                    formControlName=\"fstName\"\n                  />\n                  <label for=\"fstName\" class=\"label-padded\">Prénom : </label>\n                </div>\n              </div>\n\n             \n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step1Form.valid\"\n                  (click)=\"validStep1()\"\n                >\n                  Suivant\n                </button>\n                  <!-- <button \n                    class=\"btn waves-effect waves-light  teal lighten-2\" \n                    type=\"submit\" \n                    name=\"action\"\n                    [disabled]=\"!step1Form.valid\"\n                  >\n                    Envoyer\n                  </button> -->\n                  <!-- <input type=\"submit\" value=\"Envoyer\"> -->\n              </div>\n            </div>\n            <!-- /End form -->\n            \n          </div>\n\n      </div>\n    </div>\n  </div>\n"
 
 /***/ }),
 
 /***/ 622:
 /***/ (function(module, exports) {
 
+module.exports = "<div [@slideState]=\"slideState\" class=\"container  form-step\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n\n        <div class=\"row\"> \n\n          <div \n              name=\"step2\" \n              #step2 \n              class=\"col s12\"\n              [formGroup]=\"step2Form\"\n            >\n\n            <!-- Radio input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <p>Vous êtes : *</p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender1\" \n                    value=\"h\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender1\">Un homme</label>\n                </p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender2\" \n                    value=\"f\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender2\">Une femme</label>\n                </p>\n                <div [hidden]=\"step2Form.controls['gender-tpz'].valid || step2Form.controls['gender-tpz'].pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n            <!-- Select input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <label for=\"power\">Emploi : *</label>\n                <br><br>\n                <select \n                  class=\"browser-default\"\n                  id=\"power\" \n                  name=\"power-tpz\"\n                  formControlName=\"power\"\n                >\n                  <option value=\"\" disabled selected>Choisissez votre option</option>\n                  <option *ngFor=\"let pow of powers\" [value]=\"pow.value\" [attr.selected]=\"pow.value == '2' ? true : null\">{{pow.label}}</option>\n                </select>\n                \n                <div [hidden]=\"step2Form.controls.power.valid || step2Form.controls.power.pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n\n            <!-- Text area input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <textarea \n                  id=\"comments\" \n                  name=\"comments-tpz\"\n                  class=\"materialize-textarea\" \n                  formControlName=\"comments\"\n                >\n                </textarea>\n                <label for=\"comments\" class=\"label-padded\">Commentaires</label>\n                <div [hidden]=\"step2Form.controls.comments.valid || step2Form.controls.comments.pristine\" class=\"red-text\">\n                  Les commentaires sont requis.\n                </div>\n              </div>\n            </div>\n              \n            <!-- Checkbox input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <input \n                  type=\"checkbox\" \n                  class=\"filled-in\" \n                  id=\"filled-in-box\" \n                  name=\"newsletter-tpz\"\n                  formControlName=\"newsletter\"\n                />\n                <label for=\"filled-in-box\">M'inscire à la newsletter</label>\n              </div>\n            </div>\n\n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step2Form.valid\"\n                  (click)=\"validStep2()\"\n                >\n                  Suivant\n                </button>\n              \n              </div>\n\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ 623:
+/***/ (function(module, exports) {
+
 module.exports = "<div [@slideState]=\"currentStep == 3 ? 'active' : 'inactive'\" class=\"container  form-step\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n      <h4>Récapitulatif :</h4>\n      <ul>           \n        <li *ngFor=\"let key of arrayKeys \"><strong>{{key}} :</strong> {{postData[key]}}</li>\n      </ul>\n      <div class=\"right-align\">\n        <button \n          id=\"button-tpz\"\n          class=\"btn waves-effect waves-light  teal lighten-2\" \n          type=\"button\"\n          (click)=\"submitForm()\"\n        >\n          Envoyer\n        </button>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 636:
+/***/ 637:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(347);
@@ -572,5 +600,5 @@ module.exports = __webpack_require__(347);
 
 /***/ })
 
-},[636]);
+},[637]);
 //# sourceMappingURL=main.bundle.js.map
