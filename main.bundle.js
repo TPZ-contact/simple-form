@@ -500,7 +500,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-steps{\n}\n\n.form-step{\n  width: 100%;\n}\n\n.form-step-2{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n.form-step-3{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n[data-hidden=\"true\"]{display: none !important}\n\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
+exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-steps{\n}\n\n.form-step{\n  width: 100%;\n}\n\n.form-step-2{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n.form-step-3{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
 
 // exports
 
@@ -518,7 +518,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".ng-valid:not(div).ng-dirty  {\n  border-left: 5px solid #42A948; /* green */\n}\n\n.ng-invalid:not(div).ng-dirty  {\n  border-left: 5px solid #a94442; /* red */\n}\n\n\ninput[type=\"text\"] {\n  padding-left: 5px;\n}\n\n.label-padded{\n  padding-left: 10px;\n}\n\ntextarea{\n  padding-left: 5px;\n}", ""]);
+exports.push([module.i, ".ng-valid:not(div).ng-dirty  {\n  border-left: 5px solid #42A948; /* green */\n}\n\n.ng-invalid:not(div).ng-dirty  {\n  border-left: 5px solid #a94442; /* red */\n}\n\n\ninput[type=\"text\"] {\n  padding-left: 5px;\n}\n\n.label-padded{\n  padding-left: 10px;\n}\n\ntextarea{\n  padding-left: 5px;\n}\n\n", ""]);
 
 // exports
 
