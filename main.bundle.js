@@ -252,14 +252,14 @@ var Form1Component = (function () {
             animations: [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* trigger */])('slideState', [
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
-                        backgroundColor: '#eee',
-                        transform: 'translateX(-200%)'
+                        transform: 'translateX(-200%)',
+                        display: 'none'
                     })),
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('active', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
                         transform: 'translateX(0%)',
                     })),
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('inactive => active', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('800ms ease-in')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('active => inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('800ms ease-out'))
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('active => inactive', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('400ms ease-out'))
                 ])
             ]
         }), 
@@ -354,17 +354,21 @@ var Form2Component = (function () {
             animations: [
                 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["V" /* trigger */])('slideState', [
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactivePrevious', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
-                        backgroundColor: '#eee',
-                        transform: 'translateX(-200%)'
+                        transform: 'translateX(-200%)',
+                        display: 'none'
                     })),
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('inactiveNext', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
-                        backgroundColor: '#eee',
-                        transform: 'translateX(200%)'
+                        transform: 'translateX(200%)',
+                        display: 'none'
                     })),
                     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["W" /* state */])('active', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* style */])({
                         transform: 'translateX(0%)',
+                        display: 'block'
                     })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('* => *', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('800ms ease-out'))
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('inactivePrevious => active', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('800ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('inactiveNext => active', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('800ms ease-in')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('active => inactivePrevious', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('100ms ease-out')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* transition */])('active => inactiveNext', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* animate */])('400ms'))
                 ])
             ]
         }), 
@@ -468,7 +472,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-steps{\n}\n\n.form-step{\n}\n\n\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
+exports.push([module.i, ".form-link{\n  color: rgba(255,255,255,0.7);\n}\n\n.active{\n  color: white;\n}\n\n.show{\n  opacity: 1 !important;\n}\n.step{\n  opacity: 0 !important;\n  -webkit-transition: .5s ease-in-out all;\n  transition: .5s ease-in-out all;\n}\n\n.form-steps{\n}\n\n.form-step{\n  width: 100%;\n}\n\n.form-step-2{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n.form-step-3{\n  position: absolute;\n  top: 0;\n  right: 0;\n}\n\n\n/*.left{\n  transform: translateX(-400px);\n}*/", ""]);
 
 // exports
 
@@ -504,7 +508,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".form-step{\n  /*position: absolute;\n  top: 0;*/\n}", ""]);
 
 // exports
 
@@ -522,7 +526,7 @@ exports = module.exports = __webpack_require__(74)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".form-step{\n  /*position: absolute;\n  top: 0;*/\n}", ""]);
 
 // exports
 
@@ -535,7 +539,7 @@ module.exports = module.exports.toString();
 /***/ 619:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"form1.validStep1()\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div class=\"form-steps\" style=\"width: 100%; overflow-x: hidden;\">\n\n    <div class=\"form-step\" [ngStyle]=\"{'height': step != 1 ? 0 : auto}\">\n      <app-form1 #form1 [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 0)\"  ></app-form1>\n    </div>\n\n    <div class=\"form-step\" [ngStyle]=\"{'height': step != 2 ? 0 : auto}\">\n      <app-form2 #form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n    </div>\n    \n    <div class=\"form-step\" [ngStyle]=\"{'height': step != 3 ? 0 : auto}\">\n      <app-form3 [currentStep]=\"step\" [postData]=\"postData\"></app-form3>\n    </div>\n\n  </div>\n\n</div>\n"
+module.exports = "\n<div class=\"center-align\">\n  <h1>\n    {{title}}\n  </h1>\n  <div>\n    <nav>\n    <div class=\"nav-wrapper red accent-4\">\n      <div class=\"col s12\">\n        <a href=\"#!\" (click)=\"goStep(0)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 1}\">First</a>\n        <a href=\"#!\" (click)=\"form1.validStep1()\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 2}\">Second</a>\n        <a href=\"#!\" (click)=\"goStep(2)\" class=\"breadcrumb form-link\" [ngClass]=\"{'active': step === 3}\">Third</a>\n      </div>\n    </div>\n  </nav>\n  </div>\n  \n  <div>\n  <div class=\"form-steps\" style=\"width: 100%; overflow-x: hidden;\">\n  \n    <div style=\"\">\n      <app-form1 #form1 [formTitle]=\"formTitle\" [goStep2]=\"goStep2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 0)\" [hidden]=\"step != 1\" ></app-form1>\n      \n      <app-form2 #form2 [formTitle]=\"formTitle\" [goStep3]=\"goStep3\" [hidden]=\"step != 2\" [currentStep]=\"step\" (stepValid)=\"handleStepValid($event, 1)\"></app-form2>\n      \n      <app-form3 [currentStep]=\"step\" [postData]=\"postData\" [hidden]=\"step != 3\"></app-form3>\n    </div>\n\n  </div>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
@@ -549,14 +553,14 @@ module.exports = " \n  <div [@slideState]=\"currentStep == 1 ? 'active' : 'inact
 /***/ 621:
 /***/ (function(module, exports) {
 
-module.exports = "<div [@slideState]=\"slideState\" class=\"container white\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n\n        <div class=\"row\"> \n\n          <div \n              name=\"step2\" \n              #step2 \n              class=\"col s12\"\n              [formGroup]=\"step2Form\"\n            >\n\n            <!-- Radio input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <p>Vous êtes : *</p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender1\" \n                    value=\"h\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender1\">Un homme</label>\n                </p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender2\" \n                    value=\"f\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender2\">Une femme</label>\n                </p>\n                <div [hidden]=\"step2Form.controls['gender-tpz'].valid || step2Form.controls['gender-tpz'].pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n            <!-- Select input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <label for=\"power\">Emploi : *</label>\n                <br><br>\n                <select \n                  class=\"browser-default\"\n                  id=\"power\" \n                  name=\"power-tpz\"\n                  formControlName=\"power\"\n                >\n                  <option value=\"\" disabled selected>Choisissez votre option</option>\n                  <option *ngFor=\"let pow of powers\" [value]=\"pow.value\" [attr.selected]=\"pow.value == '2' ? true : null\">{{pow.label}}</option>\n                </select>\n                \n                <div [hidden]=\"step2Form.controls.power.valid || step2Form.controls.power.pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n\n            <!-- Text area input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <textarea \n                  id=\"comments\" \n                  name=\"comments-tpz\"\n                  class=\"materialize-textarea\" \n                  formControlName=\"comments\"\n                >\n                </textarea>\n                <label for=\"comments\" class=\"label-padded\">Commentaires</label>\n                <div [hidden]=\"step2Form.controls.comments.valid || step2Form.controls.comments.pristine\" class=\"red-text\">\n                  Les commentaires sont requis.\n                </div>\n              </div>\n            </div>\n              \n            <!-- Checkbox input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <input \n                  type=\"checkbox\" \n                  class=\"filled-in\" \n                  id=\"filled-in-box\" \n                  name=\"newsletter-tpz\"\n                  formControlName=\"newsletter\"\n                />\n                <label for=\"filled-in-box\">M'inscire à la newsletter</label>\n              </div>\n            </div>\n\n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step2Form.valid\"\n                  (click)=\"validStep2()\"\n                >\n                  Suivant\n                </button>\n              \n              </div>\n\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div [@slideState]=\"slideState\" class=\"container  form-step\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n\n        <div class=\"row\"> \n\n          <div \n              name=\"step2\" \n              #step2 \n              class=\"col s12\"\n              [formGroup]=\"step2Form\"\n            >\n\n            <!-- Radio input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <p>Vous êtes : *</p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender1\" \n                    value=\"h\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender1\">Un homme</label>\n                </p>\n                <p>\n                  <input \n                    name=\"gender-tpz\" \n                    type=\"radio\" \n                    id=\"gender2\" \n                    value=\"f\"\n                    formControlName=\"gender-tpz\"\n                  />\n                  <label for=\"gender2\">Une femme</label>\n                </p>\n                <div [hidden]=\"step2Form.controls['gender-tpz'].valid || step2Form.controls['gender-tpz'].pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n            <!-- Select input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <label for=\"power\">Emploi : *</label>\n                <br><br>\n                <select \n                  class=\"browser-default\"\n                  id=\"power\" \n                  name=\"power-tpz\"\n                  formControlName=\"power\"\n                >\n                  <option value=\"\" disabled selected>Choisissez votre option</option>\n                  <option *ngFor=\"let pow of powers\" [value]=\"pow.value\" [attr.selected]=\"pow.value == '2' ? true : null\">{{pow.label}}</option>\n                </select>\n                \n                <div [hidden]=\"step2Form.controls.power.valid || step2Form.controls.power.pristine\" class=\"red-text\">\n                  La puissance est requise.\n                </div>\n              </div>\n            </div>\n\n\n            <!-- Text area input field -->\n            <div class=\"row\">\n              <div class=\"input-field col s12\">\n                <textarea \n                  id=\"comments\" \n                  name=\"comments-tpz\"\n                  class=\"materialize-textarea\" \n                  formControlName=\"comments\"\n                >\n                </textarea>\n                <label for=\"comments\" class=\"label-padded\">Commentaires</label>\n                <div [hidden]=\"step2Form.controls.comments.valid || step2Form.controls.comments.pristine\" class=\"red-text\">\n                  Les commentaires sont requis.\n                </div>\n              </div>\n            </div>\n              \n            <!-- Checkbox input field -->\n            <div class=\"row\">\n              <div class=\"col s12\">\n                <input \n                  type=\"checkbox\" \n                  class=\"filled-in\" \n                  id=\"filled-in-box\" \n                  name=\"newsletter-tpz\"\n                  formControlName=\"newsletter\"\n                />\n                <label for=\"filled-in-box\">M'inscire à la newsletter</label>\n              </div>\n            </div>\n\n              <div class=\"right-align\">\n                <button \n                  class=\"btn waves-effect waves-light  teal lighten-2\" \n                  type=\"button\"\n                  [disabled]=\"!step2Form.valid\"\n                  (click)=\"validStep2()\"\n                >\n                  Suivant\n                </button>\n              \n              </div>\n\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
 /***/ 622:
 /***/ (function(module, exports) {
 
-module.exports = "<div [@slideState]=\"currentStep == 3 ? 'active' : 'inactive'\" class=\"container white\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n      <h4>Récapitulatif :</h4>\n      <ul>           \n        <li *ngFor=\"let key of arrayKeys \"><strong>{{key}} :</strong> {{postData[key]}}</li>\n      </ul>\n      <div class=\"right-align\">\n        <button \n          id=\"button-tpz\"\n          class=\"btn waves-effect waves-light  teal lighten-2\" \n          type=\"button\"\n          (click)=\"submitForm()\"\n        >\n          Envoyer\n        </button>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div [@slideState]=\"currentStep == 3 ? 'active' : 'inactive'\" class=\"container  form-step\">\n  <div class=\"card left-align\">\n    <div class=\"card-content\">\n      <h4>Récapitulatif :</h4>\n      <ul>           \n        <li *ngFor=\"let key of arrayKeys \"><strong>{{key}} :</strong> {{postData[key]}}</li>\n      </ul>\n      <div class=\"right-align\">\n        <button \n          id=\"button-tpz\"\n          class=\"btn waves-effect waves-light  teal lighten-2\" \n          type=\"button\"\n          (click)=\"submitForm()\"\n        >\n          Envoyer\n        </button>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
