@@ -1,24 +1,67 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>SimpleForm</title>
-  <base href="https://tpz-contact.github.io/simple-form/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- Compiled and minified CSS -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-          
+<head>
+    <meta charset="utf-8">
+    <title>HSBC | Create Account</title>
+    <base href="https://tpz-contact.github.io/simple-form/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/application.css">
 </head>
-<body class="blue-grey lighten-5">
-  <app-root>Loading...</app-root>
+
+<body>
+    <app-root>
+        <style type="text/css">
+            #pre-bootstrap {
+                background-color: #FFFFFF;
+                bottom: 0px;
+                left: 0px;
+                position: fixed;
+                right: 0px;
+                top: 0px;
+                z-index: 999999;
+            }
+            
+            #pre-bootstrap div.messaging {
+                color: #DA0010;
+                font-family: monospace;
+                left: 0px;
+                margin-top: -37px;
+                position: absolute;
+                right: 0px;
+                text-align: center;
+                top: 50%;
+            }
+            
+            #pre-bootstrap h1 {
+                font-size: 26px;
+                line-height: 35px;
+                margin: 0px 0px 20px 0px;
+            }
+            
+            #pre-bootstrap p {
+                font-size: 18px;
+                line-height: 14px;
+                margin: 0px 0px 0px 0px;
+            }
+        </style>
+
+        <div id="pre-bootstrap">
+            <div class="messaging">
+
+                <h1>
+                    WELCOME HSBC
+                </h1>
+
+                <p>
+                    Please wait
+                </p>
+
+            </div>
+        </div>
+    </app-root>
 <script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+
 </html>
