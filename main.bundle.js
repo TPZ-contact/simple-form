@@ -98,6 +98,101 @@ var HEADER_STATE;
 
 /***/ }),
 
+/***/ 14:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(635);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(146);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModelService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SharedModelService = (function () {
+    /**
+     * @constructor
+     * Constuctor of AccountTypeComponent class
+     * @param {LocalDataService} _localData service
+     */
+    function SharedModelService(_localData) {
+        var _this = this;
+        this._localData = _localData;
+        this.initModel();
+        this.mustSaveData = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"](false);
+        this.mustSaveData.subscribe(function (val) {
+            // Check if account holder
+            if (_this._model.accountType === 'jointAccount' && !_this._modelHolder) {
+                _this.initModelHolder();
+            }
+            // Check for save local data
+            if (val) {
+                _this._localData.setDataModel(_this._model);
+                if (_this._model.accountType === 'jointAccount' && _this._modelHolder) {
+                    _this._localData.setDataModelHolder(_this._modelHolder);
+                }
+                _this.mustSaveData.next(false);
+            }
+        });
+    }
+    SharedModelService.prototype.initModel = function () {
+        // Check if local data
+        var _dataModel = this._localData.getDataModel();
+        if (_dataModel) {
+            this._model = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */](_dataModel);
+        }
+        else {
+            this._model = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */]();
+        }
+    };
+    SharedModelService.prototype.initModelHolder = function () {
+        console.log('=> Creating joint account');
+        var _dataModelHolder = this._localData.getDataModelHolder();
+        // Check if local data
+        if (_dataModelHolder) {
+            this._modelHolder = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */](_dataModelHolder);
+        }
+        else {
+            this._modelHolder = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */]();
+        }
+    };
+    Object.defineProperty(SharedModelService.prototype, "model", {
+        get: function () {
+            return this._model;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(SharedModelService.prototype, "modelHolder", {
+        get: function () {
+            return this._modelHolder;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    SharedModelService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__local_data_service__["a" /* LocalDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__local_data_service__["a" /* LocalDataService */]) === 'function' && _a) || Object])
+    ], SharedModelService);
+    return SharedModelService;
+    var _a;
+}());
+//# sourceMappingURL=shared-model.service.js.map
+
+/***/ }),
+
 /***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -766,101 +861,6 @@ var ScrollService = (function () {
     return ScrollService;
 }());
 //# sourceMappingURL=scroll.service.js.map
-
-/***/ }),
-
-/***/ 16:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(635);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(146);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModelService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var SharedModelService = (function () {
-    /**
-     * @constructor
-     * Constuctor of AccountTypeComponent class
-     * @param {LocalDataService} _localData service
-     */
-    function SharedModelService(_localData) {
-        var _this = this;
-        this._localData = _localData;
-        this.initModel();
-        this.mustSaveData = new __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__["BehaviorSubject"](false);
-        this.mustSaveData.subscribe(function (val) {
-            // Check if account holder
-            if (_this._model.accountType === 'jointAccount' && !_this._modelHolder) {
-                _this.initModelHolder();
-            }
-            // Check for save local data
-            if (val) {
-                _this._localData.setDataModel(_this._model);
-                if (_this._model.accountType === 'jointAccount' && _this._modelHolder) {
-                    _this._localData.setDataModelHolder(_this._modelHolder);
-                }
-                _this.mustSaveData.next(false);
-            }
-        });
-    }
-    SharedModelService.prototype.initModel = function () {
-        // Check if local data
-        var _dataModel = this._localData.getDataModel();
-        if (_dataModel) {
-            this._model = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */](_dataModel);
-        }
-        else {
-            this._model = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */]();
-        }
-    };
-    SharedModelService.prototype.initModelHolder = function () {
-        console.log('=> Creating joint account');
-        var _dataModelHolder = this._localData.getDataModelHolder();
-        // Check if local data
-        if (_dataModelHolder) {
-            this._modelHolder = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */](_dataModelHolder);
-        }
-        else {
-            this._modelHolder = new __WEBPACK_IMPORTED_MODULE_1__model_Model__["a" /* Model */]();
-        }
-    };
-    Object.defineProperty(SharedModelService.prototype, "model", {
-        get: function () {
-            return this._model;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(SharedModelService.prototype, "modelHolder", {
-        get: function () {
-            return this._modelHolder;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    SharedModelService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__local_data_service__["a" /* LocalDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__local_data_service__["a" /* LocalDataService */]) === 'function' && _a) || Object])
-    ], SharedModelService);
-    return SharedModelService;
-    var _a;
-}());
-//# sourceMappingURL=shared-model.service.js.map
 
 /***/ }),
 
@@ -3056,7 +3056,7 @@ var PibButtonModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountOpeningValidationComponent; });
@@ -3129,7 +3129,7 @@ var AccountOpeningValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountTypeComponent; });
@@ -3252,7 +3252,7 @@ var AccountTypeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_router_state_service__ = __webpack_require__(20);
@@ -3432,7 +3432,7 @@ var ContactDetailsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditCardSecondPageComponent; });
@@ -3565,7 +3565,7 @@ var CreditCardSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditCardComponent; });
@@ -3685,7 +3685,7 @@ var CreditCardComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ESignComponent; });
@@ -3899,7 +3899,7 @@ var FiscalInformationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FollowAccountPrefComponent; });
@@ -4120,7 +4120,7 @@ var MonthlyIncomeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpeningAccountInformationComponent; });
@@ -4345,7 +4345,7 @@ var PatrimonyComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_translate__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(147);
@@ -4568,7 +4568,7 @@ var PersonalInformationSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(147);
@@ -5025,7 +5025,7 @@ var ProfessionalSituationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProofUploadValidationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5106,7 +5106,7 @@ var ProofUploadValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(19);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecapValidationComponent; });
@@ -5228,7 +5228,7 @@ var RecapValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SavedESignComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5294,7 +5294,7 @@ var SavedESignComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofHandwrittenSignatureComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5384,7 +5384,7 @@ var UploadProofHandwrittenSignatureComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofIdentityComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5482,7 +5482,7 @@ var UploadProofIdentityComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofTaxNoticeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5751,7 +5751,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(634);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_header_state_service__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_fill_data_steps_changer_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_router_state_service__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(147);
@@ -9163,6 +9163,7 @@ var HeaderComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_translate__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9178,13 +9179,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var MainComponent = (function () {
-    function MainComponent(fillDataStepChanger, translateService, router, _scroll) {
+    function MainComponent(fillDataStepChanger, translateService, router, _scroll, _sharedModelService) {
         var _this = this;
         this.fillDataStepChanger = fillDataStepChanger;
         this.translateService = translateService;
         this.router = router;
         this._scroll = _scroll;
+        this._sharedModelService = _sharedModelService;
         this.formContainerHeight = '100vh';
         this.itemsNames = ['hsbc-main.vos_informations', 'hsbc-main.votre_situation', 'hsbc-main.votre_compte', 'hsbc-main.validation'];
         this.items = [];
@@ -9204,19 +9207,37 @@ var MainComponent = (function () {
     }
     MainComponent.prototype.ngOnInit = function () {
         var _this = this;
+        var trackerNode;
         this.router.events.subscribe(function (event) {
             if (event instanceof __WEBPACK_IMPORTED_MODULE_4__angular_router__["c" /* NavigationEnd */]) {
-                //document.body.scrollTop = 0;
-                _this._scroll.scrollTo(0, 500);
-                console.log('=> Must insert tag', event.urlAfterRedirects);
-                var cdata = {};
-                switch (event.urlAfterRedirects) {
-                    case '/teststest':
-                        break;
-                    default:
-                        break;
+                if (trackerNode) {
+                    document.body.removeChild(trackerNode);
                 }
+                _this._scroll.scrollTo(0, 500);
+                var cdata = {};
+                _this.getTrackerValue(event.urlAfterRedirects, 'ti', function (value) {
+                    var ti = value;
+                    _this.getTrackerValue(event.urlAfterRedirects, 'dcsuri', function (value) {
+                        var dcsuri = value;
+                        trackerNode = document.createElement('script');
+                        trackerNode.text = '/*<![CDATA[*/HSBC.PAGE.ti="' + ti + '";HSBC.LOG.dcsuri="' + dcsuri + '";/*]]>*/';
+                        document.body.appendChild(trackerNode);
+                    });
+                });
             }
+        });
+    };
+    MainComponent.prototype.getTrackerValue = function (trackerUrl, type, callback) {
+        var key;
+        if (this._sharedModelService.model && this._sharedModelService.model.accountType && this._sharedModelService.model.accountType === 'jointAccount') {
+            key = 'hsbc-trackers-joint.' + trackerUrl.split('/')[1].replace(/-/g, '_') + '_' + trackerUrl.split('/')[2] + '_' + type;
+        }
+        else {
+            key = 'hsbc-trackers-solo.' + trackerUrl.split('/')[1].replace(/-/g, '_') + '_' + type;
+        }
+        console.log('KEY: ', key);
+        this.translateService.get(key).subscribe(function (value) {
+            callback(value);
         });
     };
     __decorate([
@@ -9229,10 +9250,10 @@ var MainComponent = (function () {
             template: __webpack_require__(729),
             styles: [__webpack_require__(704)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__["a" /* ScrollService */]) === 'function' && _e) || Object])
+        __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__["a" /* ScrollService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__["a" /* SharedModelService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__["a" /* SharedModelService */]) === 'function' && _f) || Object])
     ], MainComponent);
     return MainComponent;
-    var _a, _b, _c, _d, _e;
+    var _a, _b, _c, _d, _e, _f;
 }());
 //# sourceMappingURL=main.component.js.map
 
@@ -9898,7 +9919,7 @@ var CreateAccountRoutingModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9962,7 +9983,7 @@ var PersonalInformationGuard = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationSecondPageGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
