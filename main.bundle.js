@@ -9880,7 +9880,7 @@ var CreateAccountRoutingModule = (function () {
     }
     CreateAccountRoutingModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes, { useHash: true })],
             exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]],
             providers: [__WEBPACK_IMPORTED_MODULE_23__services_guards_personal_information_guard__["a" /* PersonalInformationGuard */], __WEBPACK_IMPORTED_MODULE_24__services_guards_personal_information_second_page_guard__["a" /* PersonalInformationSecondPageGuard */]]
         }), 
