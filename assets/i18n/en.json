@@ -26,6 +26,7 @@
         "date_naissance": "Date of birth",
         "email": "Email",
         "mobile": "Mobile phone",
+        "fixe": "Home phone (optional)",
         "sms_check": "I intend to be contacted by e-mail or SMS",
         "retour": "Back",
         "notice_consommateur": "Every consumer has the possibility of registering for free on the opposition list to solicit telephone: www.bloctel.gouv.fr It is forbidden for a professional to telephone a consumer registered on this list, Except in the case of contractual relations.",

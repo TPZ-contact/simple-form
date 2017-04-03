@@ -26,6 +26,7 @@
         "date_naissance": "Date de naissance",
         "email": "Email",
         "mobile": "Téléphone mobile",
+        "fixe": "Téléphone fixe (facultatif)",
         "sms_check": "J'accepte d'être contacté par courrier électronique ou par SMS",
         "retour": "Retour",
         "notice_consommateur": "Tout consommateur dispose de la possibilité de s’inscrire gratuitement sur la liste d’opposition à démarchage téléphonique : www.bloctel.gouv.fr. Il est interdit à un professionnel de démarcher téléphoniquement un consommateur inscrit sur cette liste, sauf en cas de relations contractuelles.",
