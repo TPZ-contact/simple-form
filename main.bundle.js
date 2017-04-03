@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 118:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -117,89 +117,12 @@ var CountriesDataService = (function () {
 
 /***/ }),
 
-/***/ 119:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ScrollService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var ScrollService = (function () {
-    function ScrollService() {
-        this.isScrolling = false;
-    }
-    // Element to move, time in ms to animate
-    ScrollService.prototype.scrollTo = function (element, duration) {
-        if (!this.isScrolling) {
-            this.isScrolling = true;
-            var e = document.documentElement;
-            if (e.scrollTop === 0) {
-                var t = e.scrollTop;
-                ++e.scrollTop;
-                e = t + 1 === e.scrollTop-- ? e : document.body;
-            }
-            this.scrollToC(e, e.scrollTop, element, duration);
-        }
-    };
-    // Element to move, element or px from, element or px to, time in ms to animate
-    ScrollService.prototype.scrollToC = function (element, from, to, duration) {
-        if (duration <= 0)
-            return;
-        if (typeof from === "object")
-            from = from.offsetTop;
-        if (typeof to === "object")
-            to = to.offsetTop;
-        this.scrollToX(element, from, to, 0, 1 / duration, 20, this.easeOutCuaic);
-    };
-    ScrollService.prototype.scrollToX = function (element, xFrom, xTo, t01, speed, step, motion) {
-        var _this = this;
-        if (t01 < 0 || t01 > 1 || speed <= 0) {
-            element.scrollTop = xTo;
-            this.isScrolling = false;
-            return;
-        }
-        element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
-        t01 += speed * step;
-        setTimeout(function () {
-            _this.scrollToX(element, xFrom, xTo, t01, speed, step, motion);
-        }, step);
-    };
-    ScrollService.prototype.easeOutCuaic = function (t) {
-        t--;
-        return t * t * t + 1;
-    };
-    ScrollService.prototype.scrollToFirstBadField = function () {
-        var badFields = window.document.getElementsByClassName('form__input--error');
-        var top = window.pageYOffset;
-        if (badFields[0]) {
-            this.scrollTo(badFields[0].getBoundingClientRect().top + document.body.scrollTop - 50, 1000);
-        }
-    };
-    ScrollService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
-        __metadata('design:paramtypes', [])
-    ], ScrollService);
-    return ScrollService;
-}());
-//# sourceMappingURL=scroll.service.js.map
-
-/***/ }),
-
 /***/ 12:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FillDataStepsChangerService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FILL_DATA_STEPS; });
@@ -716,7 +639,7 @@ var UsefulDataService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderStateService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HEADER_STATE; });
@@ -1250,7 +1173,7 @@ var LocalDataService = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModelService; });
@@ -1292,6 +1215,7 @@ var SharedModelService = (function () {
                 _this.mustSaveData.next(false);
             }
         });
+        console.log('Initialized model', this._model);
     }
     SharedModelService.prototype.initModel = function () {
         // Check if local data
@@ -3752,10 +3676,10 @@ var AccountTypeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_router_state_service__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__routing_router_animations__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(90);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4862,11 +4786,11 @@ var PatrimonyComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_translate__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_router_state_service__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routing_router_animations__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationSecondPageComponent; });
@@ -5127,9 +5051,9 @@ var PersonalInformationSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_modal_component__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routing_router_animations__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationsComponent; });
@@ -5480,9 +5404,11 @@ var PersonalInformationsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routing_router_animations__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(90);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfessionalSituationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5503,6 +5429,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var ProfessionalSituationComponent = (function () {
     /**
    * @constructor
@@ -5512,7 +5440,7 @@ var ProfessionalSituationComponent = (function () {
    * @param {HeaderStateService} _headerSteps
    * @param {FillDataStepsChangerService} _fillDataStepService
    */
-    function ProfessionalSituationComponent(_location, _translate, router, _usefulDataService, _headerSteps, _fillDataStepService, _routerState, _countriesService) {
+    function ProfessionalSituationComponent(_location, _translate, router, _usefulDataService, _headerSteps, _fillDataStepService, _routerState, _countriesService, _sharedModelService, _scroll) {
         var _this = this;
         this._location = _location;
         this._translate = _translate;
@@ -5522,6 +5450,8 @@ var ProfessionalSituationComponent = (function () {
         this._fillDataStepService = _fillDataStepService;
         this._routerState = _routerState;
         this._countriesService = _countriesService;
+        this._sharedModelService = _sharedModelService;
+        this._scroll = _scroll;
         /**
        * @var {array} profissionalSituations
        * @var {string} selectedSituation
@@ -5535,6 +5465,7 @@ var ProfessionalSituationComponent = (function () {
         this.activitySectors = [];
         this.countries = [];
         this.selectedCity = 'FR';
+        this.stepSubmitted = false;
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
             _this.routerAnimation = 'next';
@@ -5578,10 +5509,21 @@ var ProfessionalSituationComponent = (function () {
      */
     ProfessionalSituationComponent.prototype.next = function () {
         var _this = this;
-        this.routerAnimation = 'prev';
-        setTimeout(function () {
-            _this.router.navigate(['monthly-income']);
-        }, 50);
+        this.stepSubmitted = true;
+        if (this._sharedModelService.model.informations.professionalSituation.validate()) {
+            this._sharedModelService.mustSaveData.next(true);
+            this.stepSubmitted = false;
+            //this._sharedModelService.mustSaveData.next(true);
+            this.routerAnimation = 'prev';
+            setTimeout(function () {
+                _this.router.navigate(['monthly-income']);
+            }, 50);
+        }
+        else {
+            setTimeout(function () {
+                _this._scroll.scrollToFirstBadField();
+            });
+        }
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* HostBinding */])('@routerTransition'), 
@@ -5595,10 +5537,10 @@ var ProfessionalSituationComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__routing_router_animations__["a" /* routerTransition */])()],
             host: { '[@routerTransition]': '' },
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["d" /* TranslateService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__["a" /* UsefulDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__["a" /* UsefulDataService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__["a" /* CountriesDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__["a" /* CountriesDataService */]) === 'function' && _h) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5_ng2_translate__["d" /* TranslateService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__["a" /* UsefulDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__["a" /* UsefulDataService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__["a" /* CountriesDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__["a" /* CountriesDataService */]) === 'function' && _h) || Object, (typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */]) === 'function' && _j) || Object, (typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__["a" /* ScrollService */]) === 'function' && _k) || Object])
     ], ProfessionalSituationComponent);
     return ProfessionalSituationComponent;
-    var _a, _b, _c, _d, _e, _f, _g, _h;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 //# sourceMappingURL=professional-situation.component.js.map
 
@@ -6327,7 +6269,7 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(691);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(46);
@@ -6342,7 +6284,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_router_state_service__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_translate__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_account_type_account_type_component__ = __webpack_require__(366);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_personal_information_personal_informations_component__ = __webpack_require__(377);
@@ -6375,7 +6317,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(675);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(690);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(120);
 /* unused harmony export createTranslateLoader */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
@@ -8073,7 +8015,7 @@ var PibDropDownEditableModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_shared__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_button_directive__ = __webpack_require__(364);
 /* unused harmony export FileUpload */
@@ -9799,7 +9741,7 @@ var HeaderComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_translate__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(17);
@@ -9928,6 +9870,8 @@ var Model = (function () {
             if (prevData.informations.person.birthDate) {
                 this.informations.person.birthDate = new Date(prevData.informations.person.birthDate);
             }
+            this.informations.professionalSituation = new ProfessionalSituation;
+            Object.assign(this.informations.professionalSituation, prevData.informations.professionalSituation);
             this.informations.contactDetail = new ContactDetails();
             Object.assign(this.informations.contactDetail, prevData.informations.contactDetail);
             if (prevData.informations.contactDetail.livesAtThisAddressSince) {
@@ -9952,6 +9896,7 @@ var Informations = (function () {
         this.person = new PersonalInformation();
         this.contactDetail = new ContactDetails();
         this.account = new Account();
+        this.professionalSituation = new ProfessionalSituation();
     }
     return Informations;
 }());
@@ -10436,7 +10381,217 @@ var Situation = (function () {
 }());
 var ProfessionalSituation = (function () {
     function ProfessionalSituation() {
+        this.country = "FR";
     }
+    ProfessionalSituation.prototype.validateOnlyLetters = function (letters) {
+        var re = /^[a-zA-Z\- àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]*$/;
+        return re.test(letters);
+    };
+    ProfessionalSituation.prototype.validateOnlyLettersNumbers = function (letters) {
+        var re = /^[A-Za-z0-9- àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ _]*[A-Za-z0-9- àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ][A-Za-z0-9- àâäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ _]*$/;
+        return re.test(letters);
+    };
+    ProfessionalSituation.prototype.validateRequiredString = function (str) {
+        if (str && str.trim().length > 0) {
+            return true;
+        }
+        return false;
+    };
+    ProfessionalSituation.prototype.validateProfessionalStatus = function () {
+        if (!this.validateRequiredString(this.professionalStatus)) {
+            this.professionalStatusError = REQUIRED;
+            return false;
+        }
+        else {
+            this.professionalStatusError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateContractType = function () {
+        if ((this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal') && !this.validateRequiredString(this.contractType)) {
+            this.contractTypeError = REQUIRED;
+            return false;
+        }
+        else {
+            this.contractTypeError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateSIRET = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.SIRET)) {
+            this.SIRETError = REQUIRED;
+            return false;
+        }
+        else {
+            this.SIRETError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateNACE = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.NACE)) {
+            this.NACEError = REQUIRED;
+            return false;
+        }
+        else {
+            this.NACEError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateProfessionalCategory = function () {
+        if (!this.validateRequiredString(this.professionalCategory)) {
+            this.professionalCategoryError = REQUIRED;
+            return false;
+        }
+        else {
+            this.professionalCategoryError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateFunction = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal') && !this.validateRequiredString(this.function)) {
+            this.functionError = REQUIRED;
+            return false;
+        }
+        else {
+            this.functionError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateActivitySector = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.activitySector)) {
+            this.activitySectorError = REQUIRED;
+            return false;
+        }
+        else {
+            this.activitySectorError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateEmployer = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.employer)) {
+            this.employerError = REQUIRED;
+            return false;
+        }
+        else if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateOnlyLettersNumbers(this.employer)) {
+            this.employerError = INVALID_LETTERS_NUM;
+            return false;
+        }
+        else {
+            this.employerError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateEmployerAddress = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.employerAddress)) {
+            this.employerAddressError = REQUIRED;
+            return false;
+        }
+        else if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateOnlyLettersNumbers(this.employerAddress)) {
+            this.employerAddressError = INVALID_LETTERS_NUM;
+            return false;
+        }
+        else {
+            this.employerAddressError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateZipCode = function () {
+        if (this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') {
+            var re = /^[0-9]{5}$/;
+            if (!this.zipCode) {
+                this.zipCodeError = REQUIRED;
+                return false;
+            }
+            else if (!re.test(this.zipCode)) {
+                this.zipCodeError = INVALID;
+                return false;
+            }
+            else {
+                this.zipCodeError = null;
+                return true;
+            }
+        }
+        else {
+            this.zipCodeError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateCity = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.city)) {
+            this.cityError = REQUIRED;
+            return false;
+        }
+        else if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateOnlyLetters(this.city)) {
+            this.cityError = INVALID_LETTERS_NUM;
+            return false;
+        }
+        else {
+            this.cityError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validateCountry = function () {
+        if ((this.professionalStatus === 'EI' || this.professionalStatus === 'salarie' || this.professionalStatus === 'controleur_principal' || this.professionalStatus === 'chef_entreprise') && !this.validateRequiredString(this.country)) {
+            this.countryError = REQUIRED;
+            return false;
+        }
+        else {
+            this.countryError = null;
+            return true;
+        }
+    };
+    ProfessionalSituation.prototype.validate = function () {
+        var hasErrors = false;
+        if (!this.validateProfessionalStatus()) {
+            console.log(1);
+            hasErrors = true;
+        }
+        if (!this.validateContractType()) {
+            console.log(2);
+            hasErrors = true;
+        }
+        if (!this.validateSIRET()) {
+            console.log(3);
+            hasErrors = true;
+        }
+        if (!this.validateNACE()) {
+            console.log(4);
+            hasErrors = true;
+        }
+        if (!this.validateProfessionalCategory()) {
+            console.log(5);
+            hasErrors = true;
+        }
+        if (!this.validateFunction()) {
+            console.log(6);
+            hasErrors = true;
+        }
+        if (!this.validateActivitySector()) {
+            console.log(7);
+            hasErrors = true;
+        }
+        if (!this.validateEmployer()) {
+            console.log(8);
+            hasErrors = true;
+        }
+        if (!this.validateEmployerAddress()) {
+            console.log(9);
+            hasErrors = true;
+        }
+        if (!this.validateCity()) {
+            console.log(10);
+            hasErrors = true;
+        }
+        if (!this.validateZipCode()) {
+            console.log(11);
+            hasErrors = true;
+        }
+        if (!this.validateCountry()) {
+            console.log(12);
+            hasErrors = true;
+        }
+        return !hasErrors;
+    };
     return ProfessionalSituation;
 }());
 var MonthlyIncome = (function () {
@@ -11655,7 +11810,7 @@ module.exports = "<div *ngIf=\"_sharedModelService.model.accountType === 'indivi
 /***/ 890:
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.votre_situation_prof' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n\n<div class=\"clearfix\">\n    <div class=\"grid__col--8 no-padding\">\n        <div>\n            <div class=\"panel--alert\">\n                <div class=\"panel__title\">\n                <i class=\"icon icon-circle-info\"></i>\n\n                    {{'hsbc-main.pourquoi_demandons_ces_informations' | translate}}\n                </div>\n                <p>\n                    {{'hsbc-main.notice_ouverture_compte' | translate}}\n                </p>\n            </div>\n        </div>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.situation_prof'|translate}}</div>\n            <div>\n                <pib-dropdown [options]=\"profissionalSituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"panel panel--form\" *ngIf=\"selectedSituation\">\n            <div *ngIf=\"selectedSituation === 'EI' || selectedSituation === 'chef_entreprise'\" class=\"form__group\">\n                <div class=\"form__label\">SIRET</div>\n                <div>\n                    <pib-text-field placeholder=\"SIRET\" [(ngModel)]=\"siret\"></pib-text-field>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'EI' || selectedSituation === 'chef_entreprise'\" class=\"form__group\">\n                <div class=\"form__label\">NACE</div>\n                <div>\n                    <pib-text-field placeholder=\"NACE\" [(ngModel)]=\"nace\"></pib-text-field>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'salarie'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.type_contrat'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"contractTypes\" [(ngModel)]=\"selectedContrat\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'salarie' || selectedSituation === 'controleur_principal'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"employeeProfessionalCategories\" [(ngModel)]=\"selectedCategory\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'EI'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"eiProfessionalCategories\" [(ngModel)]=\"selectedCategory\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'retraite'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"retirementProfessionalCategories\" [(ngModel)]=\"selectedCategory\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'etudiant'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"studentProfessionalCategories\" [(ngModel)]=\"selectedCategory\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"selectedSituation !== 'retraite' && selectedSituation !== 'etudiant' && selectedSituation !== 'sans_profession'\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.function'|translate}}</div>\n                  <div>\n                      <pib-text-field placeholder=\"Fonction\" [(ngModel)]=\"fonction\"></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.activity_sector'|translate}}</div>\n                  <div>\n                      <pib-dropdown [options]=\"activitySectors\" [(ngModel)]=\"selectedActitySector\"></pib-dropdown>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employer'|translate}}</div>\n                  <div>\n                      <pib-text-field placeholder=\"Employeur\" [(ngModel)]=\"Employeur\"></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employer_address'|translate}}</div>\n                  <div>\n                      <pib-text-field placeholder=\"Adresse de l'employeur\" [(ngModel)]=\"adressEmployeur\"></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.additional_address'|translate}}</div>\n                  <div>\n                      <pib-text-field placeholder=\"Adresse de l'employeur\" [(ngModel)]=\"adressEmployeur\"></pib-text-field>\n                  </div>\n              </div>\n              <div style=\"margin-bottom:25px;\">\n                  <div class=\"grid__col--6\" style=\"padding-left: 0;\">\n                      <div class=\"form__label\">{{'hsbc-main.postal_code'|translate}}</div>\n                      <div>\n                          <pib-text-field placeholder=\"Code postal\" [(ngModel)]=\"codePostal\"></pib-text-field>\n                      </div>\n                  </div>\n                  <div class=\"grid__col--6\" style=\"padding-left: 0;\">\n                      <div class=\"form__label\">{{'hsbc-main.city'|translate}}</div>\n                      <div>\n                          <pib-text-field placeholder=\"Ville\" [(ngModel)]=\"ville\"></pib-text-field>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.countries'|translate}}</div>\n                  <div>\n                      <pib-dropdown [options]=\"countries\" [(ngModel)]=\"pays\"></pib-dropdown>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employed_since'|translate}}</div>\n                  <div>\n                      <pib-calendar [(ngModel)]=\"dateValArr\" [showIcon]=\"true\" [placeholder]=\"'mm/dd/yyyy'\"></pib-calendar>\n                  </div>\n              </div>\n            </div>\n            <div *ngIf=\"selectedSituation === 'etudiant'\" class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.studies_end'|translate}} :</div>\n                  <div>\n                      <pib-calendar [(ngModel)]=\"dateValArr\" [showIcon]=\"true\" [placeholder]=\"'mm/dd/yyyy'\"></pib-calendar>\n                  </div>\n              </div>\n        </div>\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
+module.exports = "\n<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.votre_situation_prof' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n\n<div class=\"clearfix\">\n    <div class=\"grid__col--8 no-padding\">\n        <div>\n            <div class=\"panel--alert\">\n                <div class=\"panel__title\">\n                <i class=\"icon icon-circle-info\"></i>\n\n                    {{'hsbc-main.pourquoi_demandons_ces_informations' | translate}}\n                </div>\n                <p>\n                    {{'hsbc-main.notice_ouverture_compte' | translate}}\n                </p>\n            </div>\n        </div>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.situation_prof'|translate}}</div>\n            <div>\n                <pib-dropdown \n                  [options]=\"profissionalSituations\" \n                  [message]=\"_sharedModelService.model.informations.professionalSituation.professionalStatusError\" messageType=\"ERROR\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateProfessionalStatus();_sharedModelService.model.informations.professionalSituation.professionalCategory = '' \"\n                  [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.professionalStatus\"\n                  ></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"panel panel--form\" *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus\">\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'EI' || _sharedModelService.model.informations.professionalSituation.professionalStatus === 'chef_entreprise'\" class=\"form__group\">\n                <div class=\"form__label\">SIRET</div>\n                <div>\n                    <pib-text-field \n                      placeholder=\"SIRET\" \n                      messageType= \"ERROR\"\n                      (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateSIRET($event)\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      [message]= \"_sharedModelService.model.informations.professionalSituation.SIRETError\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.SIRET\"\n                      ></pib-text-field>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'EI' || _sharedModelService.model.informations.professionalSituation.professionalStatus === 'chef_entreprise'\" class=\"form__group\">\n                <div class=\"form__label\">NACE</div>\n                <div>\n                    <pib-text-field \n                      placeholder=\"NACE\" \n                      (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateNACE($event)\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      [message]= \"_sharedModelService.model.informations.professionalSituation.NACEError\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.NACE\"\n                      ></pib-text-field>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'salarie'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.type_contrat'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                      [options]=\"contractTypes\" \n                      [message]=\"_sharedModelService.model.informations.professionalSituation.contractTypeError\" messageType=\"ERROR\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateContractType()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.contractType\"\n                    ></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'salarie' || _sharedModelService.model.informations.professionalSituation.professionalStatus === 'controleur_principal'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                      [options]=\"employeeProfessionalCategories\" \n                      [message]=\"_sharedModelService.model.informations.professionalSituation.professionalCategoryError\" messageType=\"ERROR\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateProfessionalCategory()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.professionalCategory\"\n                    ></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'EI'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                      [options]=\"eiProfessionalCategories\" \n                      [message]=\"_sharedModelService.model.informations.professionalSituation.professionalCategoryError\" messageType=\"ERROR\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateProfessionalCategory()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.professionalCategory\"\n                    ></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'retraite'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                      [options]=\"retirementProfessionalCategories\" \n                      [message]=\"_sharedModelService.model.informations.professionalSituation.professionalCategoryError\" messageType=\"ERROR\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateProfessionalCategory()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.professionalCategory\"\n                    ></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'etudiant'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.categorie_prof'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                      [options]=\"studentProfessionalCategories\" \n                      [message]=\"_sharedModelService.model.informations.professionalSituation.professionalCategoryError\" messageType=\"ERROR\"\n                      [stepSubmitted]=\"stepSubmitted\"\n                      (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateProfessionalCategory()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.professionalCategory\"\n                    ></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus !== 'retraite' && _sharedModelService.model.informations.professionalSituation.professionalStatus !== 'etudiant' && _sharedModelService.model.informations.professionalSituation.professionalStatus !== 'sans_profession'\">\n              <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus !== 'chef_entreprise'\" class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.function'|translate}}</div>\n                  <div>\n                      <pib-text-field \n                        placeholder=\"Fonction\" \n                        (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateFunction($event)\"\n                        [stepSubmitted]=\"stepSubmitted\"\n                        [message]= \"_sharedModelService.model.informations.professionalSituation.functionError\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.function\"\n                      ></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.activity_sector'|translate}}</div>\n                  <div>\n                      <pib-dropdown \n                        [options]=\"activitySectors\" \n                        [message]=\"_sharedModelService.model.informations.professionalSituation.activitySectorError\" messageType=\"ERROR\"\n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.professionalSituation.validateActivitySector()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.activitySector\"\n                      ></pib-dropdown>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employer'|translate}}</div>\n                  <div>\n                      <pib-text-field \n                        placeholder=\"{{'hsbc-main.employer'|translate}}\"\n                        (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateEmployer($event)\"\n                        [stepSubmitted]=\"stepSubmitted\"\n                        [message]= \"_sharedModelService.model.informations.professionalSituation.employerError\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.employer\"\n                      ></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employer_address'|translate}}</div>\n                  <div>\n                      <pib-text-field \n                        placeholder=\"{{'hsbc-main.employer_address'|translate}}\"\n                        (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateEmployerAddress($event)\"\n                        [stepSubmitted]=\"stepSubmitted\"\n                        [message]= \"_sharedModelService.model.informations.professionalSituation.employerAddressError\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.employerAddress\"\n                      ></pib-text-field>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.additional_address'|translate}}</div>\n                  <div>\n                      <pib-text-field placeholder=\"Adresse de l'employeur\" [(ngModel)]=\"adressEmployeur\"></pib-text-field>\n                  </div>\n              </div>\n              <div style=\"margin-bottom:25px;\">\n                  <div class=\"grid__col--6\" style=\"padding-left: 0;\">\n                      <div class=\"form__label\">{{'hsbc-main.postal_code'|translate}}</div>\n                      <div>\n                          <pib-text-field \n                            placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                            (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateZipCode($event)\"\n                            [stepSubmitted]=\"stepSubmitted\"\n                            [message]= \"_sharedModelService.model.informations.professionalSituation.zipCodeError\"\n                            [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.zipCode\"\n                            ></pib-text-field>\n                      </div>\n                  </div>\n                  <div class=\"grid__col--6\" style=\"padding-left: 0;\">\n                      <div class=\"form__label\">{{'hsbc-main.city'|translate}}</div>\n                      <div>\n                          <pib-text-field \n                            placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                            (keyup)=\"_sharedModelService.model.informations.professionalSituation.validateCity($event)\"\n                            [stepSubmitted]=\"stepSubmitted\"\n                            [message]= \"_sharedModelService.model.informations.professionalSituation.cityError\"\n                            [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.city\"\n                          ></pib-text-field>\n                      </div>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.countries'|translate}}</div>\n                  <div>\n                      <pib-dropdown [options]=\"countries\" [(ngModel)]=\"_sharedModelService.model.informations.professionalSituation.country\"></pib-dropdown>\n                  </div>\n              </div>\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.employed_since'|translate}}</div>\n                  <div>\n                      <pib-calendar [(ngModel)]=\"dateValArr\" [showIcon]=\"true\" [placeholder]=\"'mm/dd/yyyy'\"></pib-calendar>\n                  </div>\n              </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.professionalSituation.professionalStatus === 'etudiant'\" class=\"form__group\">\n                  <div class=\"form__label\">{{'hsbc-main.studies_end'|translate}} :</div>\n                  <div>\n                      <pib-calendar [(ngModel)]=\"dateValArr\" [showIcon]=\"true\" [placeholder]=\"'mm/dd/yyyy'\"></pib-calendar>\n                  </div>\n              </div>\n        </div>\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -11705,6 +11860,83 @@ module.exports = "<div class=\"mt10 FEF__title sub\">\n    Transmettez-nous vos 
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"mt10 FEF__title sub\"> Votre offre\n    <div class=\"FEF__subtitle\">\n        Vous souhaitez bénéficier d’une offre complète de services bancaires ?\n    </div>\n</div>\n<hr/>\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n        <pib-checkbox [(ngModel)]=\"conventionHexgone\" label=\"Convention HSBC Hexagone\" binary=\"true\"></pib-checkbox>\n        <div style=\"margin-left: 27px\">\n            <div class=\"mt10 FEF__subtitle\">\n                Avec HSBC Hexagone, tous les services bancaires essentiels sont à votre disposition au meilleur coût : cartes bancaires, opérations courantes, assurance de vos moyens de paiement, facilité de trésorerie.\n            </div>\n            <div class=\"mt20\">\n                <pib-checkbox [(ngModel)]=\"conventionHexgone\" label=\"Je souhaite bénéficier de la facilité de caisse de convention Hexagone(1)\" binary=\"true\"></pib-checkbox>\n            </div>\n\n            <div class=\"mt20\">\n                <a (click)=\"showAdvantages = !showAdvantages\">Découvrir les avantages</a>\n            </div>\n            <div *ngIf=\"showAdvantages\" class=\"mt20\">\n                <div>\n                    Vous êtes exonéré des frais de banque au quotidien\n                    <ul>\n                        <li>Frais de tenue de compte</li>\n                        <li>Virements SEPA occasionnels et permanents</li>\n                        <li>Retraits d’espèces illimités dans tous les distributeurs en France et en zone euro</li>\n                        <li>Frais d’envoi de chéquier et carte (hors frais postaux)</li>\n                        <li>Frais d’opposition sur chèques</li>\n                        <li>Réfection de la carte et réédition du code confidentiel</li>\n                        <li>Franchise d’agios jusqu’à 12€/trimestre</li>\n                    </ul>\n                </div>\n                <div>\n                    Vous disposez d’une facilité de caisse\n                    <p>\n                        Jusqu’à 3 000€/mois (débit en compte autorisé au maximum 15 jours, consécutifs ou non, par période de 30 jours)\n                    </p>\n                </div>\n                <div>\n                    Vous bénéficiez d’HSBC Alertes\n                    <p>\n                        25 alertes/mois (par SMS ou e-mail)\n                    </p>\n                </div>\n                <div>\n                    Vous êtes assuré avec HSBC Volassur\n                    <p>\n                        en cas de perte ou vol de vos moyens de paiement\n                    </p>\n                </div>\n                <div>\n                    Pour nos clients étudiants\n                    <ul>\n                        <li>\n                            50% sur leur cotisation mensuelle avec la carte Visa Classic jusqu’à vos 28 ans ou la perte du statut étudiant.\n                        </li>\n                    </ul>\n                </div>\n                <div>\n                    Vous choisissez la carte bancaire qui vous convient\n                    <hr/>\n                    <span>Cotisation mensuelle :</span>\n                    <div>\n                        <table class=\"table\">\n                            <tbody>\n                                <tr>\n                                    <td>Avec une cate Visa Classic</td>\n                                    <td>8,10 €<sup>(2)</sup></td>\n                                </tr>\n                                <tr>\n                                    <td>Avec une carte Visa Premier ou Gold Mastercard</td>\n                                    <td>14,45 €<sup>(2)</sup></td>\n                                </tr>\n                            </tbody>\n                        </table>\n                        <hr/>\n\n                    </div>\n                    <p>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</p>\n                    <p>(2) Tarif en vigueur au 01/07/2016.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>       \n        <h2 class=\"form__title\">\n            Aidez-nous à définir une offre internationale adaptée à vos besoins\n        </h2>\n<div class=\"clearfix\">\n    <div class=\"grid__col--8 no-padding\">\n\n        <div class=\"mt10 panel--alert\">\n            <i class=\"icon icon-circle-info\"></i>La loi oblige les établissements bancaires à justifier une parfaite connaissance client et des opérations qu’ils effectuent afin de lutter contre le blanchiment de capitaux et le financement du terrorisme.\n            Ces informations sont exclusivement utilisées dans le cadre de la relation bancaire pour permettre de vous offrir la meilleure qualité de service.\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">Avez-vous l’intention d’émettre ou recevoir régulièrement des virements internationaux dans les 12 prochains mois ? <i class=\"icon icon-circle-help\"></i></div>\n            <div>\n                <pib-radioButton name=\"r_b_transactions\" value=\"internationalVirement\" label=\"Emettre des virements à l’international\" [(ngModel)]=\"internationalTransaction\"></pib-radioButton>\n            </div>\n            <div class=\"panel\" *ngIf=\"internationalTransaction == 'internationalVirement'\">\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Emettre des virements à l’international</div>\n                    <div>\n                        <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"selectedPays\"></pib-dropdown>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Combien de virement(s) mensuel(s) prévoyez-vous d’émettre ?</div>\n                    <div>\n                        <pib-text-field placeholder=\"VIREMENT(S)\" [(ngModel)]=\"virements\"></pib-text-field>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Motif(s)</div>\n                    <div>\n                        <pib-text-field placeholder=\"Motif(S)\" [(ngModel)]=\"motifs\"></pib-text-field>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Quelle serait la valeur mensuelle prévue pour ce(s) virement(s) ?</div>\n                    <div>\n                        <pib-text-field placeholder=\"€\" [(ngModel)]=\"virementsValue\"></pib-text-field>\n                    </div>\n                </div>\n                <a (click)=\"internationalTransaction = 'noTransaction'\">Annuler</a>\n            </div>\n            <div>\n                <pib-radioButton name=\"r_b_transactions\" value=\"internationalVirementRecu\" label=\"Recevoir des virements à l’international\" [(ngModel)]=\"internationalTransaction\"></pib-radioButton>\n            </div>\n            <div class=\"panel\" *ngIf=\"internationalTransaction == 'internationalVirementRecu'\">\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Recevoir des virements à l’international</div>\n                    <div>\n                        <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"selectedPays\"></pib-dropdown>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Combien de virement(s) mensuel(s) prévoyez-vous de recevoir ?</div>\n                    <div>\n                        <pib-text-field placeholder=\"VIREMENT(S)\" [(ngModel)]=\"virementsRecu\"></pib-text-field>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Motif(s)</div>\n                    <div>\n                        <pib-text-field placeholder=\"Motif(S)\" [(ngModel)]=\"motifsRecu\"></pib-text-field>\n                    </div>\n                </div>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">Quelle serait la valeur mensuelle prévue pour ce(s) virement(s) ?</div>\n                    <div>\n                        <pib-text-field placeholder=\"€\" [(ngModel)]=\"virementsValue\"></pib-text-field>\n                    </div>\n                </div>\n                <a (click)=\"internationalTransaction = 'noTransaction'\">Annuler</a>\n            </div>\n            <div>\n                <pib-radioButton name=\"r_b_transactions\" value=\"noTransaction\" label=\"Je n’ai pas l’intention de faire des transactions à l’international\" [(ngModel)]=\"internationalTransaction\"></pib-radioButton>\n            </div>\n        </div>\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n            </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ 90:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ScrollService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ScrollService = (function () {
+    function ScrollService() {
+        this.isScrolling = false;
+    }
+    // Element to move, time in ms to animate
+    ScrollService.prototype.scrollTo = function (element, duration) {
+        if (!this.isScrolling) {
+            this.isScrolling = true;
+            var e = document.documentElement;
+            if (e.scrollTop === 0) {
+                var t = e.scrollTop;
+                ++e.scrollTop;
+                e = t + 1 === e.scrollTop-- ? e : document.body;
+            }
+            this.scrollToC(e, e.scrollTop, element, duration);
+        }
+    };
+    // Element to move, element or px from, element or px to, time in ms to animate
+    ScrollService.prototype.scrollToC = function (element, from, to, duration) {
+        if (duration <= 0)
+            return;
+        if (typeof from === "object")
+            from = from.offsetTop;
+        if (typeof to === "object")
+            to = to.offsetTop;
+        this.scrollToX(element, from, to, 0, 1 / duration, 20, this.easeOutCuaic);
+    };
+    ScrollService.prototype.scrollToX = function (element, xFrom, xTo, t01, speed, step, motion) {
+        var _this = this;
+        if (t01 < 0 || t01 > 1 || speed <= 0) {
+            element.scrollTop = xTo;
+            this.isScrolling = false;
+            return;
+        }
+        element.scrollTop = xFrom - (xFrom - xTo) * motion(t01);
+        t01 += speed * step;
+        setTimeout(function () {
+            _this.scrollToX(element, xFrom, xTo, t01, speed, step, motion);
+        }, step);
+    };
+    ScrollService.prototype.easeOutCuaic = function (t) {
+        t--;
+        return t * t * t + 1;
+    };
+    ScrollService.prototype.scrollToFirstBadField = function () {
+        var badFields = window.document.getElementsByClassName('form__input--error');
+        var top = window.pageYOffset;
+        if (badFields[0]) {
+            this.scrollTo(badFields[0].getBoundingClientRect().top + document.body.scrollTop - 50, 1000);
+        }
+    };
+    ScrollService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
+        __metadata('design:paramtypes', [])
+    ], ScrollService);
+    return ScrollService;
+}());
+//# sourceMappingURL=scroll.service.js.map
 
 /***/ }),
 
