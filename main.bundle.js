@@ -38,7 +38,7 @@ var CountriesDataService = (function () {
             monthNamesShort: ["janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
         };
     }
-    CountriesDataService.prototype.getData = function () {
+    CountriesDataService.prototype.getData = function (lang) {
         var _this = this;
         if (this.__data_loaded) {
             return new Promise(function (resolve, reject) {
@@ -46,32 +46,58 @@ var CountriesDataService = (function () {
             });
         }
         else {
-            return new Promise(function (resolve, reject) {
-                _this.http.get("./assets/data/countries.json")
-                    .subscribe(function (data) {
-                    _this.__data = data.json();
-                    _this.__data_loaded = true;
-                    _this.resolvePromise(resolve);
+            if (lang == 'fr') {
+                return new Promise(function (resolve, reject) {
+                    _this.http.get("./assets/data/countries_fr.json")
+                        .subscribe(function (data) {
+                        _this.__data = data.json();
+                        _this.__data_loaded = true;
+                        _this.resolvePromise(resolve);
+                    });
                 });
-            });
+            }
+            else {
+                return new Promise(function (resolve, reject) {
+                    _this.http.get("./assets/data/countries.json")
+                        .subscribe(function (data) {
+                        _this.__data = data.json();
+                        _this.__data_loaded = true;
+                        _this.resolvePromise(resolve);
+                    });
+                });
+            }
         }
     };
-    CountriesDataService.prototype.getCountries = function () {
+    CountriesDataService.prototype.getCountries = function (lang) {
         var _this = this;
-        if (this.__data_loaded) {
+        if (this.__data_loaded && lang == this.__data_lang) {
             return new Promise(function (resolve, reject) {
                 _this.getCountriesData(resolve);
             });
         }
         else {
-            return new Promise(function (resolve, reject) {
-                _this.http.get("./assets/data/countries.json")
-                    .subscribe(function (data) {
-                    _this.__data = data.json();
-                    _this.__data_loaded = true;
-                    _this.getCountriesData(resolve);
+            if (lang == 'fr') {
+                return new Promise(function (resolve, reject) {
+                    _this.http.get("./assets/data/countries_fr.json")
+                        .subscribe(function (data) {
+                        _this.__data = data.json();
+                        _this.__data_loaded = true;
+                        _this.__data_lang = lang;
+                        _this.getCountriesData(resolve);
+                    });
                 });
-            });
+            }
+            else {
+                return new Promise(function (resolve, reject) {
+                    _this.http.get("./assets/data/countries.json")
+                        .subscribe(function (data) {
+                        _this.__data = data.json();
+                        _this.__data_loaded = true;
+                        _this.__data_lang = lang;
+                        _this.getCountriesData(resolve);
+                    });
+                });
+            }
         }
     };
     CountriesDataService.prototype.getCountriesData = function (resolve) {
@@ -1119,10 +1145,10 @@ var LocalDataService = (function () {
         var lastUpdateDate = new Date(__WEBPACK_IMPORTED_MODULE_1_store__["get"]('modelLastUpdate'));
         var nowDate = new Date();
         var minutesDiff = ((nowDate.getTime() - lastUpdateDate.getTime()) / 1000 / 60);
-        if (minutesDiff < this.usefulData.getDataPersistenceTimeout()) {
-            return this._data;
-        }
-        return null;
+        //if(minutesDiff < this.usefulData.getDataPersistenceTimeout()){
+        return this._data;
+        //} 
+        //return null;
     };
     LocalDataService.prototype.getDataModelHolder = function () {
         this._data = __WEBPACK_IMPORTED_MODULE_1_store__["get"]('modelHolder');
@@ -3830,15 +3856,15 @@ var ContactDetailsComponent = (function () {
      * @function ngOnInit
      */
     ContactDetailsComponent.prototype.ngOnInit = function () {
-        var _this = this;
         this._fillDataStepService.setCurrentStep(__WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["b" /* FILL_DATA_STEPS */].INFORMATION);
         this._headerSteps.setCurrentState(__WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["b" /* HEADER_STATE */].FILL_DATA);
-        this._countriesDataService.getCountries().then(function (data) {
-            _this.countries = data;
-        });
         this.updateForm();
     };
     ContactDetailsComponent.prototype.updateForm = function () {
+        var _this = this;
+        this._countriesDataService.getCountries(this._translate.currentLang).then(function (data) {
+            _this.countries = data;
+        });
         this.currentLocal = this._countriesDataService.getLocale(this._translate.currentLang);
         this.residenceStatus = this._usefuldataService.getResidanceStatus(this._translate.currentLang);
         this.openingHsbcAccountReasons = this._usefuldataService.getOpeningHsbcAccountReason(this._translate.currentLoader);
@@ -4988,15 +5014,16 @@ var PersonalInformationSecondPageComponent = (function () {
         });
         this._fillDataStepService.setCurrentStep(__WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["b" /* FILL_DATA_STEPS */].INFORMATION);
         this._headerSteps.setCurrentState(__WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["b" /* HEADER_STATE */].FILL_DATA);
-        this._countriesService.getCountries().then(function (countries) {
-            _this.countries = countries;
-        });
         this.updateForm();
         this._translate.onLangChange.subscribe(function (ev) {
             _this.updateForm();
         });
     };
     PersonalInformationSecondPageComponent.prototype.updateForm = function () {
+        var _this = this;
+        this._countriesService.getCountries(this._translate.currentLang).then(function (countries) {
+            _this.countries = countries;
+        });
         this.familySituations = this._usefuldata.getFamilySituations(this._translate.currentLang);
         this.martialStatus = this._usefuldata.getMartialStatus(this._translate.currentLang);
         this.longNumbers = this._usefuldata.getLongNumbersName(this._translate.currentLang);
@@ -5248,9 +5275,6 @@ var PersonalInformationsComponent = (function () {
         });
         this._fillDataStepService.setCurrentStep(__WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["b" /* FILL_DATA_STEPS */].INFORMATION);
         this._headerSteps.setCurrentState(__WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["b" /* HEADER_STATE */].FILL_DATA);
-        this._countriesService.getData().then(function (data) {
-            _this.cities = data;
-        });
         this.updateForm();
         this._translate.onLangChange.subscribe(function (ev) {
             _this.updateForm();
@@ -5263,6 +5287,9 @@ var PersonalInformationsComponent = (function () {
     PersonalInformationsComponent.prototype.updateForm = function () {
         var _this = this;
         this.currentLocal = this._countriesService.getLocale(this._translate.currentLang);
+        this._countriesService.getData(this._translate.currentLang).then(function (data) {
+            _this.cities = data;
+        });
         this._translate.get('hsbc-main.madame').subscribe(function (value) {
             _this.civilities[0].label = value;
         });
@@ -5581,9 +5608,6 @@ var ProfessionalSituationComponent = (function () {
         this._fillDataStepService.setCurrentStep(__WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__["b" /* FILL_DATA_STEPS */].SITUATION);
         this._headerSteps.setCurrentState(__WEBPACK_IMPORTED_MODULE_4__services_header_state_service__["b" /* HEADER_STATE */].FILL_DATA);
         this.updateFormValues();
-        this._countriesService.getCountries().then(function (data) {
-            _this.countries = data;
-        });
         this._translate.onLangChange.subscribe(function (ev) {
             _this.updateFormValues();
         });
@@ -5596,6 +5620,10 @@ var ProfessionalSituationComponent = (function () {
         this._location.back();
     };
     ProfessionalSituationComponent.prototype.updateFormValues = function () {
+        var _this = this;
+        this._countriesService.getCountries(this._translate.currentLang).then(function (data) {
+            _this.countries = data;
+        });
         this.profissionalSituations = this._usefulDataService.getProfessionalSituation(this._translate.currentLang);
         this.employeeProfessionalCategories = this._usefulDataService.getEmployeeProfessionalCategories(this._translate.currentLang);
         this.eiProfessionalCategories = this._usefulDataService.getIndividualProfessionalCategories(this._translate.currentLang);
