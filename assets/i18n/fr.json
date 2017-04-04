@@ -24,6 +24,7 @@
         "nom": "Nom",
         "prenom": "Prénom",
         "date_naissance": "Date de naissance",
+        "date_format": "jj/dd/aaaa",
         "email": "Email",
         "mobile": "Téléphone mobile",
         "fixe": "Téléphone fixe (facultatif)",
@@ -78,7 +79,7 @@
         "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité"
     },
     "hsbc-header": {
-        "devenez_client": "Devenez client en 4 étapes en seulement 48 heures(1)",
+        "devenez_client": "Devenez client en 4 étapes en seulement 48 heures",
         "ouvrir_compte": "Ouvrir un compte bancaire en ligne chez HSBC",
         "remplissez_formulaire": "Remplissez le formulaire",
         "signer_contrat": "E-Signez votre contrat",
