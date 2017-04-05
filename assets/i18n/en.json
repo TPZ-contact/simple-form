@@ -78,6 +78,7 @@
         "error_field_only_letters_spaces":"Only letters and spaces allowed",
         "error_field_only_letters_spaces_num":"Only letters, numbers and spaces allowed",
         "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité",
+        "error_field_least_one":"Please choose at least one option",
         "first":"First",
         "second":"Second",
         "third":"Third",
