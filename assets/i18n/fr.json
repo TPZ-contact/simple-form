@@ -74,9 +74,20 @@
         "modal_minor_button":"Prendre rendez-vous",
         "error_field_required":"Ce champ est obligatoire",
         "error_field_invalid":"La valeur entrée est invalide",
+        "error_field_only_numbers":"Chiffres uniquement",
         "error_field_only_letters_spaces":"Lettres et espaces uniquement",
         "error_field_only_letters_spaces_num":"Chiffres, lettres et espaces uniquement",
-        "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité"
+        "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité",
+        "first":"Premier",
+        "second":"Second",
+        "third":"Troisième",
+        "motif":"Indiquez-nous votre motif",
+        "tax_infos":"Vos informations fiscales",
+        "tax_num":"Numéro d'identifiaction fiscale",
+        "tax_num_where":"Où le trouver ?",
+        "tax_num_country":"Pays de résidence fiscale",
+        "tax_num_country_add":"Ajouter un autre pays de résidence fiscale",
+        "tax_num_no_have":"Je ne dispose pas de numéro d'identification fiscale"
     },
     "hsbc-header": {
         "devenez_client": "Devenez client en 4 étapes en seulement 48 heures",

@@ -74,9 +74,20 @@
         "modal_minor_button":"Schedule an appointment",
         "error_field_required":"This field is required",
         "error_field_invalid":"This field is invalid",
+        "error_field_only_numbers":"Only numbers",
         "error_field_only_letters_spaces":"Only letters and spaces allowed",
         "error_field_only_letters_spaces_num":"Only letters, numbers and spaces allowed",
-        "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité"
+        "error_field_other_nationnality":"Vous ne pouvez pas avoir plusieurs fois cette nationnalité",
+        "first":"First",
+        "second":"Second",
+        "third":"Third",
+        "motif":"Give us your reasons",
+        "tax_infos":"Your fiscal informations",
+        "tax_num":"Tax informations number",
+        "tax_num_where":"Where to find it ?",
+        "tax_num_country":"Country of fiscal residence ",
+        "tax_num_country_add":"Add another country of fiscal residence",
+        "tax_num_no_have":"I don't have fiscal informations number"
     },
     "hsbc-header": {
         "devenez_client": "Become a customer in 4 steps in just 48 hours",
