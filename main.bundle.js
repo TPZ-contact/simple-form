@@ -1,14 +1,14 @@
 webpackJsonp([1,4],{
 
-/***/ 11:
+/***/ 10:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModelService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -96,524 +96,12 @@ var SharedModelService = (function () {
 
 /***/ }),
 
-/***/ 120:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsefulDataService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var UsefulDataService = (function () {
-    function UsefulDataService() {
-    }
-    UsefulDataService.prototype.getMartialStatus = function (lang) {
-        if (lang == 'fr') {
-            return [
-                {
-                    label: 'Veuillez selectionner une valeur',
-                    value: null
-                }, {
-                    label: 'Communauté légale',
-                    value: 'CL'
-                }, {
-                    label: 'Communauté universelle',
-                    value: 'CU'
-                }, {
-                    label: 'Séparation de biens',
-                    value: 'SB'
-                }, {
-                    label: 'Participation aux acquêts',
-                    value: 'PA'
-                }, {
-                    label: 'Communauté de meubles et acquêts',
-                    value: 'CM'
-                }];
-        }
-        else {
-            return [
-                {
-                    label: 'Please choose a value',
-                    value: null
-                }, {
-                    label: 'Legal community',
-                    value: 'CL'
-                }, {
-                    label: 'Universal community',
-                    value: 'CU'
-                }, {
-                    label: 'Separation of goods',
-                    value: 'SB'
-                }, {
-                    label: 'Participation in acquests',
-                    value: 'PA'
-                }, {
-                    label: 'Community of furniture and acquests',
-                    value: 'CM'
-                }];
-        }
-    };
-    UsefulDataService.prototype.getProfessionalSituation = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Salarié', value: 'salarie' },
-                { label: 'Entrepreneur Individuel', value: 'EI' },
-                { label: 'Contrôleur principal', value: 'controleur_principal' },
-                { label: 'Chef d\'entreprise', value: 'chef_entreprise' },
-                { label: 'Retraité', value: 'retraite' },
-                { label: 'Etudiant', value: 'etudiant' },
-                { label: 'Sans profession', value: 'sans_profession' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Salarié', value: 'salarie' },
-                { label: 'Entrepreneur Individuel', value: 'EI' },
-                { label: 'Contrôleur principal', value: 'controleur_principal' },
-                { label: 'Chef d\'entreprise', value: 'chef_entreprise' },
-                { label: 'Retraité', value: 'retraite' },
-                { label: 'Etudiant', value: 'etudiant' },
-                { label: 'Sans profession', value: 'sans_profession' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getContractTypes = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'CDD', value: 'D' },
-                { label: 'CDI', value: 'I' },
-                { label: 'Volontriat International Enterprise', value: 'E' },
-                { label: 'Autre', value: 'Z' }
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'CDD', value: 'D' },
-                { label: 'CDI', value: 'I' },
-                { label: 'Volontriat International Enterprise', value: 'E' },
-                { label: 'Other', value: 'z' }
-            ];
-        }
-    };
-    UsefulDataService.prototype.getEmployeeProfessionalCategories = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Architecte', value: '26' },
-                { label: 'Agent d\'Assurances', value: '36' },
-                { label: 'Agent Immobilier', value: '35' },
-                { label: 'Agriculteur', value: '1' },
-                { label: 'Artisan', value: '39' },
-                { label: 'Cadres', value: 'list', content: [
-                        { label: 'Cadre d\'Entreprise', value: '52' },
-                        { label: 'Cadre de la Fonction Publique', value: '56' },
-                        { label: 'Cadre Supérieur', value: '51' },
-                    ] },
-                { label: 'Clergé', value: '69' },
-                { label: 'Commerçant', value: '30' },
-                { label: 'Consultant', value: '27' },
-                { label: 'Employé de l\'Entreprise', value: '70' },
-                { label: 'Autres professions de l\'Entreprise (=Profession Intermédiaire de l\'Entreprise)', value: '60' },
-                { label: 'Employé de la Fonction Publique ', value: '76' },
-                { label: 'Autres professions de la Fonction Publique (=Profession Intermédiaire de la Fonction Publique)', value: '66' },
-                { label: 'Enseignement Supérieur', value: '57' },
-                { label: 'Autres professions de l\'enseignement (=Profession Intermédiaire de l\'Enseignement)', value: '67' },
-                { label: 'Géomètre', value: '28' },
-                { label: 'Professions de la Santé', value: 'list', content: [
-                        { label: 'Profession Médicale Supérieure Salariée', value: '55' },
-                        { label: 'Infirmier Libéral', value: '19' },
-                        { label: 'Kinésithérapeute', value: '12' },
-                        { label: 'Médecin', value: '10' },
-                        { label: 'Médecin Spécialiste', value: '11' },
-                        { label: 'Orthophoniste', value: '16' },
-                        { label: 'Paramédical, Auxiliaire Médical', value: '18' },
-                        { label: 'Pharmacien - Laboratoire', value: '15' },
-                        { label: 'Ostéopathe', value: '13' },
-                        { label: 'Dentiste', value: '14' },
-                        { label: 'Vétérinaire', value: '17' },
-                        { label: 'Autres professions de la Santé (=Profession Intermédiaire de la Santé)', value: '65' },
-                    ] },
-                { label: 'Professions du Chiffre', value: '23' },
-                { label: 'Professions du Droit', value: 'list', content: [
-                        { label: 'Avocat', value: '20' },
-                        { label: 'Autres Professions du Droit', value: '21' },
-                        { label: 'Huissier de Justice', value: '24' },
-                        { label: 'Notaire', value: '22' },
-                    ] },
-                { label: 'Profession Libérale "Culturel et Sportif"', value: '29' },
-                { label: 'Profession Libérale "Technique"', value: '25' },
-                { label: 'Ouvrier', value: '80' },
-                { label: 'Restaurateur - Hôtelier', value: '34' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Architecte', value: '26' },
-                { label: 'Agent d\'Assurances', value: '36' },
-                { label: 'Agent Immobilier', value: '35' },
-                { label: 'Agriculteur', value: '1' },
-                { label: 'Artisan', value: '39' },
-                { label: 'Cadres', value: 'list', content: [
-                        { label: 'Cadre d\'Entreprise', value: '52' },
-                        { label: 'Cadre de la Fonction Publique', value: '56' },
-                        { label: 'Cadre Supérieur', value: '51' },
-                    ] },
-                { label: 'Clergé', value: '69' },
-                { label: 'Commerçant', value: '30' },
-                { label: 'Consultant', value: '27' },
-                { label: 'Employé de l\'Entreprise', value: '70' },
-                { label: 'Autres professions de l\'Entreprise (=Profession Intermédiaire de l\'Entreprise)', value: '60' },
-                { label: 'Employé de la Fonction Publique ', value: '76' },
-                { label: 'Autres professions de la Fonction Publique (=Profession Intermédiaire de la Fonction Publique)', value: '66' },
-                { label: 'Enseignement Supérieur', value: '57' },
-                { label: 'Autres professions de l\'enseignement (=Profession Intermédiaire de l\'Enseignement)', value: '67' },
-                { label: 'Géomètre', value: '28' },
-                { label: 'Professions de la Santé', value: 'list', content: [
-                        { label: 'Profession Médicale Supérieure Salariée', value: '55' },
-                        { label: 'Infirmier Libéral', value: '19' },
-                        { label: 'Kinésithérapeute', value: '12' },
-                        { label: 'Médecin', value: '10' },
-                        { label: 'Médecin Spécialiste', value: '11' },
-                        { label: 'Orthophoniste', value: '16' },
-                        { label: 'Paramédical, Auxiliaire Médical', value: '18' },
-                        { label: 'Pharmacien - Laboratoire', value: '15' },
-                        { label: 'Ostéopathe', value: '13' },
-                        { label: 'Dentiste', value: '14' },
-                        { label: 'Vétérinaire', value: '17' },
-                        { label: 'Autres professions de la Santé (=Profession Intermédiaire de la Santé)', value: '65' },
-                    ] },
-                { label: 'Professions du Chiffre', value: '23' },
-                { label: 'Professions du Droit', value: 'list', content: [
-                        { label: 'Avocat', value: '20' },
-                        { label: 'Autres Professions du Droit', value: '21' },
-                        { label: 'Huissier de Justice', value: '24' },
-                        { label: 'Notaire', value: '22' },
-                    ] },
-                { label: 'Profession Libérale "Culturel et Sportif"', value: '29' },
-                { label: 'Profession Libérale "Technique"', value: '25' },
-                { label: 'Ouvrier', value: '80' },
-                { label: 'Restaurateur - Hôtelier', value: '34' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getIndividualProfessionalCategories = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Agent d\'Assurances', value: '36' },
-                { label: 'Agent Immobilier', value: '35' },
-                { label: 'Architecte', value: '26' },
-                { label: 'Artisan', value: '39' },
-                { label: 'Autres Professions du Droit', value: '21' },
-                { label: 'Avocat', value: '20' },
-                { label: 'Commerçant', value: '30' },
-                { label: 'Consultant', value: '27' },
-                { label: 'Dentiste', value: '14' },
-                { label: 'Géomètre', value: '28' },
-                { label: 'Infirmier Libéral', value: '19' },
-                { label: 'Kinésithérapeute', value: '12' },
-                { label: 'Médecin', value: '10' },
-                { label: 'Médecin Spécialiste', value: '11' },
-                { label: 'Notaire', value: '22' },
-                { label: 'Orthophoniste', value: '16' },
-                { label: 'Ostéopathe', value: '13' },
-                { label: 'Ouvrier', value: '80' },
-                { label: 'Paramédical, Auxiliaire Médical', value: '18' },
-                { label: 'Pharmacien - Laboratoire', value: '15' },
-                { label: 'Professions du Chiffre', value: '23' },
-                { label: 'Restaurateur - Hôtelier', value: '34' },
-                { label: 'Agriculteur', value: '40' },
-                { label: 'Vétérinaire', value: '17' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Agent d\'Assurances', value: '36' },
-                { label: 'Agent Immobilier', value: '35' },
-                { label: 'Architecte', value: '26' },
-                { label: 'Artisan', value: '39' },
-                { label: 'Autres Professions du Droit', value: '21' },
-                { label: 'Avocat', value: '20' },
-                { label: 'Commerçant', value: '30' },
-                { label: 'Consultant', value: '27' },
-                { label: 'Dentiste', value: '14' },
-                { label: 'Géomètre', value: '28' },
-                { label: 'Infirmier Libéral', value: '19' },
-                { label: 'Kinésithérapeute', value: '12' },
-                { label: 'Médecin', value: '10' },
-                { label: 'Médecin Spécialiste', value: '11' },
-                { label: 'Notaire', value: '22' },
-                { label: 'Orthophoniste', value: '16' },
-                { label: 'Ostéopathe', value: '13' },
-                { label: 'Ouvrier', value: '80' },
-                { label: 'Paramédical, Auxiliaire Médical', value: '18' },
-                { label: 'Pharmacien - Laboratoire', value: '15' },
-                { label: 'Professions du Chiffre', value: '23' },
-                { label: 'Restaurateur - Hôtelier', value: '34' },
-                { label: 'Agriculteur', value: '40' },
-                { label: 'Vétérinaire', value: '17' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getRetirementProfessionalCategories = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Retraité Agriculteur, Artisan, Commerçant', value: '93' },
-                { label: 'Retraité Cadre et Profession Libérale', value: '90' },
-                { label: 'Retraité du Personnel', value: '96' },
-                { label: 'Retraité Employé, Ouvrier', value: '95' },
-                { label: 'Retraité Profession Intermédiaire', value: '92' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Retraité Agriculteur, Artisan, Commerçant', value: '93' },
-                { label: 'Retraité Cadre et Profession Libérale', value: '90' },
-                { label: 'Retraité du Personnel', value: '96' },
-                { label: 'Retraité Employé, Ouvrier', value: '95' },
-                { label: 'Retraité Profession Intermédiaire', value: '92' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getStudentProfessionalCategories = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Etudiant', value: '98' },
-                { label: 'Etudiant Grandes Ecoles', value: '99' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Etudiant', value: '98' },
-                { label: 'Etudiant Grandes Ecoles', value: '99' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getSectorActivities = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Activités informatiques', value: '1' },
-                { label: 'Activités juridiques et comptables', value: '2' },
-                { label: 'Agroalimentaire', value: '3' },
-                { label: 'Automobile, aéronautique et autres matériels de transport', value: '4' },
-                { label: 'Banque et les assurances', value: '5' },
-                { label: 'Bois - papier - imprimerie', value: '6' },
-                { label: 'Chimie, le caoutchouc ou le plastique', value: '7' },
-                { label: 'Commerce interentreprises', value: '8' },
-                { label: 'Communication et les médias', value: '9' },
-                { label: 'Conseil et gestion des entreprises', value: '10' },
-                { label: 'Construction', value: '11' },
-                { label: 'Distribution généraliste et spécialisée', value: '12' },
-                { label: 'Energie, l\'eau ou la gestion des déchets', value: '13' },
-                { label: 'Equipements électriques et électroniques', value: '14' },
-                { label: 'Formation initiale et continue', value: '15' },
-                { label: 'Hôtellerie - restauration - loisirs', value: '16' },
-                { label: 'Immobilier', value: '17' },
-                { label: 'Industrie pharmaceutique', value: '18' },
-                { label: 'Ingénierie - R&D', value: '19' },
-                { label: 'Métallurgie et la mécanique', value: '20' },
-                { label: 'Meuble, le textile et les autres industries manufacturières', value: '21' },
-                { label: 'Santé - action sociale', value: '22' },
-                { label: 'Services divers aux entreprises - intermédiaires du recrutement', value: '23' },
-                { label: 'Télécoms', value: '24' },
-                { label: 'Transports et la logistique', value: '25' },
-                { label: 'Administration publique et les organisations associatives', value: '26' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Veuillez choisir une valeur', value: '' },
-                { label: 'Activités informatiques', value: '1' },
-                { label: 'Activités juridiques et comptables', value: '2' },
-                { label: 'Agroalimentaire', value: '3' },
-                { label: 'Automobile, aéronautique et autres matériels de transport', value: '4' },
-                { label: 'Banque et les assurances', value: '5' },
-                { label: 'Bois - papier - imprimerie', value: '6' },
-                { label: 'Chimie, le caoutchouc ou le plastique', value: '7' },
-                { label: 'Commerce interentreprises', value: '8' },
-                { label: 'Communication et les médias', value: '9' },
-                { label: 'Conseil et gestion des entreprises', value: '10' },
-                { label: 'Construction', value: '11' },
-                { label: 'Distribution généraliste et spécialisée', value: '12' },
-                { label: 'Energie, l\'eau ou la gestion des déchets', value: '13' },
-                { label: 'Equipements électriques et électroniques', value: '14' },
-                { label: 'Formation initiale et continue', value: '15' },
-                { label: 'Hôtellerie - restauration - loisirs', value: '16' },
-                { label: 'Immobilier', value: '17' },
-                { label: 'Industrie pharmaceutique', value: '18' },
-                { label: 'Ingénierie - R&D', value: '19' },
-                { label: 'Métallurgie et la mécanique', value: '20' },
-                { label: 'Meuble, le textile et les autres industries manufacturières', value: '21' },
-                { label: 'Santé - action sociale', value: '22' },
-                { label: 'Services divers aux entreprises - intermédiaires du recrutement', value: '23' },
-                { label: 'Télécoms', value: '24' },
-                { label: 'Transports et la logistique', value: '25' },
-                { label: 'Administration publique et les organisations associatives', value: '26' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getProfitionalCategories = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Agriculteurs exploitants', value: 'PCS1' },
-                { label: 'Artisans, commerçants et chefs d’entreprise', value: 'PCS2' },
-                { label: 'Cadres et professions intellectuelles supérieures', value: 'PCS3' },
-                { label: 'Professions Intermédiaires', value: 'PCS4' },
-                { label: 'Employés', value: 'PCS5' },
-                { label: 'Ouvriers', value: 'PCS6' },
-                { label: 'Retraités', value: 'PCS7' },
-                { label: 'Autres personnes sans activité professionnelle', value: 'PCS8' }
-            ];
-        }
-        else {
-            return [
-                { label: 'Farmer', value: 'PCS1' },
-                { label: 'Craftsmen, shopkeepers and entrepreneurs', value: 'PCS2' },
-                { label: 'Executives and higher intellectual professions', value: 'PCS3' },
-                { label: 'Intermediate Professions', value: 'PCS4' },
-                { label: 'Employees', value: 'PCS5' },
-                { label: 'Workers', value: 'PCS6' },
-                { label: 'Retired', value: 'PCS7' },
-                { label: 'Other people without professional activity', value: 'PCS8' }
-            ];
-        }
-    };
-    UsefulDataService.prototype.getOpeningHsbcAccountReason = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez selectionner une valeur', value: null },
-                { label: 'Etudes', value: 'etudes' },
-                { label: 'Déménagement en France', value: 'demenagement' },
-                { label: 'Activité professionnelle', value: 'activite_pro' },
-                { label: 'Mutation professionnelle', value: 'mutation_pro' },
-                { label: 'Résidence secondaire', value: 'residence_sec' },
-                { label: 'Autre', value: 'autre' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Please choose a value', value: null },
-                { label: 'Etudes', value: 'etudes' },
-                { label: 'Déménagement en France', value: 'demenagement' },
-                { label: 'Activité professionnelle', value: 'activite_pro' },
-                { label: 'Mutation professionnelle', value: 'mutation_pro' },
-                { label: 'Résidence secondaire', value: 'residence_sec' },
-                { label: 'Autre', value: 'autre' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getResidanceStatus = function (lang) {
-        if (lang == 'fr') {
-            return [
-                { label: 'Veuillez selectionner une valeur', value: null },
-                { label: 'Propriétaire', value: 'P' },
-                { label: 'Locataire', value: 'LPP' },
-                { label: 'Locataire à titre gratuit', value: 'LUG' },
-                { label: 'Logement de fonction', value: 'LF' },
-            ];
-        }
-        else {
-            return [
-                { label: 'Please choose a value', value: null },
-                { label: 'Owner', value: 'P' },
-                { label: 'Tenant', value: 'LPP' },
-                { label: 'Tenant for free', value: 'LUG' },
-                { label: 'Work office', value: 'LF' },
-            ];
-        }
-    };
-    UsefulDataService.prototype.getFamilySituations = function (lang) {
-        if (lang == 'fr') {
-            return [
-                {
-                    label: 'Veuillez selectionner une valeur',
-                    value: null
-                }, {
-                    label: 'Célibataire',
-                    value: '1'
-                }, {
-                    label: 'Marié(e)',
-                    value: '2'
-                }, {
-                    label: 'Divorcé(e)',
-                    value: '4'
-                }, {
-                    label: 'Veuf(ve)',
-                    value: '3'
-                }, {
-                    label: 'PACS',
-                    value: '6'
-                }];
-        }
-        else {
-            return [
-                {
-                    label: 'Please choose a value',
-                    value: null
-                }, {
-                    label: 'Single',
-                    value: '1'
-                }, {
-                    label: 'Married',
-                    value: '2'
-                }, {
-                    label: 'Divorced',
-                    value: '4'
-                }, {
-                    label: 'Widowed',
-                    value: '3'
-                }, {
-                    label: 'PACS',
-                    value: '6'
-                }];
-        }
-    };
-    UsefulDataService.prototype.getLongNumbersName = function (lang) {
-        if (lang == 'fr') {
-            return ["Seconde", "Troisieme"];
-        }
-        else {
-            return ["Second", "Third"];
-        }
-    };
-    UsefulDataService.prototype.getDataPersistenceTimeout = function () {
-        return 20;
-    };
-    UsefulDataService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
-        __metadata('design:paramtypes', [])
-    ], UsefulDataService);
-    return UsefulDataService;
-}());
-//# sourceMappingURL=useful-data.service.js.map
-
-/***/ }),
-
 /***/ 13:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FillDataStepsChangerService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FILL_DATA_STEPS; });
@@ -662,7 +150,7 @@ var FILL_DATA_STEPS;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderStateService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HEADER_STATE; });
@@ -1072,7 +560,7 @@ var DomHandler = (function () {
 /* unused harmony reexport PibSliderModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(360);
 /* unused harmony reexport PibSideBarModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_component__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_component__ = __webpack_require__(169);
 /* unused harmony reexport PibModalModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timer_component__ = __webpack_require__(683);
 /* unused harmony reexport PibTimerModule */
@@ -1114,9 +602,190 @@ var DomHandler = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Modal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibModalModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Modal = (function () {
+    /**
+     * component constructor
+     */
+    function Modal() {
+        /**
+         * css modal class
+         * @type {string}
+         */
+        this.modalClass = '';
+        /**
+         * close when click on esc leyboard
+         * @type {boolean}
+         */
+        this.closeOnEscape = true;
+        /**
+         * close when click outside of modal content
+         * @type {boolean}
+         */
+        this.closeOnOutsideClick = true;
+        /**
+         * event emitted when modal is opened
+         * @type {EventEmitter}
+         */
+        this.onOpen = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* EventEmitter */](false);
+        /**
+         * event emitted when modal is closed
+         * @type {EventEmitter}
+         */
+        this.onClose = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* EventEmitter */](false);
+        /**
+         * hold Modal state (opened, closed)
+         * @type {boolean}
+         * @private
+         */
+        this._isOpened = false;
+        this.createBackDrop();
+    }
+    /**
+     * onDestroy lifecycle hook
+     */
+    Modal.prototype.ngOnDestroy = function () {
+        document.body.className = document.body.className.replace(/modal-open\b/, "");
+        if (this._backdropElement && this._backdropElement.parentNode === document.body)
+            document.body.removeChild(this._backdropElement);
+    };
+    /**
+     * open the modal
+     * @param args
+     */
+    Modal.prototype.open = function () {
+        var _this = this;
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (this._isOpened)
+            return;
+        this._isOpened = true;
+        this.onOpen.emit(args);
+        document.body.appendChild(this._backdropElement);
+        window.setTimeout(function () { return _this.modalRoot.nativeElement.focus(); }, 0);
+        document.body.className += " modal-open";
+    };
+    /**
+     * close the modal
+     * @param args
+     */
+    Modal.prototype.close = function () {
+        var args = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i - 0] = arguments[_i];
+        }
+        if (!this._isOpened)
+            return;
+        this._isOpened = false;
+        this.onClose.emit(args);
+        // document.body.removeChild(this._backdropElement);
+        // document.body.className = document.body.className.replace(/modal-open\b/, "");
+    };
+    /**
+     * prevent the modal from closing
+     * @param event
+     */
+    Modal.prototype.preventClosing = function (event) {
+        event.stopPropagation();
+    };
+    /**
+     * get if the modal is opened
+     * @returns {boolean}
+     */
+    Modal.prototype.isOpened = function () {
+        return this._isOpened;
+    };
+    /**
+     * create the backdrop html element
+     */
+    Modal.prototype.createBackDrop = function () {
+        this._backdropElement = document.createElement("div");
+        this._backdropElement.classList.add("modal-backdrop");
+        this._backdropElement.classList.add("fade");
+        this._backdropElement.classList.add("in");
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('modalClass'), 
+        __metadata('design:type', String)
+    ], Modal.prototype, "modalClass", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('closeOnEscape'), 
+        __metadata('design:type', Boolean)
+    ], Modal.prototype, "closeOnEscape", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('closeOnOutsideClick'), 
+        __metadata('design:type', Boolean)
+    ], Modal.prototype, "closeOnOutsideClick", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Output */])('onOpen'), 
+        __metadata('design:type', Object)
+    ], Modal.prototype, "onOpen", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Output */])('onClose'), 
+        __metadata('design:type', Object)
+    ], Modal.prototype, "onClose", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewChild */])("modalRoot"), 
+        __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* ElementRef */]) === 'function' && _a) || Object)
+    ], Modal.prototype, "modalRoot", void 0);
+    Modal = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+            selector: "pib-modal",
+            template: "\n<div class=\"modal\" \n     role=\"dialog\"\n     #modalRoot\n     (keydown.esc)=\"closeOnEscape ? close() : 0\"\n     [ngClass]=\"{ 'in': _isOpened, 'fade': _isOpened }\"\n     [ngStyle]=\"{ 'display': _isOpened ? 'block' : 'none' }\"\n     (click)=\"closeOnOutsideClick ? close() : 0\">\n    <div [class]=\"'modal-dialog ' + modalClass\" (click)=\"preventClosing($event)\">\n        <div  [@dialog] = \"_isOpened\" >\n                <ng-content></ng-content>\n        </div>\n    </div>\n</div>\n",
+            animations: [
+                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* trigger */])('dialog', [
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* state */])('true', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* style */])({ opacity: 1, transform: 'scale(1.0)' })),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* state */])('false', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* style */])({ opacity: 0, transform: 'scale(0.0)' })),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* animate */])('300ms')),
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* animate */])('300ms'))
+                ])
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], Modal);
+    return Modal;
+    var _a;
+}());
+var PibModalModule = (function () {
+    function PibModalModule() {
+    }
+    PibModalModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* CommonModule */]],
+            exports: [Modal],
+            declarations: [Modal]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PibModalModule);
+    return PibModalModule;
+}());
+//# sourceMappingURL=modal.component.js.map
+
+/***/ }),
+
+/***/ 170:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_store__ = __webpack_require__(936);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__useful_data_service__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__useful_data_service__ = __webpack_require__(92);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1326,7 +995,7 @@ var RouterStateService = (function () {
 
 /***/ }),
 
-/***/ 238:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1337,7 +1006,7 @@ var RouterStateService = (function () {
 
 /***/ }),
 
-/***/ 239:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1462,187 +1131,6 @@ var SharedModule = (function () {
     return SharedModule;
 }());
 //# sourceMappingURL=shared.js.map
-
-/***/ }),
-
-/***/ 240:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Modal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibModalModule; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var Modal = (function () {
-    /**
-     * component constructor
-     */
-    function Modal() {
-        /**
-         * css modal class
-         * @type {string}
-         */
-        this.modalClass = '';
-        /**
-         * close when click on esc leyboard
-         * @type {boolean}
-         */
-        this.closeOnEscape = true;
-        /**
-         * close when click outside of modal content
-         * @type {boolean}
-         */
-        this.closeOnOutsideClick = true;
-        /**
-         * event emitted when modal is opened
-         * @type {EventEmitter}
-         */
-        this.onOpen = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* EventEmitter */](false);
-        /**
-         * event emitted when modal is closed
-         * @type {EventEmitter}
-         */
-        this.onClose = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* EventEmitter */](false);
-        /**
-         * hold Modal state (opened, closed)
-         * @type {boolean}
-         * @private
-         */
-        this._isOpened = false;
-        this.createBackDrop();
-    }
-    /**
-     * onDestroy lifecycle hook
-     */
-    Modal.prototype.ngOnDestroy = function () {
-        document.body.className = document.body.className.replace(/modal-open\b/, "");
-        if (this._backdropElement && this._backdropElement.parentNode === document.body)
-            document.body.removeChild(this._backdropElement);
-    };
-    /**
-     * open the modal
-     * @param args
-     */
-    Modal.prototype.open = function () {
-        var _this = this;
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i - 0] = arguments[_i];
-        }
-        if (this._isOpened)
-            return;
-        this._isOpened = true;
-        this.onOpen.emit(args);
-        document.body.appendChild(this._backdropElement);
-        window.setTimeout(function () { return _this.modalRoot.nativeElement.focus(); }, 0);
-        document.body.className += " modal-open";
-    };
-    /**
-     * close the modal
-     * @param args
-     */
-    Modal.prototype.close = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i - 0] = arguments[_i];
-        }
-        if (!this._isOpened)
-            return;
-        this._isOpened = false;
-        this.onClose.emit(args);
-        // document.body.removeChild(this._backdropElement);
-        // document.body.className = document.body.className.replace(/modal-open\b/, "");
-    };
-    /**
-     * prevent the modal from closing
-     * @param event
-     */
-    Modal.prototype.preventClosing = function (event) {
-        event.stopPropagation();
-    };
-    /**
-     * get if the modal is opened
-     * @returns {boolean}
-     */
-    Modal.prototype.isOpened = function () {
-        return this._isOpened;
-    };
-    /**
-     * create the backdrop html element
-     */
-    Modal.prototype.createBackDrop = function () {
-        this._backdropElement = document.createElement("div");
-        this._backdropElement.classList.add("modal-backdrop");
-        this._backdropElement.classList.add("fade");
-        this._backdropElement.classList.add("in");
-    };
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('modalClass'), 
-        __metadata('design:type', String)
-    ], Modal.prototype, "modalClass", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('closeOnEscape'), 
-        __metadata('design:type', Boolean)
-    ], Modal.prototype, "closeOnEscape", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Input */])('closeOnOutsideClick'), 
-        __metadata('design:type', Boolean)
-    ], Modal.prototype, "closeOnOutsideClick", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Output */])('onOpen'), 
-        __metadata('design:type', Object)
-    ], Modal.prototype, "onOpen", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Output */])('onClose'), 
-        __metadata('design:type', Object)
-    ], Modal.prototype, "onClose", void 0);
-    __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewChild */])("modalRoot"), 
-        __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* ElementRef */]) === 'function' && _a) || Object)
-    ], Modal.prototype, "modalRoot", void 0);
-    Modal = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-            selector: "pib-modal",
-            template: "\n<div class=\"modal\" \n     role=\"dialog\"\n     #modalRoot\n     (keydown.esc)=\"closeOnEscape ? close() : 0\"\n     [ngClass]=\"{ 'in': _isOpened, 'fade': _isOpened }\"\n     [ngStyle]=\"{ 'display': _isOpened ? 'block' : 'none' }\"\n     (click)=\"closeOnOutsideClick ? close() : 0\">\n    <div [class]=\"'modal-dialog ' + modalClass\" (click)=\"preventClosing($event)\">\n        <div  [@dialog] = \"_isOpened\" >\n                <ng-content></ng-content>\n        </div>\n    </div>\n</div>\n",
-            animations: [
-                __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* trigger */])('dialog', [
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* state */])('true', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* style */])({ opacity: 1, transform: 'scale(1.0)' })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* state */])('false', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* style */])({ opacity: 0, transform: 'scale(0.0)' })),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* transition */])('1 => 0', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* animate */])('300ms')),
-                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* transition */])('0 => 1', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* animate */])('300ms'))
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Modal);
-    return Modal;
-    var _a;
-}());
-var PibModalModule = (function () {
-    function PibModalModule() {
-    }
-    PibModalModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* CommonModule */]],
-            exports: [Modal],
-            declarations: [Modal]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PibModalModule);
-    return PibModalModule;
-}());
-//# sourceMappingURL=modal.component.js.map
 
 /***/ }),
 
@@ -1916,7 +1404,7 @@ var PibTextFieldModule = (function () {
 
 /***/ }),
 
-/***/ 29:
+/***/ 28:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2200,7 +1688,7 @@ var PibCheckboxModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_domhandler__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(25);
@@ -3392,7 +2880,7 @@ var PibTooltipModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* unused harmony export ButtonDirective */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibButtonModule; });
@@ -3530,7 +3018,7 @@ var PibButtonModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountOpeningValidationComponent; });
@@ -3603,8 +3091,8 @@ var AccountOpeningValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountTypeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3726,12 +3214,12 @@ var AccountTypeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__routing_router_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactDetailsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3928,8 +3416,8 @@ var ContactDetailsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditCardSecondPageComponent; });
@@ -4064,8 +3552,8 @@ var CreditCardSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditCardComponent; });
@@ -4189,7 +3677,7 @@ var CreditCardComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ESignComponent; });
@@ -4287,8 +3775,9 @@ var ESignComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_modal_component__ = __webpack_require__(169);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FiscalInformationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4299,6 +3788,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -4341,6 +3831,7 @@ var FiscalInformationComponent = (function () {
         this.fiscalPays = [];
         this.selectedPays = 'FR';
         this.stepSubmitted = false;
+        this.msgWhereCountry = '';
         this.routerAnimation = "next";
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
@@ -4364,6 +3855,12 @@ var FiscalInformationComponent = (function () {
         this._countriesDataService.getCountries(this._translate.currentLang).then(function (data) {
             _this.fiscalPays = data;
         });
+    };
+    FiscalInformationComponent.prototype.openModalTaxWhere = function (taxWhereNum) {
+        if (taxWhereNum === 1) {
+            this.msgWhereCountry = this._sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence;
+        }
+        this.modalTaxWhere._isOpened = true;
     };
     /**
      * Move to the previous step
@@ -4396,6 +3893,7 @@ var FiscalInformationComponent = (function () {
         var _this = this;
         this.stepSubmitted = true;
         if (this._sharedModelService.model.informations.situation.taxInformation.validate()) {
+            this._sharedModelService.mustSaveData.next(true);
             this.stepSubmitted = false;
             this.routerAnimation = 'prev';
             setTimeout(function () {
@@ -4409,6 +3907,10 @@ var FiscalInformationComponent = (function () {
         }
     };
     __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewChild */])('modalTaxWhere'), 
+        __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_11__components_modal_component__["b" /* Modal */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_11__components_modal_component__["b" /* Modal */]) === 'function' && _a) || Object)
+    ], FiscalInformationComponent.prototype, "modalTaxWhere", void 0);
+    __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* HostBinding */])('@routerTransition'), 
         __metadata('design:type', Object)
     ], FiscalInformationComponent.prototype, "routerAnimation", void 0);
@@ -4420,10 +3922,10 @@ var FiscalInformationComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__routing_router_animations__["a" /* routerTransition */])()],
             host: { '[@routerTransition]': '' }
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__["a" /* CountriesDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__["a" /* CountriesDataService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _h) || Object, (typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__["a" /* ScrollService */]) === 'function' && _j) || Object])
+        __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* Location */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__["a" /* SharedModelService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__["a" /* CountriesDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__["a" /* CountriesDataService */]) === 'function' && _h) || Object, (typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _j) || Object, (typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__["a" /* ScrollService */]) === 'function' && _k) || Object])
     ], FiscalInformationComponent);
     return FiscalInformationComponent;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 //# sourceMappingURL=fiscal-information.component.js.map
 
@@ -4438,7 +3940,7 @@ var FiscalInformationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FollowAccountPrefComponent; });
@@ -4542,8 +4044,8 @@ var FollowAccountPrefComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_translate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MonthlyIncomeComponent; });
@@ -4691,7 +4193,7 @@ var MonthlyIncomeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpeningAccountInformationComponent; });
@@ -4788,6 +4290,9 @@ var OpeningAccountInformationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_scroll_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_useful_data_service__ = __webpack_require__(92);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PatrimonyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4806,6 +4311,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var PatrimonyComponent = (function () {
     /**
      * @constructor
@@ -4816,13 +4324,17 @@ var PatrimonyComponent = (function () {
      * @param {HeaderStateService} _headerSteps
      * @param {FillDataStepsChangerService} _fillDataStepService
      */
-    function PatrimonyComponent(translate, router, _location, _headerSteps, _fillDataStepService, _routerState) {
+    function PatrimonyComponent(translate, router, _location, _headerSteps, _translate, _fillDataStepService, _routerState, _scroll, _sharedModelService, _usefulDataService) {
         var _this = this;
         this.router = router;
         this._location = _location;
         this._headerSteps = _headerSteps;
+        this._translate = _translate;
         this._fillDataStepService = _fillDataStepService;
         this._routerState = _routerState;
+        this._scroll = _scroll;
+        this._sharedModelService = _sharedModelService;
+        this._usefulDataService = _usefulDataService;
         /**
          * @var {array} familySituations
          * @var {string} selectedValue
@@ -4833,6 +4345,7 @@ var PatrimonyComponent = (function () {
          * @var {string} checkedItem4
          */
         this.familySituations = [{ label: 'Madame', value: 'md' }, { label: 'Monsieur', value: 'mo' }];
+        this.amounts = [];
         this.selectedValue = "";
         this.patrimonyChecked = false;
         this.routerAnimation = "next";
@@ -4846,8 +4359,19 @@ var PatrimonyComponent = (function () {
      * @function ngOnInit
      */
     PatrimonyComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this._fillDataStepService.setCurrentStep({ step: __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["b" /* FILL_DATA_STEPS */].SITUATION, subStep: 3 });
         this._headerSteps.setCurrentState(__WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["b" /* HEADER_STATE */].FILL_DATA);
+        this._translate.onLangChange.subscribe(function (ev) {
+            _this.updateFormValues();
+        });
+        this.updateFormValues();
+        if (this._sharedModelService.model.informations.contactDetail.mainResidenceStatus === 'P') {
+            this._sharedModelService.model.informations.situation.patrimony.mustValidateMainResidence = true;
+        }
+    };
+    PatrimonyComponent.prototype.updateFormValues = function () {
+        this.amounts = this._usefulDataService.getPatrimonyAmounts(this._translate.currentLang);
     };
     /**
      * Move to the previous step
@@ -4855,11 +4379,11 @@ var PatrimonyComponent = (function () {
      */
     PatrimonyComponent.prototype.goBack = function () {
         this._location.back();
-        /**
-         * Move to the next step
-         * @function next
-         */
     };
+    /**
+     * Move to the next step
+     * @function next
+     */
     PatrimonyComponent.prototype.next = function () {
         var _this = this;
         this.routerAnimation = 'prev';
@@ -4872,18 +4396,7 @@ var PatrimonyComponent = (function () {
      * @function changeCheckedItem
      */
     PatrimonyComponent.prototype.changeCheckedItem = function (checkedItem) {
-        if (checkedItem == 1) {
-            this.checkedItem2 = this.checkedItem3 = this.checkedItem4 = undefined;
-        }
-        if (checkedItem == 2) {
-            this.checkedItem1 = this.checkedItem3 = this.checkedItem4 = undefined;
-        }
-        if (checkedItem == 3) {
-            this.checkedItem2 = this.checkedItem1 = this.checkedItem4 = undefined;
-        }
-        if (checkedItem == 4) {
-            this.checkedItem2 = this.checkedItem3 = this.checkedItem1 = undefined;
-        }
+        this._sharedModelService.model.informations.situation.patrimony.nopatrimoine = false;
     };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_2" /* HostBinding */])('@routerTransition'), 
@@ -4897,10 +4410,10 @@ var PatrimonyComponent = (function () {
             animations: [__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_7__routing_router_animations__["a" /* routerTransition */])()],
             host: { '[@routerTransition]': '' }
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* Location */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* Location */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* Location */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__["a" /* HeaderStateService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_ng2_translate__["d" /* TranslateService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__["a" /* FillDataStepsChangerService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__["a" /* RouterStateService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_8__services_scroll_service__["a" /* ScrollService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_8__services_scroll_service__["a" /* ScrollService */]) === 'function' && _h) || Object, (typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_9__services_shared_model_service__["a" /* SharedModelService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_9__services_shared_model_service__["a" /* SharedModelService */]) === 'function' && _j) || Object, (typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_10__services_useful_data_service__["a" /* UsefulDataService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_10__services_useful_data_service__["a" /* UsefulDataService */]) === 'function' && _k) || Object])
     ], PatrimonyComponent);
     return PatrimonyComponent;
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 //# sourceMappingURL=patrimony.component.js.map
 
@@ -4916,10 +4429,10 @@ var PatrimonyComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationSecondPageComponent; });
@@ -5180,11 +4693,11 @@ var PersonalInformationSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_modal_component__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_modal_component__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5533,12 +5046,12 @@ var PersonalInformationsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routing_router_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfessionalSituationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5686,8 +5199,8 @@ var ProfessionalSituationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProofUploadValidationComponent; });
@@ -5780,7 +5293,7 @@ var ProofUploadValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__ = __webpack_require__(696);
@@ -5870,7 +5383,14 @@ var RecapValidationComponent = (function () {
      */
     RecapValidationComponent.prototype.next = function () {
         this.routerAnimation = 'prev';
-        var customEvent = __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__["a" /* CustomPolyfills */].createNewEvent('submit-ng');
+        /**
+        *
+        * SUBMIT EVENT
+        * @submit-ng-mono: mono account type
+        * @submit-ng-joint: joint account type
+        *
+        */
+        var customEvent = __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__["a" /* CustomPolyfills */].createNewEvent('submit-ng-mono');
         console.log('-> Event :', customEvent);
         window.dispatchEvent(customEvent);
         // setTimeout(() => {
@@ -5907,8 +5427,8 @@ var RecapValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SavedESignComponent; });
@@ -5992,7 +5512,7 @@ var SavedESignComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofHandwrittenSignatureComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6082,7 +5602,7 @@ var UploadProofHandwrittenSignatureComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofIdentityComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6180,8 +5700,8 @@ var UploadProofIdentityComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadProofTaxNoticeComponent; });
@@ -6294,7 +5814,7 @@ var UploadProofTaxNoticeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YourAccountComponent; });
@@ -6475,11 +5995,11 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(691);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_steps_component__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(671);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__(687);
@@ -6487,10 +6007,10 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(688);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_fill_data_steps_changer_service__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_router_state_service__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_translate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_account_type_account_type_component__ = __webpack_require__(366);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_personal_information_personal_informations_component__ = __webpack_require__(377);
@@ -6521,10 +6041,10 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(365);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_file_upload_component__ = __webpack_require__(676);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(675);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(92);
 /* unused harmony export createTranslateLoader */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -6688,7 +6208,7 @@ var AppModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives__ = __webpack_require__(684);
 /* unused harmony export CALENDAR_VALUE_ACCESSOR */
@@ -8228,8 +7748,8 @@ var PibDropDownEditableModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_shared__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_shared__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_button_directive__ = __webpack_require__(364);
 /* unused harmony export FileUpload */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibFileUploadModule; });
@@ -8474,7 +7994,7 @@ var PibFileUploadModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(240);
 /* unused harmony export GenericDropdown */
 /* unused harmony export PibGenericDropdownModule */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8993,7 +8513,7 @@ var PibSegmentControlModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
 /* unused harmony export SLIDER_VALUE_ACCESSOR */
 /* unused harmony export SliderComponent */
@@ -9883,7 +9403,7 @@ var PibTextInputModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_local_data_service__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_local_data_service__ = __webpack_require__(170);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9985,10 +9505,10 @@ var HeaderComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_fill_data_steps_changer_service__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_translate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -10101,9 +9621,11 @@ var REQUIRED = "hsbc-main.error_field_required";
 var LEAST_ONE = "hsbc-main.error_field_least_one";
 var INVALID = "hsbc-main.error_field_invalid";
 var INVALID_NUMBERS = "hsbc-main.error_field_only_numbers";
+var INVALID_FORMAT = "hsbc-main.error_field_format";
 var INVALID_LETTERS = "hsbc-main.error_field_only_letters_spaces";
 var INVALID_LETTERS_NUM = "hsbc-main.error_field_only_letters_spaces_num";
 var INVALID_NATIONALITY = "hsbc-main.error_field_other_nationnality";
+var INVALID_COUNTRY = "hsbc-main.error_field_other_country";
 var Model = (function () {
     function Model(prevData) {
         this.informations = new Informations();
@@ -10120,6 +9642,8 @@ var Model = (function () {
             Object.assign(this.informations.situation, prevData.informations.situation);
             this.informations.situation.professionalSituation = new ProfessionalSituation();
             Object.assign(this.informations.situation.professionalSituation, prevData.informations.situation.professionalSituation);
+            this.informations.situation.patrimony = new Patrimony();
+            Object.assign(this.informations.situation.patrimony, prevData.informations.situation.patrimony);
             if (prevData.informations.situation.professionalSituation.atTheEemployerSince) {
                 this.informations.situation.professionalSituation.atTheEemployerSince = new Date(prevData.informations.situation.professionalSituation.atTheEemployerSince);
             }
@@ -10194,6 +9718,17 @@ var PersonalInformation = (function () {
     PersonalInformation.prototype.validateEmailFormat = function (email) {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
+    };
+    PersonalInformation.prototype.hasDuplicates = function (array) {
+        var valuesSoFar = Object.create(null);
+        for (var i = 0; i < array.length; ++i) {
+            var value = array[i];
+            if (value in valuesSoFar) {
+                return true;
+            }
+            valuesSoFar[value] = true;
+        }
+        return false;
     };
     PersonalInformation.prototype.validatePhone = function (phone) {
         if (this.mobilePhoneDialCode === '+33') {
@@ -10380,11 +9915,11 @@ var PersonalInformation = (function () {
     };
     PersonalInformation.prototype.validateZipCode = function () {
         var re = /^[0-9]{5}$/;
-        if (!this.zipCode && this.birthCountry === null) {
+        if (!this.zipCode && this.birthCountry === 'FR') {
             this.zipCodeError = REQUIRED;
             return false;
         }
-        else if (!re.test(this.zipCode) && this.birthCountry === null) {
+        else if (!re.test(this.zipCode) && this.birthCountry === 'FR') {
             this.zipCodeError = INVALID;
             return false;
         }
@@ -10431,6 +9966,9 @@ var PersonalInformation = (function () {
         if (this.otherNationalities.indexOf(this.nationality) != -1) {
             this.otherNationalitiesErrors[this.otherNationalities.indexOf(this.nationality)] = INVALID_NATIONALITY;
             return false;
+        }
+        else if (this.hasDuplicates(this.otherNationalities)) {
+            this.otherNationalitiesErrors[this.otherNationalities.length - 1] = INVALID_NATIONALITY;
         }
         else {
             this.otherNationalitiesErrors = [];
@@ -10755,6 +10293,7 @@ var ContactDetails = (function () {
 var Situation = (function () {
     function Situation() {
         this.professionalSituation = new ProfessionalSituation();
+        this.patrimony = new Patrimony();
         this.monthlyIncome = new MonthlyIncome();
         this.taxInformation = new TaxInformation();
         this.heritage = new Heritage();
@@ -11223,14 +10762,61 @@ var TaxInformation = (function () {
         }
         return false;
     };
+    TaxInformation.prototype.validateCountryOfTaxResidence = function () {
+        if (!this.countryOfTaxResidence || this.countryOfTaxResidence.trim().length == 0) {
+            this.countryOfTaxResidenceError = REQUIRED;
+            return false;
+        }
+        else {
+            this.countryOfTaxResidenceError = null;
+            return true;
+        }
+    };
     TaxInformation.prototype.validateTaxIdentificationNumber = function () {
+        if (this.countryOfTaxResidence === 'FR') {
+            this.taxIdentificationNumberError = null;
+            return true;
+        }
         if ((!this.taxIdentificationNumber || !this.validateRequiredString(this.taxIdentificationNumber.toString())) && !this.hasNoTaxIdentificationNumber) {
             this.taxIdentificationNumberError = REQUIRED;
             return false;
         }
-        else if (!this.validateOnlyNumberAndDecimals(this.taxIdentificationNumber) && !this.hasNoTaxIdentificationNumber) {
-            this.taxIdentificationNumberError = INVALID_NUMBERS;
-            return false;
+        else if (!this.hasNoTaxIdentificationNumber) {
+            var regex = void 0;
+            switch (this.countryOfTaxResidence) {
+                case 'GB':
+                    regex = /^([0-9a-zA-Z]{2})\s*([0-9]{2})\s*([0-9]{1})\s*([0-9]{1})\s*([0-9]{2})\s*([0-9a-zA-Z]{0,1})\s*([0-9]{0,1})\s*$/i;
+                    break;
+                case 'CA':
+                    regex = /^([0-9]{3})\s*([0-9]{3})\s*([0-9]{3})\s*$/i;
+                    break;
+                case 'BE':
+                    regex = /^([0-9]{6})\s*([0-9]{3})\s*([0-9]{2})\s*$/i;
+                    break;
+                case 'CH':
+                    regex = /^(756)\s*\.*([0-9]{4})\s*\.*([0-9]{4})\s*\.*([0-9]{2})\s*$/i;
+                    break;
+                case 'AT':
+                    regex = /^([0-9]{2})\s*\-*([0-9]{3})\s*\/*([0-9]{4})\s*$/i;
+                    break;
+                case 'HK':
+                    regex = /^([a-zA-Z]{1,2})\s*([0-9]{6})\s*\(*([0-9|a|A]{1})\)*\s*$/i;
+                    break;
+                case 'US':
+                    regex = /^(9)([0-9]{2})\s*([0-9]{2})\s*([0-9]{4})\s*$/i;
+                    break;
+                case 'SG':
+                    regex = /^([s|t|f|g|S|T|F|G]{1})([0-9]{7})([0-9a-zA-Z]{1})\s*$/i;
+                    break;
+            }
+            if (regex && !regex.test(this.taxIdentificationNumber)) {
+                this.taxIdentificationNumberError = INVALID_FORMAT;
+                return false;
+            }
+            else {
+                this.taxIdentificationNumberError = null;
+                return true;
+            }
         }
         else if (this.hasNoTaxIdentificationNumber) {
             this.taxIdentificationNumberError = null;
@@ -11273,6 +10859,20 @@ var TaxInformation = (function () {
             return true;
         }
     };
+    TaxInformation.prototype.validateCountryOfTaxResidenceTwo = function () {
+        if (!this.countryOfTaxResidenceTwo || this.countryOfTaxResidenceTwo.trim().length == 0) {
+            this.countryOfTaxResidenceTwoError = REQUIRED;
+            return false;
+        }
+        else if (this.countryOfTaxResidenceTwo === this.countryOfTaxResidence) {
+            this.countryOfTaxResidenceTwoError = INVALID_COUNTRY;
+            return false;
+        }
+        else {
+            this.countryOfTaxResidenceTwoError = null;
+            return true;
+        }
+    };
     TaxInformation.prototype.validateNoTaxIdentificationNumberOptionTwo = function () {
         if (!this.noTaxIdentificationNumberOptionTwo || !this.validateRequiredString(this.noTaxIdentificationNumberOptionTwo.toString())) {
             this.noTaxIdentificationNumberOptionTwoError = REQUIRED;
@@ -11286,6 +10886,20 @@ var TaxInformation = (function () {
         this.noTaxIdentificationNumberOptionTwoError = null;
         this.reasonAbsenceNIFTwoError = null;
         return true;
+    };
+    TaxInformation.prototype.validateCountryOfTaxResidenceThree = function () {
+        if (!this.countryOfTaxResidenceThree || this.countryOfTaxResidenceThree.trim().length == 0) {
+            this.countryOfTaxResidenceThreeError = REQUIRED;
+            return false;
+        }
+        else if (this.countryOfTaxResidenceThree === this.countryOfTaxResidence || this.countryOfTaxResidenceThree === this.countryOfTaxResidenceTwo) {
+            this.countryOfTaxResidenceThreeError = INVALID_COUNTRY;
+            return false;
+        }
+        else {
+            this.countryOfTaxResidenceThreeError = null;
+            return true;
+        }
     };
     TaxInformation.prototype.validateTaxIdentificationNumberThree = function () {
         if ((!this.taxIdentificationNumberThree || !this.validateRequiredString(this.taxIdentificationNumberThree.toString())) && !this.hasNoTaxIdentificationNumberThree) {
@@ -11321,12 +10935,18 @@ var TaxInformation = (function () {
     };
     TaxInformation.prototype.validate = function () {
         var hasErrors = false;
+        if (!this.validateCountryOfTaxResidence()) {
+            hasErrors = true;
+        }
         if (!this.validateTaxIdentificationNumber()) {
             if (!this.validateNoTaxIdentificationNumberOption()) {
                 hasErrors = true;
             }
         }
         if (this.numberOfSupFiscalCountries >= 1) {
+            if (!this.validateCountryOfTaxResidenceTwo()) {
+                hasErrors = true;
+            }
             if (!this.validateTaxIdentificationNumberTwo()) {
                 if (!this.validateNoTaxIdentificationNumberOptionTwo()) {
                     hasErrors = true;
@@ -11334,6 +10954,9 @@ var TaxInformation = (function () {
             }
         }
         if (this.numberOfSupFiscalCountries >= 2) {
+            if (!this.validateCountryOfTaxResidenceThree()) {
+                hasErrors = true;
+            }
             if (!this.validateTaxIdentificationNumberThree()) {
                 if (!this.validateNoTaxIdentificationNumberOptionThree()) {
                     hasErrors = true;
@@ -11351,11 +10974,21 @@ var Patrimony = (function () {
         this.donation = false;
         this.gain = false;
         this.nopatrimoine = false;
+        this.mustValidateMainResidence = false;
     }
     Patrimony.prototype.validatePatrimonyOrigin = function () {
         if (!this.revenu && !this.heritage && !this.donation && !this.gain && !this.nopatrimoine) {
             this.noOriginSelectedError = LEAST_ONE;
         }
+    };
+    Patrimony.prototype.hasNoPatrimony = function () {
+        this.nopatrimoine = true;
+        this.revenu = false;
+        this.heritage = false;
+        this.donation = false;
+        this.gain = false;
+    };
+    Patrimony.prototype.validate = function () {
     };
     return Patrimony;
 }());
@@ -11651,7 +11284,7 @@ var CreateAccountRoutingModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactDetailsGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11705,7 +11338,7 @@ var ContactDetailsGuard = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11769,7 +11402,7 @@ var PersonalInformationGuard = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationSecondPageGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11843,7 +11476,7 @@ var PersonalInformationSecondPageGuard = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_model_service__ = __webpack_require__(10);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfessionalSituationGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12627,7 +12260,7 @@ module.exports = "<div class=\"mt10 FEF__title\" style=\"font-size: 38px\">\n   
 /***/ 881:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.coordonnees' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n\n\n        <h2 class=\"form__title simple\">{{'hsbc-main.principal_residence_address' | translate}}</h2>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">\n                {{'hsbc-main.residence_adresse'|translate}}\n            </div>\n            <div>\n                <pib-text-field placeholder=\"{{'hsbc-main.residence_adresse'|translate}}\"\n                                messageType= \"ERROR\"\n                                (keyup)=\"_sharedModelService.model.informations.contactDetail.validateMainResidenceAddress($event)\"\n                                [stepSubmitted]=\"stepSubmitted\"\n                                [message]= \"_sharedModelService.model.informations.contactDetail.mainResidenceAddressError\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.mainResidenceAddress\"></pib-text-field>\n            </div>\n        </div>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">\n                {{'hsbc-main.additional_address'|translate}}\n            </div>\n            <div>\n                <pib-text-area placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                               [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.additionalAddress\"></pib-text-area>\n            </div>\n        </div>\n\n        <div class=\"form__group clearfix\">\n            <div class=\"grid__col--4 no-padding\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.postal_code'|translate}}\n                </div>\n                <div>\n                    <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                    messageType= \"ERROR\"\n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validateZipCode($event)\"\n                                    [stepSubmitted]=\"stepSubmitted\"\n                                    [message]= \"_sharedModelService.model.informations.contactDetail.zipCodeError\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.zipCode\"></pib-text-field>\n                </div>\n            </div>\n            <div class=\"grid__col--8 \">\n                <div class=\"form__label\">\n                    {{'hsbc-main.city'|translate}}\n                </div>\n                <div>\n                    <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                     messageType= \"ERROR\"\n                                     (keyup)=\"_sharedModelService.model.informations.contactDetail.validateCity($event)\"\n                                     [stepSubmitted]=\"stepSubmitted\"\n                                    [message]= \"_sharedModelService.model.informations.contactDetail.cityError\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.city\"></pib-text-field>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"form__group large-mb\">\n            <div class=\"form__label\">\n                {{'hsbc-main.countries'|translate}}\n            </div>\n            <div>\n                <pib-dropdown [options]=\"countries\" \n                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.country\"\n                [message]=\"_sharedModelService.model.informations.contactDetail.countryError\" messageType=\"ERROR\" \n                [stepSubmitted]=\"stepSubmitted\"\n                (onChange)=\"_sharedModelService.model.informations.contactDetail.validateCountry()\"\n                ></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"panel--form\" *ngIf= \"_sharedModelService.model.informations.contactDetail.country != 'FR'\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.pourquoi_ouvrir_compte_hsbc_france'|translate}}\n                </div>\n                <div>\n                    <pib-dropdown [options]=\"openingHsbcAccountReasons\" [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.reasonForCreatingHSBCAccount\"></pib-dropdown >\n                </div>\n            </div>\n        </div>\n         \n\n        <hr>\n\n        <div class=\"form__group mt35\">\n            <div class=\"form__label\">\n                {{'hsbc-main.main_residence_status'|translate}}\n            </div>\n            <div>\n                <pib-dropdown [options]=\"residenceStatus\" \n                [message]=\"_sharedModelService.model.informations.contactDetail.mainResidenceStatusError\" messageType=\"ERROR\"\n                [stepSubmitted]=\"stepSubmitted\"\n                (onChange)=\"_sharedModelService.model.informations.contactDetail.validateMainResidenceStatus()\"\n                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.mainResidenceStatus\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.lives_at_this_address_since'|translate}}</div>\n            <div>\n\n                <div class=\"clearfix\">\n                    <table>\n                        <tr>\n                            <td class=\"date__picker__td\">\n                                <pib-text-field #inputLiveAtAddressSinceMonth placeholder=\"MM\" [(ngModel)]=\"liveAtAddressSinceMonth\"\n                                                [stepSubmitted]=\"stepSubmitted\"\n                                                [message]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError\" [showMessage]=\"false\" messageType=\"ERROR\"\n                                                (change)=\"onTfChange($event)\"></pib-text-field>\n                            </td>\n                            <td class=\"date__picker__td\">\n                                <pib-text-field #inputLiveAtAddressSinceYear placeholder=\"AAAA\" [(ngModel)]=\"liveAtAddressSinceYear\"\n                                [stepSubmitted]=\"stepSubmitted\"\n                                [message]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError\" [showMessage]=\"false\" messageType=\"ERROR\"\n                                (change)=\"onTfChange($event)\"></pib-text-field>\n                            </td>\n                        </tr>\n                    </table>\n                     <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError && ( (inputLiveAtAddressSinceMonth.dirty && inputLiveAtAddressSinceYear.dirty) || stepSubmitted )\">\n                        <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError | translate}}\n                    </div>\n                </div>\n                <div>\n                    <pib-calendar [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSince\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'mm/yyyy'\" [dateFormat]=\"'mm/yy'\" (onSelect)=\"onSelect($event)\"\n                        [maxDate]=\"today\"></pib-calendar>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"clearfix\" style=\"margin-bottom: 26px\" *ngIf=\"userHasPreviousAdress()\">\n            <div class=\"panel--form\">\n                <h2 class=\"form__title simple\">{{'hsbc-main.previous_residence_address' | translate}}</h2>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.adresse'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.adresse'|translate}}\"\n                                        messageType=\"ERROR\"\n                                        (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                        [stepSubmitted]=\"stepSubmitted\"\n                                        [message]=\"_sharedModelService.model.informations.contactDetail.previousResidanceAdressError\"\n                                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousResidanceAdress\"></pib-text-field>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.additional_address'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-area placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                    \n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousAdditionalAddress\"></pib-text-area>\n                    </div>\n                </div>\n\n                <div class=\"form__group clearfix\">\n                    <div class=\"grid__col--4 no-padding\">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.postal_code'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                            messageType= \"ERROR\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.previousZipCodeError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousZipCode\"></pib-text-field>\n                        </div>\n                    </div>\n                    <div class=\"grid__col--8 \">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.city'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                            messageType= \"ERROR\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.previousCityError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousCity\"></pib-text-field>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.countries'|translate}}\n                    </div>\n                    <div>\n                        <pib-dropdown \n                        [options]=\"countries\" \n                        [message]=\"_sharedModelService.model.informations.contactDetail.previousCountryError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.contactDetail.validatePreviousCountry()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousCountry\"></pib-dropdown>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n\n        <div class=\"form__group mt20 clearfix\">\n            <div class=\"form__label\">{{'hsbc-main.adresse_courrier_different' | translate}}</div>\n            <div class=\"f-left\" style=\"margin-right: 10px;\">\n                <pib-radioButton name=\"rb_1\" value=\"different\" label=\"{{'hsbc-main.yes' | translate}}\"  \n                                (onClick)=\"_sharedModelService.model.informations.contactDetail.validateIsPostalAddressSameAsResidenceAddress()\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress\"></pib-radioButton>\n            </div>\n            <div class=\"f-left\">\n                <pib-radioButton name=\"rb_1\" value=\"same\" label=\"{{'hsbc-main.no' | translate}}\"  \n                                (onClick)=\"_sharedModelService.model.informations.contactDetail.validateIsPostalAddressSameAsResidenceAddress()\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress\"></pib-radioButton>\n            </div>\n        </div>\n        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddressError && stepSubmitted\">\n            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddressError | translate}}\n        </div>\n        <div class=\"clearfix\" style=\"margin-bottom: 26px\" *ngIf=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress == 'different' \">\n            <div class=\"panel--form\">\n                <h2 class=\"form__title simple\">{{'hsbc-main.postal_address' | translate}}</h2>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.adresse'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.adresse'|translate}}\"\n                                      (keyup)=\"_sharedModelService.model.informations.contactDetail.validate($event)\"\n                                      [stepSubmitted]=\"stepSubmitted\"\n                                        messageType= \"ERROR\"\n                                        [message]= \"_sharedModelService.model.informations.contactDetail.postalAdressError\"\n                                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalAdress\"></pib-text-field>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.additional_address'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-area \n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                   \n                                    placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalAdditionalAddress\"></pib-text-area>\n                    </div>\n                </div>\n\n                <div class=\"form__group clearfix\">\n                    <div class=\"grid__col--4 no-padding\">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.postal_code'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            messageType= \"ERROR\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.postalZipCodeError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalZipCode\"></pib-text-field>\n                        </div>\n                    </div>\n                    <div class=\"grid__col--8 \">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.city'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            messageType= \"ERROR\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.postalCityError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalCity\"></pib-text-field>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.countries'|translate}}\n                    </div>\n                    <div>\n                        <pib-dropdown [options]=\"countries\" \n                        [message]=\"_sharedModelService.model.informations.contactDetail.postalCountryError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.contactDetail.validatePostalCountry()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalCountry\"></pib-dropdown>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n\n\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n            </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\" />\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.coordonnees' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n\n\n        <h2 class=\"form__title simple\">{{'hsbc-main.principal_residence_address' | translate}}</h2>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">\n                {{'hsbc-main.residence_adresse'|translate}}\n            </div>\n            <div>\n                <pib-text-field placeholder=\"{{'hsbc-main.residence_adresse'|translate}}\"\n                                messageType= \"ERROR\"\n                                (keyup)=\"_sharedModelService.model.informations.contactDetail.validateMainResidenceAddress($event)\"\n                                [stepSubmitted]=\"stepSubmitted\"\n                                [message]= \"_sharedModelService.model.informations.contactDetail.mainResidenceAddressError\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.mainResidenceAddress\"></pib-text-field>\n            </div>\n        </div>\n\n        <div class=\"form__group\">\n            <div class=\"form__label\">\n                {{'hsbc-main.additional_address'|translate}}\n            </div>\n            <div>\n                <pib-text-area placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                               [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.additionalAddress\"></pib-text-area>\n            </div>\n        </div>\n\n        <div class=\"form__group clearfix\">\n            <div class=\"grid__col--4 no-padding\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.postal_code'|translate}}\n                </div>\n                <div>\n                    <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                    messageType= \"ERROR\"\n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validateZipCode($event)\"\n                                    [stepSubmitted]=\"stepSubmitted\"\n                                    [message]= \"_sharedModelService.model.informations.contactDetail.zipCodeError\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.zipCode\"></pib-text-field>\n                </div>\n            </div>\n            <div class=\"grid__col--8 \">\n                <div class=\"form__label\">\n                    {{'hsbc-main.city'|translate}}\n                </div>\n                <div>\n                    <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                     messageType= \"ERROR\"\n                                     (keyup)=\"_sharedModelService.model.informations.contactDetail.validateCity($event)\"\n                                     [stepSubmitted]=\"stepSubmitted\"\n                                    [message]= \"_sharedModelService.model.informations.contactDetail.cityError\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.city\"></pib-text-field>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"form__group large-mb\">\n            <div class=\"form__label\">\n                {{'hsbc-main.countries'|translate}}\n            </div>\n            <div>\n                <pib-dropdown [options]=\"countries\" \n                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.country\"\n                [message]=\"_sharedModelService.model.informations.contactDetail.countryError\" messageType=\"ERROR\" \n                [stepSubmitted]=\"stepSubmitted\"\n                (onChange)=\"_sharedModelService.model.informations.contactDetail.validateCountry()\"\n                ></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"panel--form\" *ngIf= \"_sharedModelService.model.informations.contactDetail.country != 'FR'\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.pourquoi_ouvrir_compte_hsbc_france'|translate}}\n                </div>\n                <div>\n                    <pib-dropdown [options]=\"openingHsbcAccountReasons\" [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.reasonForCreatingHSBCAccount\"></pib-dropdown >\n                </div>\n            </div>\n        </div>\n         \n\n        <hr>\n\n        <div class=\"form__group mt35\">\n            <div class=\"form__label\">\n                {{'hsbc-main.main_residence_status'|translate}}\n            </div>\n            <div>\n                <pib-dropdown [options]=\"residenceStatus\" \n                [message]=\"_sharedModelService.model.informations.contactDetail.mainResidenceStatusError\" messageType=\"ERROR\"\n                [stepSubmitted]=\"stepSubmitted\"\n                (onChange)=\"_sharedModelService.model.informations.contactDetail.validateMainResidenceStatus()\"\n                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.mainResidenceStatus\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.lives_at_this_address_since'|translate}}</div>\n            <div>\n\n                <div class=\"clearfix\">\n                    <table>\n                        <tr>\n                            <td class=\"date__picker__td\">\n                                <pib-text-field #inputLiveAtAddressSinceMonth placeholder=\"MM\" [(ngModel)]=\"liveAtAddressSinceMonth\"\n                                                [stepSubmitted]=\"stepSubmitted\"\n                                                [message]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError\" [showMessage]=\"false\" messageType=\"ERROR\"\n                                                (change)=\"onTfChange($event)\"></pib-text-field>\n                            </td>\n                            <td class=\"date__picker__td\">\n                                <pib-text-field #inputLiveAtAddressSinceYear placeholder=\"AAAA\" [(ngModel)]=\"liveAtAddressSinceYear\"\n                                [stepSubmitted]=\"stepSubmitted\"\n                                [message]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError\" [showMessage]=\"false\" messageType=\"ERROR\"\n                                (change)=\"onTfChange($event)\"></pib-text-field>\n                            </td>\n                            <td>\n                              <div class=\"date__picker__container\">\n                                <div>\n                                    <pib-calendar [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSince\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'mm/yyyy'\" [dateFormat]=\"'mm/yy'\" (onSelect)=\"onSelect($event)\"\n                                        [maxDate]=\"today\"></pib-calendar>\n                                </div>\n                              </div>\n                            </td>\n                        </tr>\n                    </table>\n                     <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError && ( (inputLiveAtAddressSinceMonth.dirty && inputLiveAtAddressSinceYear.dirty) || stepSubmitted )\">\n                        <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.contactDetail.livesAtThisAddressSinceError | translate}}\n                    </div>\n                </div>\n                \n            </div>\n        </div>\n\n        <div class=\"clearfix\" style=\"margin-bottom: 26px\" *ngIf=\"userHasPreviousAdress()\">\n            <div class=\"panel--form\">\n                <h2 class=\"form__title simple\">{{'hsbc-main.previous_residence_address' | translate}}</h2>\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.adresse'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.adresse'|translate}}\"\n                                        messageType=\"ERROR\"\n                                        (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                        [stepSubmitted]=\"stepSubmitted\"\n                                        [message]=\"_sharedModelService.model.informations.contactDetail.previousResidanceAdressError\"\n                                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousResidanceAdress\"></pib-text-field>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.additional_address'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-area placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                    \n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousAdditionalAddress\"></pib-text-area>\n                    </div>\n                </div>\n\n                <div class=\"form__group clearfix\">\n                    <div class=\"grid__col--4 no-padding\">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.postal_code'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                            messageType= \"ERROR\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.previousZipCodeError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousZipCode\"></pib-text-field>\n                        </div>\n                    </div>\n                    <div class=\"grid__col--8 \">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.city'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                            messageType= \"ERROR\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePreviousAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.previousCityError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousCity\"></pib-text-field>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.countries'|translate}}\n                    </div>\n                    <div>\n                        <pib-dropdown \n                        [options]=\"countries\" \n                        [message]=\"_sharedModelService.model.informations.contactDetail.previousCountryError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.contactDetail.validatePreviousCountry()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.previousCountry\"></pib-dropdown>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n\n        <div class=\"form__group mt20 clearfix\">\n            <div class=\"form__label\">{{'hsbc-main.adresse_courrier_different' | translate}}</div>\n            <div class=\"f-left\" style=\"margin-right: 10px;\">\n                <pib-radioButton name=\"rb_1\" value=\"different\" label=\"{{'hsbc-main.yes' | translate}}\"  \n                                (onClick)=\"_sharedModelService.model.informations.contactDetail.validateIsPostalAddressSameAsResidenceAddress()\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress\"></pib-radioButton>\n            </div>\n            <div class=\"f-left\">\n                <pib-radioButton name=\"rb_1\" value=\"same\" label=\"{{'hsbc-main.no' | translate}}\"  \n                                (onClick)=\"_sharedModelService.model.informations.contactDetail.validateIsPostalAddressSameAsResidenceAddress()\"\n                                [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress\"></pib-radioButton>\n            </div>\n        </div>\n        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddressError && stepSubmitted\">\n            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddressError | translate}}\n        </div>\n        <div class=\"clearfix\" style=\"margin-bottom: 26px\" *ngIf=\"_sharedModelService.model.informations.contactDetail.isPostalAddressSameAsResidenceAddress == 'different' \">\n            <div class=\"panel--form\">\n                <h2 class=\"form__title simple\">{{'hsbc-main.postal_address' | translate}}</h2>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.adresse'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.adresse'|translate}}\"\n                                      (keyup)=\"_sharedModelService.model.informations.contactDetail.validate($event)\"\n                                      [stepSubmitted]=\"stepSubmitted\"\n                                        messageType= \"ERROR\"\n                                        [message]= \"_sharedModelService.model.informations.contactDetail.postalAdressError\"\n                                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalAdress\"></pib-text-field>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.additional_address'|translate}}\n                    </div>\n                    <div>\n                        <pib-text-area \n                                    (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                   \n                                    placeholder=\"{{'hsbc-main.additional_address'|translate}}\"\n                                    [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalAdditionalAddress\"></pib-text-area>\n                    </div>\n                </div>\n\n                <div class=\"form__group clearfix\">\n                    <div class=\"grid__col--4 no-padding\">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.postal_code'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.postal_code'|translate}}\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            messageType= \"ERROR\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.postalZipCodeError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalZipCode\"></pib-text-field>\n                        </div>\n                    </div>\n                    <div class=\"grid__col--8 \">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.city'|translate}}\n                        </div>\n                        <div>\n                            <pib-text-field placeholder=\"{{'hsbc-main.nom'|translate}}\"\n                                            (keyup)=\"_sharedModelService.model.informations.contactDetail.validatePostalAddress($event)\"\n                                            [stepSubmitted]=\"stepSubmitted\"\n                                            messageType= \"ERROR\"\n                                            [message]= \"_sharedModelService.model.informations.contactDetail.postalCityError\"\n                                            [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalCity\"></pib-text-field>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">\n                        {{'hsbc-main.countries'|translate}}\n                    </div>\n                    <div>\n                        <pib-dropdown [options]=\"countries\" \n                        [message]=\"_sharedModelService.model.informations.contactDetail.postalCountryError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.contactDetail.validatePostalCountry()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.contactDetail.postalCountry\"></pib-dropdown>\n                    </div>\n                </div>\n\n            </div>\n        </div>\n\n\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n            </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\" />\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n\n    </div>\n</div>"
 
 /***/ }),
 
@@ -12655,7 +12288,7 @@ module.exports = "<div class=\"mt10 FEF__title sub\">\n    E-Signer votre contra
 /***/ 885:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.tax_infos'|translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.tax_num_country'|translate}} <i class=\"icon icon-circle-help\"></i></div>\n            <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence\"></pib-dropdown>\n        </div>\n        <div class=\"panel panel--form\" style=\"position:relative;\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence\" >\n            <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}\n                    <div class=\"mt10 mb10\"><a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a></div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumber($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                ></pib-text-field>\n            </div>\n            <div class=\"form__group full\">\n                <pib-checkbox \n                  [label]=\"'hsbc-main.tax_num_no_have'\" \n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError = null;\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                  binary=\"true\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-checkbox>\n            </div>\n\n            <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\">\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif A\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-radioButton>\n              </div>\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif C\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                      ></pib-radioButton>\n              </div>\n              \n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif B\"></pib-radioButton>\n              </div>\n\n              <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError\">\n                  <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError | translate}}\n              </div>\n\n              <pib-text-area \n                *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption === 'Motif B'\"\n                [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIF\"\n                placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                messageType= \"ERROR\"\n                (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                [stepSubmitted]=\"stepSubmitted\"\n                [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFError\"\n                ></pib-text-area>\n\n\n            </div>\n\n\n            <div *ngIf=\"fiscalpaysAdd.length >= 1\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[0]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo\"></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}{{numbersInLetters[i]|translate}} {{'hsbc-main.countries'|translate}}\n                    <div class=\"mt10 mb10\"><a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a></div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberTwo($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                ></pib-text-field>\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwo\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwoError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n\n\n            <div *ngIf=\"fiscalpaysAdd.length >= 2\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[0]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree\"></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}{{numbersInLetters[i]|translate}} {{'hsbc-main.countries'|translate}}\n                    <div class=\"mt10 mb10\"><a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a></div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberThree($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                ></pib-text-field>\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThree\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThreeError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n\n          <!--   <div *ngFor=\"let pays of fiscalpaysAdd;let i = index\">\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{numbersInLetters[i]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                    \n                    <pib-dropdown [options]=\"fiscalPays\" [(ngModel)]=\"pays.name\"></pib-dropdown>\n                </div>\n                <div *ngIf=\"pays.name\">\n                     <div class=\"form__group full\">\n                        <div class=\"form__label\">\n                            {{'hsbc-main.tax_num'|translate}}\n                            <div class=\"mt10 mb10\">\n                                <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                            </div>\n                        </div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.tax_num'|translate}}\" [(ngModel)]=\"fiscalId\"></pib-text-field>\n                    </div>\n                     <div class=\"form__group full\">\n                        <pib-checkbox [label]=\"'hsbc-main.tax_num_no_have'\"  binary=\"true\"></pib-checkbox>\n                    </div>\n                    <div>\n                         <div class=\"form__group full\">\n                            <pib-radioButton name=\"rb_1\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"selectedVal\" value=\"Motif A\"></pib-radioButton>\n                        </div>\n                        <div class=\"form__group full\">\n                            <pib-radioButton name=\"rb_1\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                                [(ngModel)]=\"selectedVal\" value=\"Motif C\"></pib-radioButton>\n                        </div>\n                         <div class=\"form__group full\">\n                            <pib-radioButton name=\"rb_1\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                                [(ngModel)]=\"selectedVal\" value=\"Motif C\"></pib-radioButton>\n                        </div>\n                    </div>\n\n                </div>\n            </div> -->\n            <div>\n                <a (click)=\"AddFiscalPays()\" *ngIf=\"fiscalpaysAdd.length < 2\" class=\"add-link\" >{{'hsbc-main.tax_num_country_add'|translate}}</a>\n                <!-- <a (click)=\"removeLastPays()\" class=\"btn--delete\" style=\"margin-left: 12px\" *ngIf=\"fiscalpaysAdd.length >0\">Annuler</a> -->\n                 <a class=\"cancel-link\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\" (click)=\"removeLastPays()\" *ngIf=\"fiscalpaysAdd.length >0\" ><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n            </div>\n        </div>\n        \n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.tax_infos'|translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.tax_num_country'|translate}} <i class=\"icon icon-circle-help\"></i></div>\n            <pib-dropdown \n              [options]=\"fiscalPays\" \n              [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence\"\n              [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceError\" \n              messageType=\"ERROR\" \n              [stepSubmitted]=\"stepSubmitted\"\n              (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidence()\"\n              ></pib-dropdown>\n        </div>\n        <div class=\"panel panel--form\" style=\"position:relative;\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence && _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence !== 'FR'\" >\n            <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CH' \" class=\"mt10 mb10\">\n                      <a (click)=\"openModalTaxWhere(1)\" class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumber($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                ></pib-text-field>\n            </div>\n            <div class=\"form__group full\">\n                <pib-checkbox \n                  [label]=\"'hsbc-main.tax_num_no_have'\" \n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError = null;\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                  binary=\"true\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-checkbox>\n            </div>\n\n            <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\">\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif A\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-radioButton>\n              </div>\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif C\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                      ></pib-radioButton>\n              </div>\n              \n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif B\"></pib-radioButton>\n              </div>\n\n              <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError\">\n                  <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError | translate}}\n              </div>\n\n              <pib-text-area \n                *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption === 'Motif B'\"\n                [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIF\"\n                placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                messageType= \"ERROR\"\n                (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                [stepSubmitted]=\"stepSubmitted\"\n                [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFError\"\n                ></pib-text-area>\n\n\n            </div>\n\n        </div>\n\n        <div style=\"position:relative;\">\n          <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 1\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[0]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                  [options]=\"fiscalPays\" \n                  [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwoError\" \n                  messageType=\"ERROR\" \n                  [stepSubmitted]=\"stepSubmitted\"\n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceTwo()\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo\"></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberTwo($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                ></pib-text-field>\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwo\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwoError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n\n\n            <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 2\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[1]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                    [options]=\"fiscalPays\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree\"\n                    [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThreeError\" \n                    messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceThree()\"\n                    ></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberThree($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                ></pib-text-field>\n\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThree\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThreeError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n            <div>\n                <a (click)=\"AddFiscalPays()\" *ngIf=\"fiscalpaysAdd.length < 2\" class=\"add-link\" >{{'hsbc-main.tax_num_country_add'|translate}}</a>\n                <!-- <a (click)=\"removeLastPays()\" class=\"btn--delete\" style=\"margin-left: 12px\" *ngIf=\"fiscalpaysAdd.length >0\">Annuler</a> -->\n                 <a class=\"cancel-link\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\" (click)=\"removeLastPays()\" *ngIf=\"fiscalpaysAdd.length >0\" ><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n            </div>\n        </div>\n\n        <pib-modal #modalTaxWhere>\n          <div class=\"modal-content\">\n            <div class=\"modal-title\">{{'hsbc-main.tax_num_where_title' | translate}}</div>\n            <p>\n              {{'hsbc-main.tax_num_where_'+msgWhereCountry | translate}}\n            </p>\n            <br>\n            <img *ngIf=\"msgWhereCountry\" [src]=\"'../../assets/img/NIF-'+msgWhereCountry+'.jpg'\" alt=\"\">\n          </div>\n        </pib-modal>\n\n        \n        \n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -12690,21 +12323,21 @@ module.exports = "<h2 class=\"form__title\">Vos informations d’ouverture de co
 /***/ 890:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.patrimony' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"clearfix \">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"panel--alert\">\n            <div class=\"panel__title\">\n                <i class=\"icon icon-circle-info\"></i>\n                Pourquoi demandons-nous ces informations ?\n            </div>\n            <p>\n                Pour toute ouverture de compte, la réglementation demande aux établissements bancaires de justifier une parfaite connaissance client et des opérations qu’ils\n                effectuent. Ces informations seront exclusivement utilisées dans le cadre de notre relation bancaire et nous permettront de vous offrir la meilleure qualité de service.\n            </p>\n        </div>\n\n        <div>\n            <div class=\"mb10\" style=\"font-size: 16px;\">Origine du patrimoine</div>\n            <div>\n                    <div class=\"mb10\">\n                        <pib-checkbox name=\"cb_1\"  [(ngModel)]=\"checkedItem1\" binary=\"true\" \n                            [label]=\"'Revenus professionnels'\" (onChange)=\"changeCheckedItem(1)\"></pib-checkbox>\n                    </div>\n                    <div class=\"mb10\"><pib-checkbox name=\"cb_2\"  [(ngModel)]=\"checkedItem2\" binary=\"true\" \n                    [label]=\"'Héritage'\" (onChange)=\"changeCheckedItem(2)\"></pib-checkbox></div>\n                    <div class=\"mb10\"><pib-checkbox name=\"cb_3\"  [(ngModel)]=\"checkedItem3\" binary=\"true\" \n                    [label]=\"'Donation'\" (onChange)=\"changeCheckedItem(3)\"></pib-checkbox></div>\n                    <div class=\"mb10\"><pib-checkbox name=\"cb_4\"  [(ngModel)]=\"checkedItem4\" binary=\"true\" \n                    [label]=\"'Gain au jeu'\" (onChange)=\"changeCheckedItem(4)\"></pib-checkbox></div>\n                  <div class=\"mb10\"><pib-radioButton [label]=\"'Je ne dispose pas de patrimoine'\"></pib-radioButton></div>\n            </div>\n    </div>\n\n\n        <div class=\"panel panel__form mt20\" *ngIf=\"checkedItem1 || checkedItem2 || checkedItem3 || checkedItem4\">\n            <div class=\"form__group\">\n               <div class=\"form__label\">De quel(s) pays provient principalement votre patrimoine ?</div>\n                <div>\n                    <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n                </div> \n            </div>\n            \n            <a><b>+ Ajouter un autre pays</b></a>\n        </div>\n    </div>\n</div>\n\n<h2 class=\"form__title\">Vos actifs patrimoniaux</h2>\n\n\n<div class=\"clearfix\">\n    <div class=\"grid__col--8\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">Comptes courants et comptes d’épargnes</div>\n            <div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">Titres financiers et OPC</div>\n            <div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">Assurance vie</div>\n            <div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n            </div>\n        </div>\n        <div class=\"form__group\">\n            <div class=\"form__label\">Autres (FCPI/SCPI etc.)</div>\n            <div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n            </div>\n        </div>\n    </div>\n</div>\n\n<h2 class=\"form__title\">Votre patrimoine immobilier</h2>\n\n<div class=\"clearfix\">\n    <div class=\"grid__col--8\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">Résidence principale</div>\n            <div>\n                <pib-text-field placeholder=\"€\"  inputClass=\"euro-unit\" [(ngModel)]=\"textFieldWarning\"></pib-text-field>\n            </div>\n        </div>\n        \n        <div class=\"form__group\">\n            <div class=\"form__label\">Autres biens et investissements immobiliers</div>\n            <div>\n                <pib-text-field placeholder=\"€\"  inputClass=\"euro-unit\" [(ngModel)]=\"textFieldWarning\"></pib-text-field>\n            </div>\n        </div>\n\n\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.patrimony' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"clearfix \">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"panel--alert\">\n            <div class=\"panel__title\">\n                <i class=\"icon icon-circle-info\"></i>\n                {{'hsbc-main.patrimony_question' | translate}}\n            </div>\n            <p>\n                {{'hsbc-main.patrimony_desc' | translate}}\n            </p>\n        </div>\n\n        <div>\n            <div class=\"mb10\" style=\"font-size: 16px;\">{{'hsbc-main.patrimony_origin' | translate}}</div>\n            <div>\n                    <div class=\"mb10\">\n                        <pib-checkbox name=\"cb_1\"  \n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.revenu\" \n                          binary=\"true\" \n                          label=\"{{'hsbc-main.patrimony_pro_revenus' | translate}}\" \n                          (onChange)=\"changeCheckedItem(1)\"\n                        ></pib-checkbox>\n                    </div>\n                    <div class=\"mb10\">\n                      <pib-checkbox \n                        name=\"cb_2\"  \n                        [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.heritage\" \n                        binary=\"true\" \n                        label=\"{{'hsbc-main.patrimony_heritage' | translate}}\" \n                        (onChange)=\"changeCheckedItem(2)\"\n                      ></pib-checkbox>\n                    </div>\n                    <div class=\"mb10\">\n                      <pib-checkbox \n                        name=\"cb_3\"  \n                        [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.donation\" \n                        binary=\"true\" \n                        label=\"{{'hsbc-main.patrimony_donation' | translate}}\" \n                        [label]=\"'Donation'\" \n                        (onChange)=\"changeCheckedItem(3)\"\n                      ></pib-checkbox>\n                    </div>\n                    <div class=\"mb10\">\n                      <pib-checkbox name=\"cb_4\"  \n                        [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.gain\" \n                        binary=\"true\" \n                        label=\"{{'hsbc-main.patrimony_gains' | translate}}\" \n                        (onChange)=\"changeCheckedItem(4)\"\n                      ></pib-checkbox>\n                    </div>\n                  <div class=\"mb10\">\n                    <pib-checkbox name=\"cb_4\"  \n                        binary=\"true\" \n                        (onChange)=\"_sharedModelService.model.informations.situation.patrimony.hasNoPatrimony()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.nopatrimoine\"\n                        label=\"{{'hsbc-main.patrimony_no_have' | translate}}\"\n                      ></pib-checkbox>\n<!--                     <pib-radioButton \n                      (onClick)=\"_sharedModelService.model.informations.situation.patrimony.hasNoPatrimony()\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.nopatrimoine\"\n                      [label]=\"'Je ne dispose pas de patrimoine'\"\n                    ></pib-radioButton> -->\n                  </div>\n            </div>\n    </div>\n\n\n        <div  class=\"panel panel__form mt20\" *ngIf=\"_sharedModelService.model.informations.situation.patrimony.revenu || _sharedModelService.model.informations.situation.patrimony.heritage || _sharedModelService.model.informations.situation.patrimony.donation || _sharedModelService.model.informations.situation.patrimony.gain\">\n            <div class=\"form__group\">\n               <div class=\"form__label\">{{'hsbc-main.patrimony_country_question' | translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"amounts\" [(ngModel)]=\"selectedSituation\"></pib-dropdown>\n                </div> \n            </div>\n            \n            <a><b>{{'hsbc-main.patrimony_country_add' | translate}}</b></a>\n        </div>\n    </div>\n</div>\n\n\n<div *ngIf=\"_sharedModelService.model.informations.situation.patrimony.revenu || _sharedModelService.model.informations.situation.patrimony.heritage || _sharedModelService.model.informations.situation.patrimony.donation || _sharedModelService.model.informations.situation.patrimony.gain\">\n\n  <h2 class=\"form__title\">{{'hsbc-main.patrimony_actifs' | translate}}</h2>\n\n\n  <div class=\"clearfix\">\n      <div class=\"grid__col--8\">\n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_actifs_accounts' | translate}}</div>\n              <div>\n                  <pib-dropdown \n                    [options]=\"amounts\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.accountsPatrimony\"\n                  ></pib-dropdown>\n              </div>\n          </div>\n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_actifs_titles' | translate}}</div>\n              <div>\n                  <pib-dropdown \n                    [options]=\"amounts\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.financialTitles\"\n                  ></pib-dropdown>\n              </div>\n          </div>\n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_actifs_assurance' | translate}}</div>\n              <div>\n                  <pib-dropdown \n                    [options]=\"amounts\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.assurancePatrimony\"\n                  ></pib-dropdown>\n              </div>\n          </div>\n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_actifs_others' | translate}}</div>\n              <div>\n                  <pib-dropdown \n                    [options]=\"amounts\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.otherActivePatrimony\"\n                  ></pib-dropdown>\n              </div>\n          </div>\n      </div>\n  </div>\n\n\n  <h2 class=\"form__title\">{{'hsbc-main.patrimony_immo' | translate}}</h2>\n\n  <div class=\"clearfix\">\n      <div *ngIf=\"_sharedModelService.model.informations.situation.patrimony.mustValidateMainResidence\" class=\"grid__col--8\">\n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_immo_residence' | translate}}</div>\n              <div>\n                  <pib-text-field \n                    placeholder=\"€\"  \n                    inputClass=\"euro-unit\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.mainResidencePatrimony\"\n                  ></pib-text-field>\n              </div>\n          </div>\n          \n          <div class=\"form__group\">\n              <div class=\"form__label\">{{'hsbc-main.patrimony_immo_others' | translate}}</div>\n              <div>\n                  <pib-text-field \n                    placeholder=\"€\"  \n                    inputClass=\"euro-unit\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.patrimony.otherImmoPatrimony\"\n                  ></pib-text-field>\n              </div>\n          </div>\n\n      </div>\n  </div>\n</div>\n<button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                      </button>\n\n<a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n<hr class=\"bottom-hr\"/>\n\n<div class=\"f-right bottom-help\">\n    <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n</div>"
 
 /***/ }),
 
 /***/ 891:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"_sharedModelService.model.accountType === 'individualAccount'\" class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.informations_personelles' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<div *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" class=\"mt10 FEF__title sub\">\n    <span *ngIf=\"internalStep === 1\">{{'hsbc-main.informations_personelles' | translate}}</span>\n    <span *ngIf=\"internalStep === 2\">{{'hsbc-main.informations_personelles_joint' | translate}}</span>\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<hr/>\n\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">\n      {{_sharedModelService.model.informations.person.lastName.toUpperCase()}} {{_sharedModelService.model.informations.person.firstName.toUpperCase()}}\n    </span></a>\n  </li>\n  <li class=\"steps--underlined__item disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{_sharedModelService.modelHolder.informations.person.lastName.toUpperCase()}} {{_sharedModelService.modelHolder.informations.person.firstName.toUpperCase()}}</span></a>\n  </li>\n</ul> \n<br/>\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\" class=\"clearfix mt40 front\">\n        <div class=\"grid__col--8 no-padding\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.situation_familiale'|translate}}</div>\n                <div></div>\n                <pib-dropdown \n                  [options]=\"familySituations\" \n                  [message]=\"_sharedModelService.model.informations.person.familySituationError\" messageType=\"ERROR\" \n                  [stepSubmitted]=\"stepSubmitted\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.person.familySituation\"\n                  (onChange)=\"_sharedModelService.model.informations.person.validateFamilySituation()\"\n                  >\n                  </pib-dropdown>\n            </div>\n            <!--\n            *ngIf=\"_sharedModelService.model.informations.person.familySituation == 'married' && _sharedModelService.model.informations.person.shouldValidateMartialStatus\"\n            -->\n            <div style=\"position: relative; min-height: 290px\" *ngIf=\"_sharedModelService.model.informations.person.familySituation == 2 \">\n            <div [@extendTransition]=\"\" class=\"panel--form\" >\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.regime_matrimonial'|translate}}</div>\n                    <div>\n                        <pib-dropdown [options]=\"martialStatus\" \n                        [message]=\"_sharedModelService.model.informations.person.maritalStatusError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.person.validateFamilySituation()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.person.maritalStatus\"></pib-dropdown>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.nom_naissance'|translate}}</div>\n                    <div>\n                        <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateFamilySituation($event)\" placeholder=\"{{'hsbc-main.nom_naissance'|translate}}\" \n                                        [message]=\"_sharedModelService.model.informations.person.birthNameError\" messageType=\"ERROR\" \n                                        [(ngModel)]=\"_sharedModelService.model.informations.person.birthName\"\n                                        [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                    </div>\n                </div>\n            </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.pays_naissance'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.person.birthCountry\" \n                    [message]=\"_sharedModelService.model.informations.person.birthCountryError\" messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateBirthCountry()\"\n                    placeholder=\"Sélectionnez\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.person.birthCountry === 'FR'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.code_postal_ville_naissance'|translate}}</div>\n                <div>\n                    <pib-text-field placeholder=\" {{'hsbc-main.code_postal_ville_naissance'|translate}}\"\n                                    (keyup)=\"_sharedModelService.model.informations.person.validateZipCode($event)\"\n                                    [message]=\"_sharedModelService.model.informations.person.zipCodeError\" messageType=\"ERROR\" \n                                    [(ngModel)]=\"_sharedModelService.model.informations.person.zipCode\"\n                                    [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n            <hr/>\n            <div class=\"form__group mt35\">\n                <div class=\"form__label\">{{'hsbc-main.nationalite'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                    [message]=\"_sharedModelService.model.informations.person.nationalityError\" messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateOtherNationalities($event); _sharedModelService.model.informations.person.validateNationality($event)\" [options]=\"countries\" [(ngModel)]=\"_sharedModelService.model.informations.person.nationality\"></pib-dropdown>\n                </div>\n            </div>\n            <div style=\"position: relative; min-height: 215px\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length > 0\">\n              <div [@extendTransition]=\"\" class=\"panel--form\">\n                  <div *ngFor=\"let nationality of nbNationalities;let i = index; \" class=\"form__group\">\n                      <div class=\"form__label\">{{longNumbers[i]}} {{'hsbc-main.nationalite'|translate}}</div>\n                      <div>\n                          <pib-dropdown [options]=\"countries\" [message]=\"_sharedModelService.model.informations.person.otherNationalitiesErrors[i]\" (onChange)=\"_sharedModelService.model.informations.person.validateOtherNationalities($event)\" [(ngModel)]=\"_sharedModelService.model.informations.person.otherNationalities[i]\" \n                          [stepSubmitted]=\"stepSubmitted\"\n                          ></pib-dropdown>\n\n                          <a (click)=\"deleteLastNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length - 1 == i\" class=\"cancel-link\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                      </div>\n                  </div>\n                  <div class=\"mt10\">\n                      <a class=\"add-link\" (click)=\"AddOtherNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length < 2\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n                  </div>\n              </div>\n            </div>\n\n            <a class=\"add-link mt10\" (click)=\"AddOtherNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length == 0\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n            <div class=\"form__group mt35 large-mb clearfix\">\n                <div class=\"form__label\">{{'hsbc-main.status_us_person'|translate}} <i class=\"icon  icon-circle-help-solid help-tooltip\"></i></div>\n                <div class=\"f-left mr30\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.model.informations.person.validateIsUSPerson()\" name=\"rb_1\" value=\"isUsPerson\" label=\"{{'hsbc-main.yes' | translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n                <div class=\"f-left\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.model.informations.person.validateIsUSPerson()\" name=\"rb_1\" value=\"isNotUsPerson\" label=\"{{'hsbc-main.no' | translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n            </div>\n            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.person.isUsPersonError && stepSubmitted\">\n                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.person.isUsPersonError | translate}}\n            </div>\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n    </div>\n\n    <div  [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" class=\"clearfix mt40 back\">\n        <div class=\"grid__col--8 no-padding\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.situation_familiale'|translate}}</div>\n                <div></div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.familySituation\"></pib-dropdown>\n            </div>\n            <div *ngIf=\"_sharedModelService.modelHolder.informations.person.familySituation == 'married' && _sharedModelService.modelHolder.informations.person.shouldValidateMartialStatus\" class=\"panel--form\">\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.regime_matrimonial'|translate}}</div>\n                    <div>\n                        <pib-dropdown [options]=\"martialStatus\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.maritalStatus\"></pib-dropdown>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.nom_naissance'|translate}}</div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.nom_naissance'|translate}}\" \n                                        [message]=\"_sharedModelService.modelHolder.informations.person.birthNameError\" messageType=\"ERROR\" \n                                        (keyup)=\"_sharedModelService.modelHolder.informations.person.validateFamilySituation($event)\"\n                                        [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthName\"\n                                        [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                        <a class=\"cancel-link\" (click)=\"_sharedModelService.modelHolder.informations.person.shouldValidateMartialStatus = false\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.pays_naissance'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthCountry\" placeholder=\"Sélectionnez\"></pib-dropdown>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.code_postal_ville_naissance'|translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateZipCode($event)\" placeholder=\" {{'hsbc-main.code_postal_ville_naissance'|translate}}\"\n                                    [message]=\"_sharedModelService.modelHolder.informations.person.zipCodeError\" messageType=\"ERROR\" \n                                    [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.zipCode\"\n                                    [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n            <hr/>\n            <div class=\"form__group mt35\">\n                <div class=\"form__label\">{{'hsbc-main.nationalite'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\"\n                    (onChange)=\"_sharedModelService.modelHolder.informations.person.validateOtherNationalities($event)\"\n                     [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.nationality\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length > 0\" class=\"panel--form\">\n                <div *ngFor=\"let nationality of nbNationalitiesHolder;let i = index\" class=\"form__group\">\n                    <div class=\"form__label\">{{longNumbers[i]}} {{'hsbc-main.nationalite'|translate}}</div>\n                    <div>\n                        <pib-dropdown  [options]=\"countries\" [message]=\"_sharedModelService.modelHolder.informations.person.otherNationalitiesErrors[i]\" (onChange)=\"_sharedModelService.modelHolder.informations.person.validateOtherNationalities($event)\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.otherNationalities[i]\"></pib-dropdown>\n\n                        <a (click)=\"deleteLastNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length - 1 == i\" class=\"cancel-link\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                    </div>\n                </div>\n                <div class=\"mt10\">\n                    <a class=\"add-link\" (click)=\"AddOtherNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length < 2\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n                </div>\n            </div>\n            <a class=\"add-link mt10\" (click)=\"AddOtherNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length == 0\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n            <div class=\"form__group mt35 large-mb clearfix\">\n                <div class=\"form__label\">{{'hsbc-main.status_us_person'|translate}} <i class=\"icon  icon-circle-help-solid help-tooltip\"></i></div>\n                <div class=\"f-left mr30\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.modelHolder.informations.person.validateIsUSPerson()\" name=\"rb_2\" value=\"isUsPerson\" label=\"{{'hsbc-main.yes' | translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n                <div class=\"f-left\">\n                    <pib-radioButton name=\"rb_2\" value=\"isNotUsPerson\" (onClick)=\"_sharedModelService.modelHolder.informations.person.validateIsUSPerson()\" label=\"{{'hsbc-main.no' | translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n            </div>\n            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.person.isUsPersonError && stepSubmitted\">\n                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.person.isUsPersonError | translate}}\n            </div>\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n               </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div *ngIf=\"_sharedModelService.model.accountType === 'individualAccount'\" class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.informations_personelles' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<div *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" class=\"mt10 FEF__title sub\">\n    <span *ngIf=\"internalStep === 1\">{{'hsbc-main.informations_personelles' | translate}}</span>\n    <span *ngIf=\"internalStep === 2\">{{'hsbc-main.informations_personelles_joint' | translate}}</span>\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<hr/>\n\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">\n      {{_sharedModelService.model.informations.person.lastName.toUpperCase()}} {{_sharedModelService.model.informations.person.firstName.toUpperCase()}}\n    </span></a>\n  </li>\n  <li class=\"steps--underlined__item disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{_sharedModelService.modelHolder.informations.person.lastName.toUpperCase()}} {{_sharedModelService.modelHolder.informations.person.firstName.toUpperCase()}}</span></a>\n  </li>\n</ul> \n<br/>\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\" class=\"clearfix mt40 front\">\n        <div class=\"grid__col--8 no-padding\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.situation_familiale'|translate}}</div>\n                <div></div>\n                <pib-dropdown \n                  [options]=\"familySituations\" \n                  [message]=\"_sharedModelService.model.informations.person.familySituationError\" messageType=\"ERROR\" \n                  [stepSubmitted]=\"stepSubmitted\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.person.familySituation\"\n                  (onChange)=\"_sharedModelService.model.informations.person.validateFamilySituation()\"\n                  >\n                  </pib-dropdown>\n            </div>\n            <!--\n            *ngIf=\"_sharedModelService.model.informations.person.familySituation == 'married' && _sharedModelService.model.informations.person.shouldValidateMartialStatus\"\n            -->\n            <div style=\"position: relative; min-height: 290px\" *ngIf=\"_sharedModelService.model.informations.person.familySituation == 2 \">\n            <div [@extendTransition]=\"\" class=\"panel--form\" >\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.regime_matrimonial'|translate}}</div>\n                    <div>\n                        <pib-dropdown [options]=\"martialStatus\" \n                        [message]=\"_sharedModelService.model.informations.person.maritalStatusError\" messageType=\"ERROR\" \n                        [stepSubmitted]=\"stepSubmitted\"\n                        (onChange)=\"_sharedModelService.model.informations.person.validateFamilySituation()\"\n                        [(ngModel)]=\"_sharedModelService.model.informations.person.maritalStatus\"></pib-dropdown>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.nom_naissance'|translate}}</div>\n                    <div>\n                        <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateFamilySituation($event)\" placeholder=\"{{'hsbc-main.nom_naissance'|translate}}\" \n                                        [message]=\"_sharedModelService.model.informations.person.birthNameError\" messageType=\"ERROR\" \n                                        [(ngModel)]=\"_sharedModelService.model.informations.person.birthName\"\n                                        [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                    </div>\n                </div>\n            </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.pays_naissance'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.person.birthCountry\" \n                    [message]=\"_sharedModelService.model.informations.person.birthCountryError\" messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateBirthCountry()\"\n                    placeholder=\"Sélectionnez\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.model.informations.person.birthCountry === 'FR'\" class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.code_postal_ville_naissance'|translate}}</div>\n                <div>\n                    <pib-text-field placeholder=\" {{'hsbc-main.code_postal_ville_naissance'|translate}}\"\n                                    (keyup)=\"_sharedModelService.model.informations.person.validateZipCode($event)\"\n                                    [message]=\"_sharedModelService.model.informations.person.zipCodeError\" messageType=\"ERROR\" \n                                    [(ngModel)]=\"_sharedModelService.model.informations.person.zipCode\"\n                                    [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n            <hr/>\n            <div class=\"form__group mt35\">\n                <div class=\"form__label\">{{'hsbc-main.nationalite'|translate}}</div>\n                <div>\n                    <pib-dropdown \n                    [message]=\"_sharedModelService.model.informations.person.nationalityError\" messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateOtherNationalities($event); _sharedModelService.model.informations.person.validateNationality($event)\" [options]=\"countries\" [(ngModel)]=\"_sharedModelService.model.informations.person.nationality\"></pib-dropdown>\n                </div>\n            </div>\n            <div style=\"position: relative; min-height: 215px\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length > 0\">\n              <div [@extendTransition]=\"\" class=\"panel--form\">\n                  <div *ngFor=\"let nationality of _sharedModelService.model.informations.person.otherNationalities;let i = index; \" class=\"form__group\">\n                      <div class=\"form__label\">{{longNumbers[i]}} {{'hsbc-main.nationalite'|translate}}</div>\n                      <div>\n                          <pib-dropdown [options]=\"countries\" [message]=\"_sharedModelService.model.informations.person.otherNationalitiesErrors[i]\" (onChange)=\"_sharedModelService.model.informations.person.validateOtherNationalities($event)\" [(ngModel)]=\"_sharedModelService.model.informations.person.otherNationalities[i]\" \n                          [stepSubmitted]=\"stepSubmitted\"\n                          ></pib-dropdown>\n\n                          <a (click)=\"deleteLastNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length - 1 == i\" class=\"cancel-link\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                      </div>\n                  </div>\n                  <div class=\"mt10\">\n                      <a class=\"add-link\" (click)=\"AddOtherNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length < 2\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n                  </div>\n              </div>\n            </div>\n\n            <a class=\"add-link mt10\" (click)=\"AddOtherNationality()\" *ngIf=\"_sharedModelService.model.informations.person.otherNationalities.length == 0\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n            <div class=\"form__group mt35 large-mb clearfix\">\n                <div class=\"form__label\">{{'hsbc-main.status_us_person'|translate}} <i class=\"icon  icon-circle-help-solid help-tooltip\"></i></div>\n                <div class=\"f-left mr30\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.model.informations.person.validateIsUSPerson()\" name=\"rb_1\" value=\"isUsPerson\" label=\"{{'hsbc-main.yes' | translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n                <div class=\"f-left\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.model.informations.person.validateIsUSPerson()\" name=\"rb_1\" value=\"isNotUsPerson\" label=\"{{'hsbc-main.no' | translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n            </div>\n            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.person.isUsPersonError && stepSubmitted\">\n                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.person.isUsPersonError | translate}}\n            </div>\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n    </div>\n\n    <div  [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" class=\"clearfix mt40 back\">\n        <div class=\"grid__col--8 no-padding\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.situation_familiale'|translate}}</div>\n                <div></div>\n                <pib-dropdown [options]=\"familySituations\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.familySituation\"></pib-dropdown>\n            </div>\n            <div *ngIf=\"_sharedModelService.modelHolder.informations.person.familySituation == 'married' && _sharedModelService.modelHolder.informations.person.shouldValidateMartialStatus\" class=\"panel--form\">\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.regime_matrimonial'|translate}}</div>\n                    <div>\n                        <pib-dropdown [options]=\"martialStatus\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.maritalStatus\"></pib-dropdown>\n                    </div>\n                </div>\n\n                <div class=\"form__group\">\n                    <div class=\"form__label\">{{'hsbc-main.nom_naissance'|translate}}</div>\n                    <div>\n                        <pib-text-field placeholder=\"{{'hsbc-main.nom_naissance'|translate}}\" \n                                        [message]=\"_sharedModelService.modelHolder.informations.person.birthNameError\" messageType=\"ERROR\" \n                                        (keyup)=\"_sharedModelService.modelHolder.informations.person.validateFamilySituation($event)\"\n                                        [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthName\"\n                                        [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                        <a class=\"cancel-link\" (click)=\"_sharedModelService.modelHolder.informations.person.shouldValidateMartialStatus = false\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.pays_naissance'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthCountry\" placeholder=\"Sélectionnez\"></pib-dropdown>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.code_postal_ville_naissance'|translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateZipCode($event)\" placeholder=\" {{'hsbc-main.code_postal_ville_naissance'|translate}}\"\n                                    [message]=\"_sharedModelService.modelHolder.informations.person.zipCodeError\" messageType=\"ERROR\" \n                                    [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.zipCode\"\n                                    [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n            <hr/>\n            <div class=\"form__group mt35\">\n                <div class=\"form__label\">{{'hsbc-main.nationalite'|translate}}</div>\n                <div>\n                    <pib-dropdown [options]=\"countries\"\n                    (onChange)=\"_sharedModelService.modelHolder.informations.person.validateOtherNationalities($event)\"\n                     [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.nationality\"></pib-dropdown>\n                </div>\n            </div>\n            <div *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length > 0\" class=\"panel--form\">\n                <div *ngFor=\"let nationality of nbNationalitiesHolder;let i = index\" class=\"form__group\">\n                    <div class=\"form__label\">{{longNumbers[i]}} {{'hsbc-main.nationalite'|translate}}</div>\n                    <div>\n                        <pib-dropdown  [options]=\"countries\" [message]=\"_sharedModelService.modelHolder.informations.person.otherNationalitiesErrors[i]\" (onChange)=\"_sharedModelService.modelHolder.informations.person.validateOtherNationalities($event)\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.otherNationalities[i]\"></pib-dropdown>\n\n                        <a (click)=\"deleteLastNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length - 1 == i\" class=\"cancel-link\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n                    </div>\n                </div>\n                <div class=\"mt10\">\n                    <a class=\"add-link\" (click)=\"AddOtherNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length < 2\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n                </div>\n            </div>\n            <a class=\"add-link mt10\" (click)=\"AddOtherNationalityHolder()\" *ngIf=\"_sharedModelService.modelHolder.informations.person.otherNationalities.length == 0\">{{'hsbc-main.ajouter_nationalite'|translate}}</a>\n            <div class=\"form__group mt35 large-mb clearfix\">\n                <div class=\"form__label\">{{'hsbc-main.status_us_person'|translate}} <i class=\"icon  icon-circle-help-solid help-tooltip\"></i></div>\n                <div class=\"f-left mr30\">\n                    <pib-radioButton (onClick)=\"_sharedModelService.modelHolder.informations.person.validateIsUSPerson()\" name=\"rb_2\" value=\"isUsPerson\" label=\"{{'hsbc-main.yes' | translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n                <div class=\"f-left\">\n                    <pib-radioButton name=\"rb_2\" value=\"isNotUsPerson\" (onClick)=\"_sharedModelService.modelHolder.informations.person.validateIsUSPerson()\" label=\"{{'hsbc-main.no' | translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.isUsPerson\"></pib-radioButton>\n                </div>\n            </div>\n            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.person.isUsPersonError && stepSubmitted\">\n                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.person.isUsPersonError | translate}}\n            </div>\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n               </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
 /***/ 892:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"_sharedModelService.model.accountType === 'individualAccount'\" class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.informations_personelles' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<div *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" class=\"mt10 FEF__title sub\">\n    <span *ngIf=\"internalStep === 1\">{{'hsbc-main.informations_personelles' | translate}}</span>\n    <span *ngIf=\"internalStep === 2\">{{'hsbc-main.informations_personelles_joint' | translate}}</span>\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<hr/>\n\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{'hsbc-main.co-holder-one-link' | translate}}</span></a>\n  </li>\n  <li class=\"steps--underlined__item disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{'hsbc-main.co-holder-two-link' | translate}}</span></a>\n  </li>\n</ul> \n<br/>\n\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div class=\"clearfix mt40\">\n        <div class=\"grid__col--8 no-padding front\" [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.civilite' | translate}}</div>\n                <div>\n                    <pib-segment-control [options]=\"civilities\" styleClass=\"ui-selectbutton--underlined\" [(ngModel)]=\"_sharedModelService.model.informations.person.civility\"\n                    [message]=\"_sharedModelService.model.informations.person.civilityError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateCivility()\"\n                    ></pib-segment-control>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.nom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateLastName($event)\" placeholder=\"{{'hsbc-main.nom'|translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.lastName\" [message]=\"_sharedModelService.model.informations.person.lastNameError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.prenom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateFirstName($event)\" placeholder=\"{{'hsbc-main.prenom' | translate}}\" [message]=\"_sharedModelService.model.informations.person.firstNameError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.firstName\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.date_naissance'|translate}}</div>\n                <div>\n\n                    <div class=\"clearfix\">\n                        <table>\n                            <tr>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthDay placeholder=\"JJ\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthDay\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthMonth placeholder=\"MM\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthMonth\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\"  [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthYear placeholder=\"AAAA\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthYear\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                            </tr>\n                        </table>\n                        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.person.birthDateError && (inputBirthDay.inputTf.dirty || inputBirthMonth.inputTf.dirty || inputBirthYear.inputTf.dirty || stepSubmitted) || (birthDay && birthMonth && birthYear && birthDateError)\">\n                            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.person.birthDateError | translate}}\n                        </div>\n                    </div>\n                    <div>\n                        <pib-calendar [(ngModel)]=\"_sharedModelService.model.informations.person.birthDate\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'dd/mm/yyyy'\" [dateFormat]=\"'dd/mm/yy'\" (onSelect)=\"onSelect($event)\"></pib-calendar>\n                    </div>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.email' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateEmail($event)\" placeholder=\"{{'hsbc-main.email' | translate}}\" [message]=\"_sharedModelService.model.informations.person.emailError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.email\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.mobile'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.model.informations.person.validateMobilePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.model.informations.person.mobilePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.mobilePhone\" [(multiSelectValue)]=\"_sharedModelService.model.informations.person.mobilePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.fixe'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.model.informations.person.validateFixePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.model.informations.person.fixePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.fixePhone\" [(multiSelectValue)]=\"_sharedModelService.model.informations.person.fixePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n\n            <div class=\"panel--checkbox\">\n                <pib-checkbox label=\"{{'hsbc-main.sms_check'|translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.contactMeByEmailOrSMS\" binary=\"true\"></pib-checkbox>\n            </div>\n\n\n            <div class=\"panel--notice\">\n                <span class=\"star\">*</span>{{'hsbc-main.notice_consommateur'|translate}}\n            </div>\n\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n        <div class=\"grid__col--8 no-padding back\" [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" >\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.civilite' | translate}}</div>\n                <div>\n                    <pib-segment-control [options]=\"civilities\" styleClass=\"ui-selectbutton--underlined\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.civility\"></pib-segment-control>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.nom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateLastName($event)\" placeholder=\"{{'hsbc-main.nom'|translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.lastName\" [message]=\"_sharedModelService.modelHolder.informations.person.lastNameError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.prenom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateFirstName($event)\" placeholder=\"{{'hsbc-main.prenom' | translate}}\" [message]=\"_sharedModelService.modelHolder.informations.person.firstNameError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.firstName\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.date_naissance'|translate}}</div>\n                <div>\n\n                    <div class=\"clearfix\">\n                        <table>\n                            <tr>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthDayHolder placeholder=\"JJ\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthDayHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthMonthHolder placeholder=\"MM\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthMonthHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\"  [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthYearHolder placeholder=\"AAAA\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthYearHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                            </tr>\n                        </table>\n                        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.person.birthDateError && (inputBirthDayHolder.inputTf.dirty || inputBirthMonthHolder.inputTf.dirty || inputBirthYearHolder.inputTf.dirty || stepSubmitted) || (birthDayHolder && birthMonthHolder && birthYearHolder && _sharedModelService.modelHolder.informations.person.birthDateError)\">\n                            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.person.birthDateError | translate}}\n                        </div>\n                    </div>\n                    <div>\n                        <pib-calendar [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthDate\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'dd/mm/yyyy'\" [dateFormat]=\"'dd/mm/yy'\" (onSelect)=\"onSelectHolder($event)\"></pib-calendar>\n                    </div>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.email' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateEmail($event)\" placeholder=\"{{'hsbc-main.email' | translate}}\" [message]=\"_sharedModelService.modelHolder.informations.person.emailError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.email\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.mobile'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.modelHolder.informations.person.validateMobilePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.modelHolder.informations.person.mobilePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.mobilePhone\" [(multiSelectValue)]=\"_sharedModelService.modelHolder.informations.person.mobilePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n\n            <div class=\"panel--checkbox\">\n                <pib-checkbox label=\"{{'hsbc-main.sms_check'|translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.contactMeByEmailOrSMS\" binary=\"true\"></pib-checkbox>\n            </div>\n\n\n            <div class=\"panel--notice\">\n                <span class=\"star\">*</span>{{'hsbc-main.notice_consommateur'|translate}}\n            </div>\n\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n\n\n\n        <pib-modal #modalMinor>\n          <div class=\"modal-content\">\n            <div class=\"modal-title\">{{'hsbc-main.modal_minor_title' | translate}}</div>\n            <p>\n              {{'hsbc-main.modal_minor_content' | translate}}\n            </p>\n            <div class=\"modal-footer\">\n              <button pibButton type=\"button\" label=\"{{'hsbc-main.modal_minor_button' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n            </div>\n          </div>\n          \n        </pib-modal>\n    </div>\n  </div>\n</div>"
+module.exports = "<div *ngIf=\"_sharedModelService.model.accountType === 'individualAccount'\" class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.informations_personelles' | translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<div *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" class=\"mt10 FEF__title sub\">\n    <span *ngIf=\"internalStep === 1\">{{'hsbc-main.informations_personelles' | translate}}</span>\n    <span *ngIf=\"internalStep === 2\">{{'hsbc-main.informations_personelles_joint' | translate}}</span>\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n\n<hr/>\n\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{'hsbc-main.co-holder-one-link' | translate}}</span></a>\n  </li>\n  <li class=\"steps--underlined__item disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{'hsbc-main.co-holder-two-link' | translate}}</span></a>\n  </li>\n</ul> \n<br/>\n\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div class=\"clearfix mt40\">\n        <div class=\"grid__col--8 no-padding front\" [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\">\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.civilite' | translate}}</div>\n                <div>\n                    <pib-segment-control [options]=\"civilities\" styleClass=\"ui-selectbutton--underlined\" [(ngModel)]=\"_sharedModelService.model.informations.person.civility\"\n                    [message]=\"_sharedModelService.model.informations.person.civilityError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.person.validateCivility()\"\n                    ></pib-segment-control>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.nom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateLastName($event)\" placeholder=\"{{'hsbc-main.nom'|translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.lastName\" [message]=\"_sharedModelService.model.informations.person.lastNameError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.prenom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateFirstName($event)\" placeholder=\"{{'hsbc-main.prenom' | translate}}\" [message]=\"_sharedModelService.model.informations.person.firstNameError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.firstName\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.date_naissance'|translate}}</div>\n                <div>\n\n                    <div class=\"clearfix\">\n                        <table>\n                            <tr>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthDay placeholder=\"JJ\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthDay\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthMonth placeholder=\"MM\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthMonth\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\"  [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthYear placeholder=\"AAAA\" [message]=\"_sharedModelService.model.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthYear\" (keyup)=\"onTfChange($event, 'model')\" (blur)=\"onTfChange($event, 'model')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td>\n                                  <div class=\"date__picker__container\">\n                                      <pib-calendar [(ngModel)]=\"_sharedModelService.model.informations.person.birthDate\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'dd/mm/yyyy'\" [dateFormat]=\"'dd/mm/yy'\" (onSelect)=\"onSelect($event)\"></pib-calendar>\n                                  </div>\n                                </td>\n                            </tr>\n                        </table>\n                        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.person.birthDateError && (inputBirthDay.inputTf.dirty || inputBirthMonth.inputTf.dirty || inputBirthYear.inputTf.dirty || stepSubmitted) || (birthDay && birthMonth && birthYear && birthDateError)\">\n                            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.person.birthDateError | translate}}\n                        </div>\n                    </div>\n                    \n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.email' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.model.informations.person.validateEmail($event)\" placeholder=\"{{'hsbc-main.email' | translate}}\" [message]=\"_sharedModelService.model.informations.person.emailError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.email\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.mobile'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.model.informations.person.validateMobilePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.model.informations.person.mobilePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.mobilePhone\" [(multiSelectValue)]=\"_sharedModelService.model.informations.person.mobilePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.fixe'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.model.informations.person.validateFixePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.model.informations.person.fixePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.model.informations.person.fixePhone\" [(multiSelectValue)]=\"_sharedModelService.model.informations.person.fixePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n\n            <div class=\"panel--checkbox\">\n                <pib-checkbox label=\"{{'hsbc-main.sms_check'|translate}}\" [(ngModel)]=\"_sharedModelService.model.informations.person.contactMeByEmailOrSMS\" binary=\"true\"></pib-checkbox>\n            </div>\n\n\n            <div class=\"panel--notice\">\n                <span class=\"star\">*</span>{{'hsbc-main.notice_consommateur'|translate}}\n            </div>\n\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n        <div class=\"grid__col--8 no-padding back\" [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" >\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.civilite' | translate}}</div>\n                <div>\n                    <pib-segment-control [options]=\"civilities\" styleClass=\"ui-selectbutton--underlined\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.civility\"></pib-segment-control>\n                </div>\n            </div>\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.nom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateLastName($event)\" placeholder=\"{{'hsbc-main.nom'|translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.lastName\" [message]=\"_sharedModelService.modelHolder.informations.person.lastNameError\" messageType=\"ERROR\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.prenom' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateFirstName($event)\" placeholder=\"{{'hsbc-main.prenom' | translate}}\" [message]=\"_sharedModelService.modelHolder.informations.person.firstNameError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.firstName\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.date_naissance'|translate}}</div>\n                <div>\n\n                    <div class=\"clearfix\">\n                        <table>\n                            <tr>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthDayHolder placeholder=\"JJ\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthDayHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthMonthHolder placeholder=\"MM\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthMonthHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\"  [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                                <td class=\"date__picker__td\">\n                                    <pib-text-field #inputBirthYearHolder placeholder=\"AAAA\" [message]=\"_sharedModelService.modelHolder.informations.person.birthDateError\" [showMessage]=\"false\" messageType=\"ERROR\" [(ngModel)]=\"birthYearHolder\" (keyup)=\"onTfChange($event, 'modelHolder')\" (blur)=\"onTfChange($event, 'modelHolder')\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                                </td>\n                            </tr>\n                        </table>\n                        <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.person.birthDateError && (inputBirthDayHolder.inputTf.dirty || inputBirthMonthHolder.inputTf.dirty || inputBirthYearHolder.inputTf.dirty || stepSubmitted) || (birthDayHolder && birthMonthHolder && birthYearHolder && _sharedModelService.modelHolder.informations.person.birthDateError)\">\n                            <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.person.birthDateError | translate}}\n                        </div>\n                    </div>\n                    <div>\n                        <pib-calendar [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.birthDate\" [(locale)]=\"currentLocal\" [hideTextInput]=\"true\" [showIcon]=\"true\" [leftIcon]=\"true\" [placeholder]=\"'dd/mm/yyyy'\" [dateFormat]=\"'dd/mm/yy'\" (onSelect)=\"onSelectHolder($event)\"></pib-calendar>\n                    </div>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.email' | translate}}</div>\n                <div>\n                    <pib-text-field (keyup)=\"_sharedModelService.modelHolder.informations.person.validateEmail($event)\" placeholder=\"{{'hsbc-main.email' | translate}}\" [message]=\"_sharedModelService.modelHolder.informations.person.emailError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.email\" [stepSubmitted]=\"stepSubmitted\"></pib-text-field>\n                </div>\n            </div>\n\n\n            <div class=\"form__group\">\n                <div class=\"form__label\">{{'hsbc-main.mobile'|translate}}</div>\n                <div>\n                    <pib-drop-down-editable (keyup)=\"_sharedModelService.modelHolder.informations.person.validateMobilePhone($event)\" [options]=\"cities\" placeholder=\"Phone number\" [message]=\"_sharedModelService.modelHolder.informations.person.mobilePhoneError\" messageType=\"ERROR\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.mobilePhone\" [(multiSelectValue)]=\"_sharedModelService.modelHolder.informations.person.mobilePhoneDialCode\" [stepSubmitted]=\"stepSubmitted\"></pib-drop-down-editable>\n                </div>\n            </div>\n\n\n            <div class=\"panel--checkbox\">\n                <pib-checkbox label=\"{{'hsbc-main.sms_check'|translate}}\" [(ngModel)]=\"_sharedModelService.modelHolder.informations.person.contactMeByEmailOrSMS\" binary=\"true\"></pib-checkbox>\n            </div>\n\n\n            <div class=\"panel--notice\">\n                <span class=\"star\">*</span>{{'hsbc-main.notice_consommateur'|translate}}\n            </div>\n\n            <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n\n            <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n            <hr class=\"bottom-hr\" />\n\n            <div class=\"f-right bottom-help\">\n                <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n            </div>\n        </div>\n\n\n\n        <pib-modal #modalMinor>\n          <div class=\"modal-content\">\n            <div class=\"modal-title\">{{'hsbc-main.modal_minor_title' | translate}}</div>\n            <p>\n              {{'hsbc-main.modal_minor_content' | translate}}\n            </p>\n            <div class=\"modal-footer\">\n              <button pibButton type=\"button\" label=\"{{'hsbc-main.modal_minor_button' | translate}}\" class=\"btn--primary f-right\">\n                </button>\n            </div>\n          </div>\n        </pib-modal>\n        \n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -12769,7 +12402,7 @@ module.exports = "<div class=\"mt10 FEF__title sub\"> Votre offre\n    <div clas
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(541);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(906);
@@ -12876,7 +12509,6 @@ var CountriesDataService = (function () {
                 });
             }
         }
-        console.log('Custom items: ', this.arrayObjectIndexOf(this.__data, toSort[0], 'code'));
         data.unshift({ label: '--------------', value: '' });
         for (var g = toSort.length - 1; g >= 0; g--) {
             var itemIndex = this.arrayObjectIndexOf(this.__data, toSort[g], 'code');
@@ -12933,6 +12565,538 @@ var CountriesDataService = (function () {
     var _a;
 }());
 //# sourceMappingURL=countries-data.service.js.map
+
+/***/ }),
+
+/***/ 92:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsefulDataService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UsefulDataService = (function () {
+    function UsefulDataService() {
+    }
+    UsefulDataService.prototype.getMartialStatus = function (lang) {
+        if (lang == 'fr') {
+            return [
+                {
+                    label: 'Veuillez selectionner une valeur',
+                    value: null
+                }, {
+                    label: 'Communauté légale',
+                    value: 'CL'
+                }, {
+                    label: 'Communauté universelle',
+                    value: 'CU'
+                }, {
+                    label: 'Séparation de biens',
+                    value: 'SB'
+                }, {
+                    label: 'Participation aux acquêts',
+                    value: 'PA'
+                }, {
+                    label: 'Communauté de meubles et acquêts',
+                    value: 'CM'
+                }];
+        }
+        else {
+            return [
+                {
+                    label: 'Please choose a value',
+                    value: null
+                }, {
+                    label: 'Legal community',
+                    value: 'CL'
+                }, {
+                    label: 'Universal community',
+                    value: 'CU'
+                }, {
+                    label: 'Separation of goods',
+                    value: 'SB'
+                }, {
+                    label: 'Participation in acquests',
+                    value: 'PA'
+                }, {
+                    label: 'Community of furniture and acquests',
+                    value: 'CM'
+                }];
+        }
+    };
+    UsefulDataService.prototype.getProfessionalSituation = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Salarié', value: 'salarie' },
+                { label: 'Entrepreneur Individuel', value: 'EI' },
+                { label: 'Contrôleur principal', value: 'controleur_principal' },
+                { label: 'Chef d\'entreprise', value: 'chef_entreprise' },
+                { label: 'Retraité', value: 'retraite' },
+                { label: 'Etudiant', value: 'etudiant' },
+                { label: 'Sans profession', value: 'sans_profession' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Salarié', value: 'salarie' },
+                { label: 'Entrepreneur Individuel', value: 'EI' },
+                { label: 'Contrôleur principal', value: 'controleur_principal' },
+                { label: 'Chef d\'entreprise', value: 'chef_entreprise' },
+                { label: 'Retraité', value: 'retraite' },
+                { label: 'Etudiant', value: 'etudiant' },
+                { label: 'Sans profession', value: 'sans_profession' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getContractTypes = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'CDD', value: 'D' },
+                { label: 'CDI', value: 'I' },
+                { label: 'Volontriat International Enterprise', value: 'E' },
+                { label: 'Autre', value: 'Z' }
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'CDD', value: 'D' },
+                { label: 'CDI', value: 'I' },
+                { label: 'Volontriat International Enterprise', value: 'E' },
+                { label: 'Other', value: 'z' }
+            ];
+        }
+    };
+    UsefulDataService.prototype.getEmployeeProfessionalCategories = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Architecte', value: '26' },
+                { label: 'Agent d\'Assurances', value: '36' },
+                { label: 'Agent Immobilier', value: '35' },
+                { label: 'Agriculteur', value: '1' },
+                { label: 'Artisan', value: '39' },
+                { label: 'Cadres', value: 'list', content: [
+                        { label: 'Cadre d\'Entreprise', value: '52' },
+                        { label: 'Cadre de la Fonction Publique', value: '56' },
+                        { label: 'Cadre Supérieur', value: '51' },
+                    ] },
+                { label: 'Clergé', value: '69' },
+                { label: 'Commerçant', value: '30' },
+                { label: 'Consultant', value: '27' },
+                { label: 'Employé de l\'Entreprise', value: '70' },
+                { label: 'Autres professions de l\'Entreprise (=Profession Intermédiaire de l\'Entreprise)', value: '60' },
+                { label: 'Employé de la Fonction Publique ', value: '76' },
+                { label: 'Autres professions de la Fonction Publique (=Profession Intermédiaire de la Fonction Publique)', value: '66' },
+                { label: 'Enseignement Supérieur', value: '57' },
+                { label: 'Autres professions de l\'enseignement (=Profession Intermédiaire de l\'Enseignement)', value: '67' },
+                { label: 'Géomètre', value: '28' },
+                { label: 'Professions de la Santé', value: 'list', content: [
+                        { label: 'Profession Médicale Supérieure Salariée', value: '55' },
+                        { label: 'Infirmier Libéral', value: '19' },
+                        { label: 'Kinésithérapeute', value: '12' },
+                        { label: 'Médecin', value: '10' },
+                        { label: 'Médecin Spécialiste', value: '11' },
+                        { label: 'Orthophoniste', value: '16' },
+                        { label: 'Paramédical, Auxiliaire Médical', value: '18' },
+                        { label: 'Pharmacien - Laboratoire', value: '15' },
+                        { label: 'Ostéopathe', value: '13' },
+                        { label: 'Dentiste', value: '14' },
+                        { label: 'Vétérinaire', value: '17' },
+                        { label: 'Autres professions de la Santé (=Profession Intermédiaire de la Santé)', value: '65' },
+                    ] },
+                { label: 'Professions du Chiffre', value: '23' },
+                { label: 'Professions du Droit', value: 'list', content: [
+                        { label: 'Avocat', value: '20' },
+                        { label: 'Autres Professions du Droit', value: '21' },
+                        { label: 'Huissier de Justice', value: '24' },
+                        { label: 'Notaire', value: '22' },
+                    ] },
+                { label: 'Profession Libérale "Culturel et Sportif"', value: '29' },
+                { label: 'Profession Libérale "Technique"', value: '25' },
+                { label: 'Ouvrier', value: '80' },
+                { label: 'Restaurateur - Hôtelier', value: '34' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Architecte', value: '26' },
+                { label: 'Agent d\'Assurances', value: '36' },
+                { label: 'Agent Immobilier', value: '35' },
+                { label: 'Agriculteur', value: '1' },
+                { label: 'Artisan', value: '39' },
+                { label: 'Cadres', value: 'list', content: [
+                        { label: 'Cadre d\'Entreprise', value: '52' },
+                        { label: 'Cadre de la Fonction Publique', value: '56' },
+                        { label: 'Cadre Supérieur', value: '51' },
+                    ] },
+                { label: 'Clergé', value: '69' },
+                { label: 'Commerçant', value: '30' },
+                { label: 'Consultant', value: '27' },
+                { label: 'Employé de l\'Entreprise', value: '70' },
+                { label: 'Autres professions de l\'Entreprise (=Profession Intermédiaire de l\'Entreprise)', value: '60' },
+                { label: 'Employé de la Fonction Publique ', value: '76' },
+                { label: 'Autres professions de la Fonction Publique (=Profession Intermédiaire de la Fonction Publique)', value: '66' },
+                { label: 'Enseignement Supérieur', value: '57' },
+                { label: 'Autres professions de l\'enseignement (=Profession Intermédiaire de l\'Enseignement)', value: '67' },
+                { label: 'Géomètre', value: '28' },
+                { label: 'Professions de la Santé', value: 'list', content: [
+                        { label: 'Profession Médicale Supérieure Salariée', value: '55' },
+                        { label: 'Infirmier Libéral', value: '19' },
+                        { label: 'Kinésithérapeute', value: '12' },
+                        { label: 'Médecin', value: '10' },
+                        { label: 'Médecin Spécialiste', value: '11' },
+                        { label: 'Orthophoniste', value: '16' },
+                        { label: 'Paramédical, Auxiliaire Médical', value: '18' },
+                        { label: 'Pharmacien - Laboratoire', value: '15' },
+                        { label: 'Ostéopathe', value: '13' },
+                        { label: 'Dentiste', value: '14' },
+                        { label: 'Vétérinaire', value: '17' },
+                        { label: 'Autres professions de la Santé (=Profession Intermédiaire de la Santé)', value: '65' },
+                    ] },
+                { label: 'Professions du Chiffre', value: '23' },
+                { label: 'Professions du Droit', value: 'list', content: [
+                        { label: 'Avocat', value: '20' },
+                        { label: 'Autres Professions du Droit', value: '21' },
+                        { label: 'Huissier de Justice', value: '24' },
+                        { label: 'Notaire', value: '22' },
+                    ] },
+                { label: 'Profession Libérale "Culturel et Sportif"', value: '29' },
+                { label: 'Profession Libérale "Technique"', value: '25' },
+                { label: 'Ouvrier', value: '80' },
+                { label: 'Restaurateur - Hôtelier', value: '34' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getIndividualProfessionalCategories = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Agent d\'Assurances', value: '36' },
+                { label: 'Agent Immobilier', value: '35' },
+                { label: 'Architecte', value: '26' },
+                { label: 'Artisan', value: '39' },
+                { label: 'Autres Professions du Droit', value: '21' },
+                { label: 'Avocat', value: '20' },
+                { label: 'Commerçant', value: '30' },
+                { label: 'Consultant', value: '27' },
+                { label: 'Dentiste', value: '14' },
+                { label: 'Géomètre', value: '28' },
+                { label: 'Infirmier Libéral', value: '19' },
+                { label: 'Kinésithérapeute', value: '12' },
+                { label: 'Médecin', value: '10' },
+                { label: 'Médecin Spécialiste', value: '11' },
+                { label: 'Notaire', value: '22' },
+                { label: 'Orthophoniste', value: '16' },
+                { label: 'Ostéopathe', value: '13' },
+                { label: 'Ouvrier', value: '80' },
+                { label: 'Paramédical, Auxiliaire Médical', value: '18' },
+                { label: 'Pharmacien - Laboratoire', value: '15' },
+                { label: 'Professions du Chiffre', value: '23' },
+                { label: 'Restaurateur - Hôtelier', value: '34' },
+                { label: 'Agriculteur', value: '40' },
+                { label: 'Vétérinaire', value: '17' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Agent d\'Assurances', value: '36' },
+                { label: 'Agent Immobilier', value: '35' },
+                { label: 'Architecte', value: '26' },
+                { label: 'Artisan', value: '39' },
+                { label: 'Autres Professions du Droit', value: '21' },
+                { label: 'Avocat', value: '20' },
+                { label: 'Commerçant', value: '30' },
+                { label: 'Consultant', value: '27' },
+                { label: 'Dentiste', value: '14' },
+                { label: 'Géomètre', value: '28' },
+                { label: 'Infirmier Libéral', value: '19' },
+                { label: 'Kinésithérapeute', value: '12' },
+                { label: 'Médecin', value: '10' },
+                { label: 'Médecin Spécialiste', value: '11' },
+                { label: 'Notaire', value: '22' },
+                { label: 'Orthophoniste', value: '16' },
+                { label: 'Ostéopathe', value: '13' },
+                { label: 'Ouvrier', value: '80' },
+                { label: 'Paramédical, Auxiliaire Médical', value: '18' },
+                { label: 'Pharmacien - Laboratoire', value: '15' },
+                { label: 'Professions du Chiffre', value: '23' },
+                { label: 'Restaurateur - Hôtelier', value: '34' },
+                { label: 'Agriculteur', value: '40' },
+                { label: 'Vétérinaire', value: '17' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getRetirementProfessionalCategories = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Retraité Agriculteur, Artisan, Commerçant', value: '93' },
+                { label: 'Retraité Cadre et Profession Libérale', value: '90' },
+                { label: 'Retraité du Personnel', value: '96' },
+                { label: 'Retraité Employé, Ouvrier', value: '95' },
+                { label: 'Retraité Profession Intermédiaire', value: '92' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Retraité Agriculteur, Artisan, Commerçant', value: '93' },
+                { label: 'Retraité Cadre et Profession Libérale', value: '90' },
+                { label: 'Retraité du Personnel', value: '96' },
+                { label: 'Retraité Employé, Ouvrier', value: '95' },
+                { label: 'Retraité Profession Intermédiaire', value: '92' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getStudentProfessionalCategories = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Etudiant', value: '98' },
+                { label: 'Etudiant Grandes Ecoles', value: '99' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Etudiant', value: '98' },
+                { label: 'Etudiant Grandes Ecoles', value: '99' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getSectorActivities = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Activités informatiques', value: '1' },
+                { label: 'Activités juridiques et comptables', value: '2' },
+                { label: 'Agroalimentaire', value: '3' },
+                { label: 'Automobile, aéronautique et autres matériels de transport', value: '4' },
+                { label: 'Banque et les assurances', value: '5' },
+                { label: 'Bois - papier - imprimerie', value: '6' },
+                { label: 'Chimie, le caoutchouc ou le plastique', value: '7' },
+                { label: 'Commerce interentreprises', value: '8' },
+                { label: 'Communication et les médias', value: '9' },
+                { label: 'Conseil et gestion des entreprises', value: '10' },
+                { label: 'Construction', value: '11' },
+                { label: 'Distribution généraliste et spécialisée', value: '12' },
+                { label: 'Energie, l\'eau ou la gestion des déchets', value: '13' },
+                { label: 'Equipements électriques et électroniques', value: '14' },
+                { label: 'Formation initiale et continue', value: '15' },
+                { label: 'Hôtellerie - restauration - loisirs', value: '16' },
+                { label: 'Immobilier', value: '17' },
+                { label: 'Industrie pharmaceutique', value: '18' },
+                { label: 'Ingénierie - R&D', value: '19' },
+                { label: 'Métallurgie et la mécanique', value: '20' },
+                { label: 'Meuble, le textile et les autres industries manufacturières', value: '21' },
+                { label: 'Santé - action sociale', value: '22' },
+                { label: 'Services divers aux entreprises - intermédiaires du recrutement', value: '23' },
+                { label: 'Télécoms', value: '24' },
+                { label: 'Transports et la logistique', value: '25' },
+                { label: 'Administration publique et les organisations associatives', value: '26' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Veuillez choisir une valeur', value: '' },
+                { label: 'Activités informatiques', value: '1' },
+                { label: 'Activités juridiques et comptables', value: '2' },
+                { label: 'Agroalimentaire', value: '3' },
+                { label: 'Automobile, aéronautique et autres matériels de transport', value: '4' },
+                { label: 'Banque et les assurances', value: '5' },
+                { label: 'Bois - papier - imprimerie', value: '6' },
+                { label: 'Chimie, le caoutchouc ou le plastique', value: '7' },
+                { label: 'Commerce interentreprises', value: '8' },
+                { label: 'Communication et les médias', value: '9' },
+                { label: 'Conseil et gestion des entreprises', value: '10' },
+                { label: 'Construction', value: '11' },
+                { label: 'Distribution généraliste et spécialisée', value: '12' },
+                { label: 'Energie, l\'eau ou la gestion des déchets', value: '13' },
+                { label: 'Equipements électriques et électroniques', value: '14' },
+                { label: 'Formation initiale et continue', value: '15' },
+                { label: 'Hôtellerie - restauration - loisirs', value: '16' },
+                { label: 'Immobilier', value: '17' },
+                { label: 'Industrie pharmaceutique', value: '18' },
+                { label: 'Ingénierie - R&D', value: '19' },
+                { label: 'Métallurgie et la mécanique', value: '20' },
+                { label: 'Meuble, le textile et les autres industries manufacturières', value: '21' },
+                { label: 'Santé - action sociale', value: '22' },
+                { label: 'Services divers aux entreprises - intermédiaires du recrutement', value: '23' },
+                { label: 'Télécoms', value: '24' },
+                { label: 'Transports et la logistique', value: '25' },
+                { label: 'Administration publique et les organisations associatives', value: '26' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getProfitionalCategories = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Agriculteurs exploitants', value: 'PCS1' },
+                { label: 'Artisans, commerçants et chefs d’entreprise', value: 'PCS2' },
+                { label: 'Cadres et professions intellectuelles supérieures', value: 'PCS3' },
+                { label: 'Professions Intermédiaires', value: 'PCS4' },
+                { label: 'Employés', value: 'PCS5' },
+                { label: 'Ouvriers', value: 'PCS6' },
+                { label: 'Retraités', value: 'PCS7' },
+                { label: 'Autres personnes sans activité professionnelle', value: 'PCS8' }
+            ];
+        }
+        else {
+            return [
+                { label: 'Farmer', value: 'PCS1' },
+                { label: 'Craftsmen, shopkeepers and entrepreneurs', value: 'PCS2' },
+                { label: 'Executives and higher intellectual professions', value: 'PCS3' },
+                { label: 'Intermediate Professions', value: 'PCS4' },
+                { label: 'Employees', value: 'PCS5' },
+                { label: 'Workers', value: 'PCS6' },
+                { label: 'Retired', value: 'PCS7' },
+                { label: 'Other people without professional activity', value: 'PCS8' }
+            ];
+        }
+    };
+    UsefulDataService.prototype.getOpeningHsbcAccountReason = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez selectionner une valeur', value: null },
+                { label: 'Etudes', value: 'etudes' },
+                { label: 'Déménagement en France', value: 'demenagement' },
+                { label: 'Activité professionnelle', value: 'activite_pro' },
+                { label: 'Mutation professionnelle', value: 'mutation_pro' },
+                { label: 'Résidence secondaire', value: 'residence_sec' },
+                { label: 'Autre', value: 'autre' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Please choose a value', value: null },
+                { label: 'Etudes', value: 'etudes' },
+                { label: 'Déménagement en France', value: 'demenagement' },
+                { label: 'Activité professionnelle', value: 'activite_pro' },
+                { label: 'Mutation professionnelle', value: 'mutation_pro' },
+                { label: 'Résidence secondaire', value: 'residence_sec' },
+                { label: 'Autre', value: 'autre' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getResidanceStatus = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez selectionner une valeur', value: null },
+                { label: 'Propriétaire', value: 'P' },
+                { label: 'Locataire', value: 'LPP' },
+                { label: 'Locataire à titre gratuit', value: 'LUG' },
+                { label: 'Logement de fonction', value: 'LF' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Please choose a value', value: null },
+                { label: 'Owner', value: 'P' },
+                { label: 'Tenant', value: 'LPP' },
+                { label: 'Tenant for free', value: 'LUG' },
+                { label: 'Work office', value: 'LF' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getPatrimonyAmounts = function (lang) {
+        if (lang == 'fr') {
+            return [
+                { label: 'Veuillez selectionner une valeur', value: null },
+                { label: 'De 0 à 1000 €', value: '1' },
+                { label: 'De 1000 à 10000 €', value: '2' },
+                { label: 'De 10 000 à 100 000 €', value: '3' },
+                { label: 'De 100 000 à 1 000 000 €', value: '4' },
+            ];
+        }
+        else {
+            return [
+                { label: 'Please choose a value', value: null },
+                { label: 'De 0 à 1000 €', value: '1' },
+                { label: 'De 1000 à 10000 €', value: '2' },
+                { label: 'De 10 000 à 100 000 €', value: '3' },
+                { label: 'De 100 000 à 1 000 000 €', value: '4' },
+            ];
+        }
+    };
+    UsefulDataService.prototype.getFamilySituations = function (lang) {
+        if (lang == 'fr') {
+            return [
+                {
+                    label: 'Veuillez selectionner une valeur',
+                    value: null
+                }, {
+                    label: 'Célibataire',
+                    value: '1'
+                }, {
+                    label: 'Marié(e)',
+                    value: '2'
+                }, {
+                    label: 'Divorcé(e)',
+                    value: '4'
+                }, {
+                    label: 'Veuf(ve)',
+                    value: '3'
+                }, {
+                    label: 'PACS',
+                    value: '6'
+                }];
+        }
+        else {
+            return [
+                {
+                    label: 'Please choose a value',
+                    value: null
+                }, {
+                    label: 'Single',
+                    value: '1'
+                }, {
+                    label: 'Married',
+                    value: '2'
+                }, {
+                    label: 'Divorced',
+                    value: '4'
+                }, {
+                    label: 'Widowed',
+                    value: '3'
+                }, {
+                    label: 'PACS',
+                    value: '6'
+                }];
+        }
+    };
+    UsefulDataService.prototype.getLongNumbersName = function (lang) {
+        if (lang == 'fr') {
+            return ["Seconde", "Troisieme"];
+        }
+        else {
+            return ["Second", "Third"];
+        }
+    };
+    UsefulDataService.prototype.getDataPersistenceTimeout = function () {
+        return 20;
+    };
+    UsefulDataService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
+        __metadata('design:paramtypes', [])
+    ], UsefulDataService);
+    return UsefulDataService;
+}());
+//# sourceMappingURL=useful-data.service.js.map
 
 /***/ }),
 

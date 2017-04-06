@@ -2434,7 +2434,17 @@ header {
     margin-bottom: 40px;
     font-size: 30px;
     font-weight: normal; }
-
+.modal-content{
+  padding: 25px;
+  background: white;
+}  
+.modal-title{
+  text-align: center;
+  font-size: 2rem;
+}
+.modal-footer{
+  height: 75px;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
@@ -2618,6 +2628,12 @@ button.close {
     padding: 0px 10px 11px 10px;
     background: #fff;
     border: 1px solid #333; }
+    .date__picker__container{
+      position: absolute;
+      top: 25px;
+      width: 100%;
+      z-index: 50;
+    }
     .ui-calendar .ui-datepicker .ui-datepicker-header {
       text-align: center;
       background: #fff;
