@@ -5,10 +5,10 @@ webpackJsonp([1,4],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(690);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(171);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedModelService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -101,7 +101,7 @@ var SharedModelService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FillDataStepsChangerService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FILL_DATA_STEPS; });
@@ -150,7 +150,7 @@ var FILL_DATA_STEPS;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_BehaviorSubject__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderStateService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HEADER_STATE; });
@@ -194,7 +194,7 @@ var HEADER_STATE;
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -550,35 +550,35 @@ var DomHandler = (function () {
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calendar_component__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calendar_component__ = __webpack_require__(675);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__calendar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_component__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_component__ = __webpack_require__(682);
 /* unused harmony reexport PibSliderModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(361);
 /* unused harmony reexport PibSideBarModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_component__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_component__ = __webpack_require__(170);
 /* unused harmony reexport PibModalModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timer_component__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timer_component__ = __webpack_require__(684);
 /* unused harmony reexport PibTimerModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__text_field_component__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__text_field_component__ = __webpack_require__(242);
 /* unused harmony reexport PibTextFieldModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_component__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_component__ = __webpack_require__(359);
 /* unused harmony reexport PibCheckboxModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__radio_button_component__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__radio_button_component__ = __webpack_require__(680);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__radio_button_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__steps_component__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__steps_component__ = __webpack_require__(362);
 /* unused harmony reexport PibStepsModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__segment_control_component__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__segment_control_component__ = __webpack_require__(681);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_9__segment_control_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dropdown_component__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dropdown_component__ = __webpack_require__(360);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_10__dropdown_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generic_dropdown_component__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generic_dropdown_component__ = __webpack_require__(678);
 /* unused harmony reexport PibGenericDropdownModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__tab_component__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__tab_component__ = __webpack_require__(363);
 /* unused harmony reexport PibTabMenuModule */
 
 
@@ -597,7 +597,7 @@ var DomHandler = (function () {
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -778,14 +778,14 @@ var PibModalModule = (function () {
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_store__ = __webpack_require__(936);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_store___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_store__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__useful_data_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__useful_data_service__ = __webpack_require__(93);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -995,18 +995,18 @@ var RouterStateService = (function () {
 
 /***/ }),
 
-/***/ 239:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domhandler__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domhandler__ = __webpack_require__(168);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__domhandler__["a"]; });
 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ 240:
+/***/ 241:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1134,14 +1134,14 @@ var SharedModule = (function () {
 
 /***/ }),
 
-/***/ 241:
+/***/ 242:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_translate__ = __webpack_require__(25);
 /* unused harmony export PibTextField */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibTextFieldModule; });
@@ -1481,7 +1481,7 @@ var ScrollService = (function () {
 
 /***/ }),
 
-/***/ 358:
+/***/ 359:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1682,14 +1682,14 @@ var PibCheckboxModule = (function () {
 
 /***/ }),
 
-/***/ 359:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_domhandler__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_domhandler__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(25);
 /* unused harmony export DROPDOWN_VALUE_ACCESSOR */
@@ -2215,7 +2215,7 @@ var PibDropdownModule = (function () {
 
 /***/ }),
 
-/***/ 360:
+/***/ 361:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2466,7 +2466,7 @@ var PibSideBarModule = (function () {
 
 /***/ }),
 
-/***/ 361:
+/***/ 362:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2559,14 +2559,14 @@ var PibStepsModule = (function () {
 
 /***/ }),
 
-/***/ 362:
+/***/ 363:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_domhandler__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_domhandler__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api__ = __webpack_require__(674);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__common_api__);
 /* unused harmony export TabMenu */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibTabMenuModule; });
@@ -2674,13 +2674,13 @@ var PibTabMenuModule = (function () {
 
 /***/ }),
 
-/***/ 363:
+/***/ 364:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_domhandler__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_domhandler__ = __webpack_require__(168);
 /* unused harmony export Tooltip */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibTooltipModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2875,12 +2875,12 @@ var PibTooltipModule = (function () {
 
 /***/ }),
 
-/***/ 364:
+/***/ 365:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
 /* unused harmony export ButtonDirective */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibButtonModule; });
@@ -3011,7 +3011,7 @@ var PibButtonModule = (function () {
 
 /***/ }),
 
-/***/ 365:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3082,7 +3082,7 @@ var AccountOpeningValidationComponent = (function () {
 
 /***/ }),
 
-/***/ 366:
+/***/ 367:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3092,7 +3092,7 @@ var AccountOpeningValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountTypeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3204,7 +3204,7 @@ var AccountTypeComponent = (function () {
 
 /***/ }),
 
-/***/ 367:
+/***/ 368:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3215,8 +3215,8 @@ var AccountTypeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__routing_router_animations__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_scroll_service__ = __webpack_require__(28);
@@ -3406,7 +3406,7 @@ var ContactDetailsComponent = (function () {
 
 /***/ }),
 
-/***/ 368:
+/***/ 369:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3543,7 +3543,7 @@ var CreditCardSecondPageComponent = (function () {
 
 /***/ }),
 
-/***/ 369:
+/***/ 370:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3556,6 +3556,7 @@ var CreditCardSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditCardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3566,6 +3567,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3595,6 +3597,7 @@ var CreditCardComponent = (function () {
         this._routerState = _routerState;
         this._scroll = _scroll;
         this.debitCreditCard = 'dd';
+        this.environment = __WEBPACK_IMPORTED_MODULE_9__environments_environment__["a" /* environment */];
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
             _this.routerAnimation = 'next';
@@ -3668,7 +3671,7 @@ var CreditCardComponent = (function () {
 
 /***/ }),
 
-/***/ 370:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3680,6 +3683,7 @@ var CreditCardComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ESignComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3690,6 +3694,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3717,6 +3722,7 @@ var ESignComponent = (function () {
         this._fillDataStepService = _fillDataStepService;
         this._routerState = _routerState;
         this.routerAnimation = "next";
+        this.environment = __WEBPACK_IMPORTED_MODULE_8__environments_environment__["a" /* environment */];
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
             _this.routerAnimation = 'next';
@@ -3762,7 +3768,7 @@ var ESignComponent = (function () {
 
 /***/ }),
 
-/***/ 371:
+/***/ 372:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3774,10 +3780,11 @@ var ESignComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_countries_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_modal_component__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_modal_component__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FiscalInformationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3788,6 +3795,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3832,6 +3840,7 @@ var FiscalInformationComponent = (function () {
         this.selectedPays = 'FR';
         this.stepSubmitted = false;
         this.msgWhereCountry = '';
+        this.environment = __WEBPACK_IMPORTED_MODULE_12__environments_environment__["a" /* environment */];
         this.routerAnimation = "next";
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
@@ -3931,7 +3940,7 @@ var FiscalInformationComponent = (function () {
 
 /***/ }),
 
-/***/ 372:
+/***/ 373:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3943,6 +3952,7 @@ var FiscalInformationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FollowAccountPrefComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3953,6 +3963,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3980,6 +3991,7 @@ var FollowAccountPrefComponent = (function () {
         this._fillDataStepService = _fillDataStepService;
         this._routerState = _routerState;
         this.routerAnimation = "next";
+        this.environment = __WEBPACK_IMPORTED_MODULE_8__environments_environment__["a" /* environment */];
         this.routerAnimation = this._routerState.lastAction;
         setTimeout(function () {
             _this.routerAnimation = 'next';
@@ -4034,7 +4046,7 @@ var FollowAccountPrefComponent = (function () {
 
 /***/ }),
 
-/***/ 373:
+/***/ 374:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4184,7 +4196,7 @@ var MonthlyIncomeComponent = (function () {
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4278,7 +4290,7 @@ var OpeningAccountInformationComponent = (function () {
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4292,7 +4304,7 @@ var OpeningAccountInformationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_useful_data_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_useful_data_service__ = __webpack_require__(93);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PatrimonyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4419,7 +4431,7 @@ var PatrimonyComponent = (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4428,9 +4440,9 @@ var PatrimonyComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_countries_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_useful_data_service__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_translate__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_router_state_service__ = __webpack_require__(22);
@@ -4683,7 +4695,7 @@ var PersonalInformationSecondPageComponent = (function () {
 
 /***/ }),
 
-/***/ 377:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4694,10 +4706,10 @@ var PersonalInformationSecondPageComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_scroll_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_modal_component__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_modal_component__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__routing_router_animations__ = __webpack_require__(21);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PersonalInformationsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5036,7 +5048,7 @@ var PersonalInformationsComponent = (function () {
 
 /***/ }),
 
-/***/ 378:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5046,8 +5058,8 @@ var PersonalInformationsComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_useful_data_service__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_countries_data_service__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routing_router_animations__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_shared_model_service__ = __webpack_require__(10);
@@ -5190,7 +5202,7 @@ var ProfessionalSituationComponent = (function () {
 
 /***/ }),
 
-/***/ 379:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5283,7 +5295,7 @@ var ProofUploadValidationComponent = (function () {
 
 /***/ }),
 
-/***/ 380:
+/***/ 381:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5296,7 +5308,7 @@ var ProofUploadValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__ = __webpack_require__(697);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecapValidationComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5418,7 +5430,7 @@ var RecapValidationComponent = (function () {
 
 /***/ }),
 
-/***/ 381:
+/***/ 382:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5503,7 +5515,7 @@ var SavedESignComponent = (function () {
 
 /***/ }),
 
-/***/ 382:
+/***/ 383:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5593,7 +5605,7 @@ var UploadProofHandwrittenSignatureComponent = (function () {
 
 /***/ }),
 
-/***/ 383:
+/***/ 384:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5691,7 +5703,7 @@ var UploadProofIdentityComponent = (function () {
 
 /***/ }),
 
-/***/ 384:
+/***/ 385:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5805,7 +5817,7 @@ var UploadProofTaxNoticeComponent = (function () {
 
 /***/ }),
 
-/***/ 385:
+/***/ 386:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5922,7 +5934,25 @@ var YourAccountComponent = (function () {
 
 /***/ }),
 
-/***/ 554:
+/***/ 54:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+var environment = {
+    production: false,
+    //assetsPath: 'http://localhost:4200/'
+    assetsPath: 'https://tpz-contact.github.io/simple-form/'
+};
+//# sourceMappingURL=environment.js.map
+
+/***/ }),
+
+/***/ 555:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -5931,20 +5961,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 554;
+webpackEmptyContext.id = 555;
 
 
 /***/ }),
 
-/***/ 555:
+/***/ 556:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(641);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(672);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(642);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(54);
 
 
 
@@ -5957,7 +5987,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 671:
+/***/ 672:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5991,60 +6021,61 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 672:
+/***/ 673:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(691);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_steps_component__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(671);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__(687);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(686);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_steps_component__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(672);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(687);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(689);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_local_data_service__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_router_state_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_scroll_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_account_type_account_type_component__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_personal_information_personal_informations_component__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_tab_component__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_text_field_component__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_text_area_component__ = __webpack_require__(682);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_sidebar_component__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_checkbox_component__ = __webpack_require__(358);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__main_personal_information_second_page_personal_information_second_page_component__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__main_contact_details_contact_details_component__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__main_monthly_income_monthly_income_component__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__main_patrimony_patrimony_component__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__main_professional_situation_professional_situation_component__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__main_fiscal_information_fiscal_information_component__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__main_follow_account_pref_follow_account_pref_component__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__main_your_account_your_account_component__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__main_credit_card_credit_card_component__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__main_credit_card_second_page_credit_card_second_page_component__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__main_recap_validation_recap_validation_component__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__main_opening_account_information_opening_account_information_component__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__main_e_sign_e_sign_component__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__main_saved_e_sign_saved_e_sign_component__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__main_upload_proof_identity_upload_proof_identity_component__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__main_upload_proof_handwritten_signature_upload_proof_handwritten_signature_component__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_file_upload_component__ = __webpack_require__(676);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(675);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(690);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_account_type_account_type_component__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_personal_information_personal_informations_component__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_tab_component__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_text_field_component__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_text_area_component__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_sidebar_component__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_checkbox_component__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__main_personal_information_second_page_personal_information_second_page_component__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__main_contact_details_contact_details_component__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__main_monthly_income_monthly_income_component__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__main_patrimony_patrimony_component__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__main_professional_situation_professional_situation_component__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__main_fiscal_information_fiscal_information_component__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__main_follow_account_pref_follow_account_pref_component__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__main_your_account_your_account_component__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__main_credit_card_credit_card_component__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__main_credit_card_second_page_credit_card_second_page_component__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__main_recap_validation_recap_validation_component__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__main_opening_account_information_opening_account_information_component__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__main_e_sign_e_sign_component__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__main_saved_e_sign_saved_e_sign_component__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__main_upload_proof_identity_upload_proof_identity_component__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__main_upload_proof_handwritten_signature_upload_proof_handwritten_signature_component__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_file_upload_component__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(691);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__environments_environment__ = __webpack_require__(54);
 /* unused harmony export createTranslateLoader */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -6109,10 +6140,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+console.log('Env:', __WEBPACK_IMPORTED_MODULE_50__environments_environment__["a" /* environment */].assetsPath);
 // // Guards import
 // import {PersonalInformationGuard} from './services/guards/personal-information-guard'
 function createTranslateLoader(http) {
-    return new __WEBPACK_IMPORTED_MODULE_16_ng2_translate__["a" /* TranslateStaticLoader */](http, './assets/i18n', '.json');
+    return new __WEBPACK_IMPORTED_MODULE_16_ng2_translate__["a" /* TranslateStaticLoader */](http, __WEBPACK_IMPORTED_MODULE_50__environments_environment__["a" /* environment */].assetsPath + 'assets/i18n', '.json');
 }
 var AppModule = (function () {
     function AppModule(translate, localData) {
@@ -6195,22 +6228,22 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 673:
+/***/ 674:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=api.js.map
 
 /***/ }),
 
-/***/ 674:
+/***/ 675:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives__ = __webpack_require__(685);
 /* unused harmony export CALENDAR_VALUE_ACCESSOR */
 /* unused harmony export CALENDAR_VALIDATOR */
 /* unused harmony export CalendarComponent */
@@ -7476,14 +7509,14 @@ var PibCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 675:
+/***/ 676:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_field_component__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_component__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_field_component__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_component__ = __webpack_require__(360);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_translate__ = __webpack_require__(25);
 /* unused harmony export DropDownEditable */
@@ -7742,15 +7775,15 @@ var PibDropDownEditableModule = (function () {
 
 /***/ }),
 
-/***/ 676:
+/***/ 677:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_shared__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_button_directive__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_shared__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_button_directive__ = __webpack_require__(365);
 /* unused harmony export FileUpload */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibFileUploadModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7988,13 +8021,13 @@ var PibFileUploadModule = (function () {
 
 /***/ }),
 
-/***/ 677:
+/***/ 678:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_shared__ = __webpack_require__(241);
 /* unused harmony export GenericDropdown */
 /* unused harmony export PibGenericDropdownModule */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8114,7 +8147,7 @@ var PibGenericDropdownModule = (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8177,7 +8210,7 @@ var PibBrogressBarModule = (function () {
 
 /***/ }),
 
-/***/ 679:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8314,7 +8347,7 @@ var PibRadioButtonModule = (function () {
 
 /***/ }),
 
-/***/ 680:
+/***/ 681:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8507,13 +8540,13 @@ var PibSegmentControlModule = (function () {
 
 /***/ }),
 
-/***/ 681:
+/***/ 682:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
 /* unused harmony export SLIDER_VALUE_ACCESSOR */
 /* unused harmony export SliderComponent */
@@ -8878,14 +8911,14 @@ var PibSliderModule = (function () {
 
 /***/ }),
 
-/***/ 682:
+/***/ 683:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip_directive__ = __webpack_require__(364);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_translate__ = __webpack_require__(25);
 /* unused harmony export PibTextArea */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibTextAreaModule; });
@@ -9154,7 +9187,7 @@ var PibTextAreaModule = (function () {
 
 /***/ }),
 
-/***/ 683:
+/***/ 684:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9162,7 +9195,7 @@ var PibTextAreaModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable__ = __webpack_require__(915);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progress_bar_component__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progress_bar_component__ = __webpack_require__(679);
 /* unused harmony export TimerComponent */
 /* unused harmony export PibTimerModule */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -9327,13 +9360,13 @@ var PibTimerModule = (function () {
 
 /***/ }),
 
-/***/ 684:
+/***/ 685:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_directive__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_directive__ = __webpack_require__(365);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__button_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_input_directive__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_input_directive__ = __webpack_require__(686);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__text_input_directive__["a"]; });
 
 
@@ -9341,7 +9374,7 @@ var PibTimerModule = (function () {
 
 /***/ }),
 
-/***/ 685:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9397,13 +9430,14 @@ var PibTextInputModule = (function () {
 
 /***/ }),
 
-/***/ 686:
+/***/ 687:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_translate__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_local_data_service__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_local_data_service__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9417,11 +9451,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var FooterComponent = (function () {
     function FooterComponent(translateService, localData) {
         this.translateService = translateService;
         this.localData = localData;
         this.activeLang = 'fr';
+        this.environment = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */];
         this.activeLang = translateService.currentLang;
     }
     FooterComponent.prototype.ngOnInit = function () {
@@ -9452,12 +9488,13 @@ var FooterComponent = (function () {
 
 /***/ }),
 
-/***/ 687:
+/***/ 688:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_header_state_service__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9470,11 +9507,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HeaderComponent = (function () {
     function HeaderComponent(headerState) {
         this.headerState = headerState;
         this.statesTexts = ['hsbc-header.remplissez_formulaire', 'hsbc-header.signer_contrat', 'hsbc-header.transmettez_justificatifs', 'hsbc-header.activez_compte'];
         this.statesIcons = ['icon-fast-track', "icon-edit", "icon-download", "icon-accounts"];
+        this.environment = __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */];
     }
     HeaderComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -9499,7 +9538,7 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 688:
+/***/ 689:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9573,8 +9612,10 @@ var MainComponent = (function () {
                         try {
                             trackerNode = document.createElement('script');
                             trackerNode.text = '/*<![CDATA[*/HSBC.PAGE.ti="' + ti + '";HSBC.LOG.dcsuri="' + dcsuri + '";/*]]>*/';
+                            document.body.appendChild(trackerNode);
                         }
                         catch (e) {
+                            console.log('=> Error injecting trackers data', e);
                         }
                     });
                 });
@@ -9612,7 +9653,7 @@ var MainComponent = (function () {
 
 /***/ }),
 
-/***/ 689:
+/***/ 690:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11046,7 +11087,7 @@ var ProofOfIdentity = (function () {
 
 /***/ }),
 
-/***/ 690:
+/***/ 691:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11091,37 +11132,37 @@ var HsbcTimePipe = (function () {
 
 /***/ }),
 
-/***/ 691:
+/***/ 692:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_account_type_account_type_component__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__main_personal_information_personal_informations_component__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_personal_information_second_page_personal_information_second_page_component__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__main_contact_details_contact_details_component__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__main_professional_situation_professional_situation_component__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__main_monthly_income_monthly_income_component__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__main_fiscal_information_fiscal_information_component__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_patrimony_patrimony_component__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__main_follow_account_pref_follow_account_pref_component__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__main_your_account_your_account_component__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__main_credit_card_credit_card_component__ = __webpack_require__(369);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__main_credit_card_second_page_credit_card_second_page_component__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__main_recap_validation_recap_validation_component__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__main_opening_account_information_opening_account_information_component__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__main_e_sign_e_sign_component__ = __webpack_require__(370);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_saved_e_sign_saved_e_sign_component__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_upload_proof_identity_upload_proof_identity_component__ = __webpack_require__(383);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__main_upload_proof_handwritten_signature_upload_proof_handwritten_signature_component__ = __webpack_require__(382);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(384);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(365);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_guards_personal_information_guard__ = __webpack_require__(693);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_guards_personal_information_second_page_guard__ = __webpack_require__(694);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_guards_contact_details_guard__ = __webpack_require__(692);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_guards_professional_situation_guard__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__main_account_type_account_type_component__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__main_personal_information_personal_informations_component__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__main_personal_information_second_page_personal_information_second_page_component__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__main_contact_details_contact_details_component__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__main_professional_situation_professional_situation_component__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__main_monthly_income_monthly_income_component__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__main_fiscal_information_fiscal_information_component__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_patrimony_patrimony_component__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__main_follow_account_pref_follow_account_pref_component__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__main_your_account_your_account_component__ = __webpack_require__(386);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__main_credit_card_credit_card_component__ = __webpack_require__(370);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__main_credit_card_second_page_credit_card_second_page_component__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__main_recap_validation_recap_validation_component__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__main_opening_account_information_opening_account_information_component__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__main_e_sign_e_sign_component__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__main_saved_e_sign_saved_e_sign_component__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_upload_proof_identity_upload_proof_identity_component__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__main_upload_proof_handwritten_signature_upload_proof_handwritten_signature_component__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(385);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_guards_personal_information_guard__ = __webpack_require__(694);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_guards_personal_information_second_page_guard__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_guards_contact_details_guard__ = __webpack_require__(693);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_guards_professional_situation_guard__ = __webpack_require__(696);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateAccountRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11278,7 +11319,7 @@ var CreateAccountRoutingModule = (function () {
 
 /***/ }),
 
-/***/ 692:
+/***/ 693:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11332,7 +11373,7 @@ var ContactDetailsGuard = (function () {
 
 /***/ }),
 
-/***/ 693:
+/***/ 694:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11396,7 +11437,7 @@ var PersonalInformationGuard = (function () {
 
 /***/ }),
 
-/***/ 694:
+/***/ 695:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11470,7 +11511,7 @@ var PersonalInformationSecondPageGuard = (function () {
 
 /***/ }),
 
-/***/ 695:
+/***/ 696:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11532,7 +11573,7 @@ var ProfessionalSituationGuard = (function () {
 
 /***/ }),
 
-/***/ 696:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11553,22 +11594,6 @@ var CustomPolyfills = (function () {
     return CustomPolyfills;
 }());
 //# sourceMappingURL=custom-polyfills.js.map
-
-/***/ }),
-
-/***/ 697:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-var environment = {
-    production: false
-};
-//# sourceMappingURL=environment.js.map
 
 /***/ }),
 
@@ -11972,236 +11997,236 @@ module.exports = module.exports.toString();
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 423,
-	"./af.js": 423,
-	"./ar": 430,
-	"./ar-dz": 424,
-	"./ar-dz.js": 424,
-	"./ar-kw": 425,
-	"./ar-kw.js": 425,
-	"./ar-ly": 426,
-	"./ar-ly.js": 426,
-	"./ar-ma": 427,
-	"./ar-ma.js": 427,
-	"./ar-sa": 428,
-	"./ar-sa.js": 428,
-	"./ar-tn": 429,
-	"./ar-tn.js": 429,
-	"./ar.js": 430,
-	"./az": 431,
-	"./az.js": 431,
-	"./be": 432,
-	"./be.js": 432,
-	"./bg": 433,
-	"./bg.js": 433,
-	"./bn": 434,
-	"./bn.js": 434,
-	"./bo": 435,
-	"./bo.js": 435,
-	"./br": 436,
-	"./br.js": 436,
-	"./bs": 437,
-	"./bs.js": 437,
-	"./ca": 438,
-	"./ca.js": 438,
-	"./cs": 439,
-	"./cs.js": 439,
-	"./cv": 440,
-	"./cv.js": 440,
-	"./cy": 441,
-	"./cy.js": 441,
-	"./da": 442,
-	"./da.js": 442,
-	"./de": 445,
-	"./de-at": 443,
-	"./de-at.js": 443,
-	"./de-ch": 444,
-	"./de-ch.js": 444,
-	"./de.js": 445,
-	"./dv": 446,
-	"./dv.js": 446,
-	"./el": 447,
-	"./el.js": 447,
-	"./en-au": 448,
-	"./en-au.js": 448,
-	"./en-ca": 449,
-	"./en-ca.js": 449,
-	"./en-gb": 450,
-	"./en-gb.js": 450,
-	"./en-ie": 451,
-	"./en-ie.js": 451,
-	"./en-nz": 452,
-	"./en-nz.js": 452,
-	"./eo": 453,
-	"./eo.js": 453,
-	"./es": 455,
-	"./es-do": 454,
-	"./es-do.js": 454,
-	"./es.js": 455,
-	"./et": 456,
-	"./et.js": 456,
-	"./eu": 457,
-	"./eu.js": 457,
-	"./fa": 458,
-	"./fa.js": 458,
-	"./fi": 459,
-	"./fi.js": 459,
-	"./fo": 460,
-	"./fo.js": 460,
-	"./fr": 463,
-	"./fr-ca": 461,
-	"./fr-ca.js": 461,
-	"./fr-ch": 462,
-	"./fr-ch.js": 462,
-	"./fr.js": 463,
-	"./fy": 464,
-	"./fy.js": 464,
-	"./gd": 465,
-	"./gd.js": 465,
-	"./gl": 466,
-	"./gl.js": 466,
-	"./gom-latn": 467,
-	"./gom-latn.js": 467,
-	"./he": 468,
-	"./he.js": 468,
-	"./hi": 469,
-	"./hi.js": 469,
-	"./hr": 470,
-	"./hr.js": 470,
-	"./hu": 471,
-	"./hu.js": 471,
-	"./hy-am": 472,
-	"./hy-am.js": 472,
-	"./id": 473,
-	"./id.js": 473,
-	"./is": 474,
-	"./is.js": 474,
-	"./it": 475,
-	"./it.js": 475,
-	"./ja": 476,
-	"./ja.js": 476,
-	"./jv": 477,
-	"./jv.js": 477,
-	"./ka": 478,
-	"./ka.js": 478,
-	"./kk": 479,
-	"./kk.js": 479,
-	"./km": 480,
-	"./km.js": 480,
-	"./kn": 481,
-	"./kn.js": 481,
-	"./ko": 482,
-	"./ko.js": 482,
-	"./ky": 483,
-	"./ky.js": 483,
-	"./lb": 484,
-	"./lb.js": 484,
-	"./lo": 485,
-	"./lo.js": 485,
-	"./lt": 486,
-	"./lt.js": 486,
-	"./lv": 487,
-	"./lv.js": 487,
-	"./me": 488,
-	"./me.js": 488,
-	"./mi": 489,
-	"./mi.js": 489,
-	"./mk": 490,
-	"./mk.js": 490,
-	"./ml": 491,
-	"./ml.js": 491,
-	"./mr": 492,
-	"./mr.js": 492,
-	"./ms": 494,
-	"./ms-my": 493,
-	"./ms-my.js": 493,
-	"./ms.js": 494,
-	"./my": 495,
-	"./my.js": 495,
-	"./nb": 496,
-	"./nb.js": 496,
-	"./ne": 497,
-	"./ne.js": 497,
-	"./nl": 499,
-	"./nl-be": 498,
-	"./nl-be.js": 498,
-	"./nl.js": 499,
-	"./nn": 500,
-	"./nn.js": 500,
-	"./pa-in": 501,
-	"./pa-in.js": 501,
-	"./pl": 502,
-	"./pl.js": 502,
-	"./pt": 504,
-	"./pt-br": 503,
-	"./pt-br.js": 503,
-	"./pt.js": 504,
-	"./ro": 505,
-	"./ro.js": 505,
-	"./ru": 506,
-	"./ru.js": 506,
-	"./sd": 507,
-	"./sd.js": 507,
-	"./se": 508,
-	"./se.js": 508,
-	"./si": 509,
-	"./si.js": 509,
-	"./sk": 510,
-	"./sk.js": 510,
-	"./sl": 511,
-	"./sl.js": 511,
-	"./sq": 512,
-	"./sq.js": 512,
-	"./sr": 514,
-	"./sr-cyrl": 513,
-	"./sr-cyrl.js": 513,
-	"./sr.js": 514,
-	"./ss": 515,
-	"./ss.js": 515,
-	"./sv": 516,
-	"./sv.js": 516,
-	"./sw": 517,
-	"./sw.js": 517,
-	"./ta": 518,
-	"./ta.js": 518,
-	"./te": 519,
-	"./te.js": 519,
-	"./tet": 520,
-	"./tet.js": 520,
-	"./th": 521,
-	"./th.js": 521,
-	"./tl-ph": 522,
-	"./tl-ph.js": 522,
-	"./tlh": 523,
-	"./tlh.js": 523,
-	"./tr": 524,
-	"./tr.js": 524,
-	"./tzl": 525,
-	"./tzl.js": 525,
-	"./tzm": 527,
-	"./tzm-latn": 526,
-	"./tzm-latn.js": 526,
-	"./tzm.js": 527,
-	"./uk": 528,
-	"./uk.js": 528,
-	"./ur": 529,
-	"./ur.js": 529,
-	"./uz": 531,
-	"./uz-latn": 530,
-	"./uz-latn.js": 530,
-	"./uz.js": 531,
-	"./vi": 532,
-	"./vi.js": 532,
-	"./x-pseudo": 533,
-	"./x-pseudo.js": 533,
-	"./yo": 534,
-	"./yo.js": 534,
-	"./zh-cn": 535,
-	"./zh-cn.js": 535,
-	"./zh-hk": 536,
-	"./zh-hk.js": 536,
-	"./zh-tw": 537,
-	"./zh-tw.js": 537
+	"./af": 424,
+	"./af.js": 424,
+	"./ar": 431,
+	"./ar-dz": 425,
+	"./ar-dz.js": 425,
+	"./ar-kw": 426,
+	"./ar-kw.js": 426,
+	"./ar-ly": 427,
+	"./ar-ly.js": 427,
+	"./ar-ma": 428,
+	"./ar-ma.js": 428,
+	"./ar-sa": 429,
+	"./ar-sa.js": 429,
+	"./ar-tn": 430,
+	"./ar-tn.js": 430,
+	"./ar.js": 431,
+	"./az": 432,
+	"./az.js": 432,
+	"./be": 433,
+	"./be.js": 433,
+	"./bg": 434,
+	"./bg.js": 434,
+	"./bn": 435,
+	"./bn.js": 435,
+	"./bo": 436,
+	"./bo.js": 436,
+	"./br": 437,
+	"./br.js": 437,
+	"./bs": 438,
+	"./bs.js": 438,
+	"./ca": 439,
+	"./ca.js": 439,
+	"./cs": 440,
+	"./cs.js": 440,
+	"./cv": 441,
+	"./cv.js": 441,
+	"./cy": 442,
+	"./cy.js": 442,
+	"./da": 443,
+	"./da.js": 443,
+	"./de": 446,
+	"./de-at": 444,
+	"./de-at.js": 444,
+	"./de-ch": 445,
+	"./de-ch.js": 445,
+	"./de.js": 446,
+	"./dv": 447,
+	"./dv.js": 447,
+	"./el": 448,
+	"./el.js": 448,
+	"./en-au": 449,
+	"./en-au.js": 449,
+	"./en-ca": 450,
+	"./en-ca.js": 450,
+	"./en-gb": 451,
+	"./en-gb.js": 451,
+	"./en-ie": 452,
+	"./en-ie.js": 452,
+	"./en-nz": 453,
+	"./en-nz.js": 453,
+	"./eo": 454,
+	"./eo.js": 454,
+	"./es": 456,
+	"./es-do": 455,
+	"./es-do.js": 455,
+	"./es.js": 456,
+	"./et": 457,
+	"./et.js": 457,
+	"./eu": 458,
+	"./eu.js": 458,
+	"./fa": 459,
+	"./fa.js": 459,
+	"./fi": 460,
+	"./fi.js": 460,
+	"./fo": 461,
+	"./fo.js": 461,
+	"./fr": 464,
+	"./fr-ca": 462,
+	"./fr-ca.js": 462,
+	"./fr-ch": 463,
+	"./fr-ch.js": 463,
+	"./fr.js": 464,
+	"./fy": 465,
+	"./fy.js": 465,
+	"./gd": 466,
+	"./gd.js": 466,
+	"./gl": 467,
+	"./gl.js": 467,
+	"./gom-latn": 468,
+	"./gom-latn.js": 468,
+	"./he": 469,
+	"./he.js": 469,
+	"./hi": 470,
+	"./hi.js": 470,
+	"./hr": 471,
+	"./hr.js": 471,
+	"./hu": 472,
+	"./hu.js": 472,
+	"./hy-am": 473,
+	"./hy-am.js": 473,
+	"./id": 474,
+	"./id.js": 474,
+	"./is": 475,
+	"./is.js": 475,
+	"./it": 476,
+	"./it.js": 476,
+	"./ja": 477,
+	"./ja.js": 477,
+	"./jv": 478,
+	"./jv.js": 478,
+	"./ka": 479,
+	"./ka.js": 479,
+	"./kk": 480,
+	"./kk.js": 480,
+	"./km": 481,
+	"./km.js": 481,
+	"./kn": 482,
+	"./kn.js": 482,
+	"./ko": 483,
+	"./ko.js": 483,
+	"./ky": 484,
+	"./ky.js": 484,
+	"./lb": 485,
+	"./lb.js": 485,
+	"./lo": 486,
+	"./lo.js": 486,
+	"./lt": 487,
+	"./lt.js": 487,
+	"./lv": 488,
+	"./lv.js": 488,
+	"./me": 489,
+	"./me.js": 489,
+	"./mi": 490,
+	"./mi.js": 490,
+	"./mk": 491,
+	"./mk.js": 491,
+	"./ml": 492,
+	"./ml.js": 492,
+	"./mr": 493,
+	"./mr.js": 493,
+	"./ms": 495,
+	"./ms-my": 494,
+	"./ms-my.js": 494,
+	"./ms.js": 495,
+	"./my": 496,
+	"./my.js": 496,
+	"./nb": 497,
+	"./nb.js": 497,
+	"./ne": 498,
+	"./ne.js": 498,
+	"./nl": 500,
+	"./nl-be": 499,
+	"./nl-be.js": 499,
+	"./nl.js": 500,
+	"./nn": 501,
+	"./nn.js": 501,
+	"./pa-in": 502,
+	"./pa-in.js": 502,
+	"./pl": 503,
+	"./pl.js": 503,
+	"./pt": 505,
+	"./pt-br": 504,
+	"./pt-br.js": 504,
+	"./pt.js": 505,
+	"./ro": 506,
+	"./ro.js": 506,
+	"./ru": 507,
+	"./ru.js": 507,
+	"./sd": 508,
+	"./sd.js": 508,
+	"./se": 509,
+	"./se.js": 509,
+	"./si": 510,
+	"./si.js": 510,
+	"./sk": 511,
+	"./sk.js": 511,
+	"./sl": 512,
+	"./sl.js": 512,
+	"./sq": 513,
+	"./sq.js": 513,
+	"./sr": 515,
+	"./sr-cyrl": 514,
+	"./sr-cyrl.js": 514,
+	"./sr.js": 515,
+	"./ss": 516,
+	"./ss.js": 516,
+	"./sv": 517,
+	"./sv.js": 517,
+	"./sw": 518,
+	"./sw.js": 518,
+	"./ta": 519,
+	"./ta.js": 519,
+	"./te": 520,
+	"./te.js": 520,
+	"./tet": 521,
+	"./tet.js": 521,
+	"./th": 522,
+	"./th.js": 522,
+	"./tl-ph": 523,
+	"./tl-ph.js": 523,
+	"./tlh": 524,
+	"./tlh.js": 524,
+	"./tr": 525,
+	"./tr.js": 525,
+	"./tzl": 526,
+	"./tzl.js": 526,
+	"./tzm": 528,
+	"./tzm-latn": 527,
+	"./tzm-latn.js": 527,
+	"./tzm.js": 528,
+	"./uk": 529,
+	"./uk.js": 529,
+	"./ur": 530,
+	"./ur.js": 530,
+	"./uz": 532,
+	"./uz-latn": 531,
+	"./uz-latn.js": 531,
+	"./uz.js": 532,
+	"./vi": 533,
+	"./vi.js": 533,
+	"./x-pseudo": 534,
+	"./x-pseudo.js": 534,
+	"./yo": 535,
+	"./yo.js": 535,
+	"./zh-cn": 536,
+	"./zh-cn.js": 536,
+	"./zh-hk": 537,
+	"./zh-hk.js": 537,
+	"./zh-tw": 538,
+	"./zh-tw.js": 538
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -12232,14 +12257,14 @@ module.exports = "<app-header></app-header>\n<app-main></app-main>\n<app-footer>
 /***/ 877:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"grid\">\n    <div class=\"is-hidden-mobile\">\n    <div class=\"cookies-notice cookies-notice--light\">\n      <div class=\"grid\">\n        <span class=\"cookies-notice--bold\">{{'hsbc-footer.Les_cookies_sont_actives' | translate}}</span> {{'hsbc-footer.cookies_alert' | translate}} <a href=\"/\">{{'hsbc-footer.cliquez_ici' | translate}}</a>\n      </div>\n    </div>\n    <footer class=\"panel--padded footer\" role=\"contentinfo\">\n\n      <div class=\"grid\">\n        <div class=\"grid__col--4\">\n              <span class=\"footer__icon\">\n                <i class=\"icon icon-phone\"></i>\n              </span>\n          {{'hsbc-footer.Nous_appeler' | translate}}\n        </div>\n        <div class=\"grid__col--4\">\n               <span class=\"footer__icon\">\n                  <i class=\"icon icon-chat\"></i>\n                </span>\n          {{'hsbc-footer.Nous_poser_une_question' | translate}}\n        </div>\n        <div class=\"grid__col--4\">\n               <span class=\"footer__icon\">\n                  <i class=\"icon icon-location\"></i>\n                </span>\n          {{'hsbc-footer.Nous_contacter' | translate}}\n        </div>\n      </div>\n\n      <div class=\"grid\">\n        <div class=\"footer__menu__container\">\n          <div class=\"grid__col--4\">\n            <img src=\"assets/img/contact_phone.png\"/>\n            <p>{{'hsbc-footer.contact_desc' | translate}}</p>\n          </div>\n\n          <div class=\"grid__col--4\">\n            <p>{{'hsbc-footer.ask_question_desc' | translate}}</p>\n          </div>\n\n          <div class=\"grid__col--4\">\n          \n            <ul class=\"footer__menu\">\n              <li class=\"footer__menu__item underline\">{{'hsbc-footer.Laisser_msg' | translate}}</li>\n              <li class=\"footer__menu__item\">{{'hsbc-footer.prendre_rdv' | translate}}</li>\n              <li class=\"footer__menu__item\">{{'hsbc-footer.trouver_agence' | translate}}</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"footer__lang\">\n          {{'hsbc-footer.Langue' | translate}} :\n          <a class=\"btn--lang\" [ngClass]=\"{'active':activeLang == 'fr'}\" (click)=\"onSelectLanguage('fr')\" >Français</a>\n          <a class=\"btn--lang\" [ngClass]=\"{'active':activeLang == 'en'}\" (click)=\"onSelectLanguage('en')\">English</a>\n        </div>\n      </div>\n    </footer>\n    <div class=\"footer__bottom\">\n      <ul class=\"footer__bottom__menu\">\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Mentions_legales' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Aide' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Gestion_des_cookies' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Securite' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Guide_de_la_mobilite' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Convention_AERAS' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Tarifs' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Reclamations_Clients_et_Mediation' | translate}}</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"cookies-notice\">{{'hsbc-footer.copyright' | translate}}</div>\n</div>\n"
+module.exports = "<div class=\"grid\">\n    <div class=\"is-hidden-mobile\">\n    <div class=\"cookies-notice cookies-notice--light\">\n      <div class=\"grid\">\n        <span class=\"cookies-notice--bold\">{{'hsbc-footer.Les_cookies_sont_actives' | translate}}</span> {{'hsbc-footer.cookies_alert' | translate}} <a href=\"/\">{{'hsbc-footer.cliquez_ici' | translate}}</a>\n      </div>\n    </div>\n    <footer class=\"panel--padded footer\" role=\"contentinfo\">\n\n      <div class=\"grid\">\n        <div class=\"grid__col--4\">\n              <span class=\"footer__icon\">\n                <i class=\"icon icon-phone\"></i>\n              </span>\n          {{'hsbc-footer.Nous_appeler' | translate}}\n        </div>\n        <div class=\"grid__col--4\">\n               <span class=\"footer__icon\">\n                  <i class=\"icon icon-chat\"></i>\n                </span>\n          {{'hsbc-footer.Nous_poser_une_question' | translate}}\n        </div>\n        <div class=\"grid__col--4\">\n               <span class=\"footer__icon\">\n                  <i class=\"icon icon-location\"></i>\n                </span>\n          {{'hsbc-footer.Nous_contacter' | translate}}\n        </div>\n      </div>\n\n      <div class=\"grid\">\n        <div class=\"footer__menu__container\">\n          <div class=\"grid__col--4\">\n            <img [src]=\"environment.assetsPath + 'assets/img/contact_phone.png'\" />\n            <p>{{'hsbc-footer.contact_desc' | translate}}</p>\n          </div>\n\n          <div class=\"grid__col--4\">\n            <p>{{'hsbc-footer.ask_question_desc' | translate}}</p>\n          </div>\n\n          <div class=\"grid__col--4\">\n          \n            <ul class=\"footer__menu\">\n              <li class=\"footer__menu__item underline\">{{'hsbc-footer.Laisser_msg' | translate}}</li>\n              <li class=\"footer__menu__item\">{{'hsbc-footer.prendre_rdv' | translate}}</li>\n              <li class=\"footer__menu__item\">{{'hsbc-footer.trouver_agence' | translate}}</li>\n            </ul>\n          </div>\n        </div>\n\n        <div class=\"footer__lang\">\n          {{'hsbc-footer.Langue' | translate}} :\n          <a class=\"btn--lang\" [ngClass]=\"{'active':activeLang == 'fr'}\" (click)=\"onSelectLanguage('fr')\" >Français</a>\n          <a class=\"btn--lang\" [ngClass]=\"{'active':activeLang == 'en'}\" (click)=\"onSelectLanguage('en')\">English</a>\n        </div>\n      </div>\n    </footer>\n    <div class=\"footer__bottom\">\n      <ul class=\"footer__bottom__menu\">\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Mentions_legales' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Aide' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Gestion_des_cookies' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Securite' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Guide_de_la_mobilite' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Convention_AERAS' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Tarifs' | translate}}</li>\n        <li class=\"footer__bottom__item\">{{'hsbc-footer.Reclamations_Clients_et_Mediation' | translate}}</li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"cookies-notice\">{{'hsbc-footer.copyright' | translate}}</div>\n</div>\n"
 
 /***/ }),
 
 /***/ 878:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"logo_container\">\n  <div class=\"grid\">\n    <img src=\"assets/img/logo.png\" />\n  </div>\n</div>\n<div class=\"header\">\n    <div class=\"grid\">\n      <div class=\"FEF__container\">\n        <div class=\"text_container\">\n            <div class=\"header__title\">{{'hsbc-header.ouvrir_compte' | translate}}</div>\n            <div class=\"header__subtitle\">{{'hsbc-header.devenez_client' | translate}}<sup>(1)</sup></div>\n            <hr/>\n        </div>\n        <div class=\"steps--withicon is-hidden-mobile\">\n            <ul role=\"tablist\">\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 0}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 0\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.remplissez_formulaire' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 1}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 1\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.signer_contrat' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 2}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 2\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.transmettez_justificatifs' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 3}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 3\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.activez_compte' | translate}}</span>\n                    </a>\n                </li>\n            </ul>\n        </div>\n        <div class=\"steps--withicon is-displayed-mobile\">\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 0\" [ngClass]=\"{'highlight':currentState == 0}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.remplissez_formulaire' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 1\" [ngClass]=\"{'highlight':currentState == 1}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.signer_contrat' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 2\" [ngClass]=\"{'highlight':currentState == 2}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.transmettez_justificatifs' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 3\" [ngClass]=\"{'highlight':currentState == 3}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i  class=\"icon icon-fast-track\"></i>{{'hsbc-header.activez_compte' | translate}}</span>\n                </a>\n            </div>\n        </div>\n      </div>\n       \n    </div>\n</div>"
+module.exports = "<div class=\"logo_container\">\n  <div class=\"grid\">\n    <img [src]=\"environment.assetsPath + 'assets/img/logo.png'\" />\n  </div>\n</div>\n<div class=\"header\">\n    <div class=\"grid\">\n      <div class=\"FEF__container\">\n        <div class=\"text_container\">\n            <div class=\"header__title\">{{'hsbc-header.ouvrir_compte' | translate}}</div>\n            <div class=\"header__subtitle\">{{'hsbc-header.devenez_client' | translate}}<sup>(1)</sup></div>\n            <hr/>\n        </div>\n        <div class=\"steps--withicon is-hidden-mobile\">\n            <ul role=\"tablist\">\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 0}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 0\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.remplissez_formulaire' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 1}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 1\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.signer_contrat' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 2}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 2\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.transmettez_justificatifs' | translate}}</span>\n                    </a>\n                </li>\n                <li class=\"steps--withicon__item\" [ngClass]=\"{'highlight':currentState == 3}\">\n                    <a class=\"steps__title__link\">\n                        <span class=\"steps__title\"><i *ngIf=\"currentState == 3\" class=\"icon icon-fast-track\"></i>{{'hsbc-header.activez_compte' | translate}}</span>\n                    </a>\n                </li>\n            </ul>\n        </div>\n        <div class=\"steps--withicon is-displayed-mobile\">\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 0\" [ngClass]=\"{'highlight':currentState == 0}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.remplissez_formulaire' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 1\" [ngClass]=\"{'highlight':currentState == 1}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.signer_contrat' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 2\" [ngClass]=\"{'highlight':currentState == 2}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i class=\"icon icon-fast-track\"></i>{{'hsbc-header.transmettez_justificatifs' | translate}}</span>\n                </a>\n            </div>\n            <div class=\"steps--withicon__item\" *ngIf=\"currentState == 3\" [ngClass]=\"{'highlight':currentState == 3}\" style=\"width: 100%\">\n                <a class=\"steps__title__link\">\n                    <span class=\"steps__title\"><i  class=\"icon icon-fast-track\"></i>{{'hsbc-header.activez_compte' | translate}}</span>\n                </a>\n            </div>\n        </div>\n      </div>\n       \n    </div>\n</div>"
 
 /***/ }),
 
@@ -12274,28 +12299,28 @@ module.exports = "<div class=\"mt10 FEF__title sub\">\n    Votre utilisation du 
 /***/ 883:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    Votre carte\n    <div class=\"FEF__subtitle\">\n         Vous souhaitez souscrire à une carte bancaire internationale avec un maximum de garanties ?\n    </div>\n</div>\n<hr/>\n\n<div class=\"pricing-table clearfix mt40\">\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCC')\" [ngClass]=\"{'active':cardType=='CCC','expanded':showAdvantage == 'CCC','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">Recommandé pour vous</div>\n\n        <div class=\"pricing-container--body\">\n            <img src=\"../../assets/img/c1.png\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_1\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_1\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCC')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCC'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa Classic (1)</b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n            </div>\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCC')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCC')\">Choisir</a>\n        </div>\n\n    </div>\n\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCP')\" [ngClass]=\"{'active':cardType=='CCP','expanded':showAdvantage == 'CCP','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n        <div class=\"pricing-container--body\">\n            <img src=\"../../assets/img/c2.png\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n\n\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_2\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    \n\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_2\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCP')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCP'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa Premier <sup>(1)</sup></b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n\n\n            </div>\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCP')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCP')\">Choisir</a>\n        </div>\n\n    </div>\n\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCM')\" [ngClass]=\"{'active':cardType=='CCM','expanded':showAdvantage == 'CCM','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n        <div class=\"pricing-container--body\">\n            <img src=\"../../assets/img/c3.png\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n\n\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_3\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_3\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCM')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCM'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa MaterCard <sup>(1)</sup></b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n            </div>\n\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCM')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCM')\">Choisir</a>\n        </div>\n\n    </div>\n</div>\n<div class=\"card__detail\" *ngIf=\"showAdvantage\">\n    <div *ngIf=\"showAdvantage == 'CCC'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa Classic (1)</b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'CCP'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa Premier <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'CCM'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa MaterCard <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div class=\"clearfix\">\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCC')\" [attr.disabled]=\"showAdvantage == 'CCC'?null:true\">Choisir</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCP')\" [attr.disabled]=\"showAdvantage == 'CCP'?null:true\">Choisir</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCM')\" [attr.disabled]=\"showAdvantage == 'CCM'?null:true\">Choisir</a>\n        </div>\n    </div>\n</div>\n\n<div class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" [(ngModel)]=\"checked\" binary=\"true\" [label]=\"'Je ne souhaite pas souscrire à une carte bancaire.'\"></pib-checkbox>\n</div>\n\n\n<div class=\"mt10\">\n    <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    Votre carte\n    <div class=\"FEF__subtitle\">\n         Vous souhaitez souscrire à une carte bancaire internationale avec un maximum de garanties ?\n    </div>\n</div>\n<hr/>\n\n<div class=\"pricing-table clearfix mt40\">\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCC')\" [ngClass]=\"{'active':cardType=='CCC','expanded':showAdvantage == 'CCC','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">Recommandé pour vous</div>\n\n        <div class=\"pricing-container--body\">\n            <img [src]=\"environment.assetsPath + 'assets/img/c1.png'\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_1\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_1\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCC')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCC'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa Classic (1)</b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n            </div>\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCC')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCC')\">Choisir</a>\n        </div>\n\n    </div>\n\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCP')\" [ngClass]=\"{'active':cardType=='CCP','expanded':showAdvantage == 'CCP','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n        <div class=\"pricing-container--body\">\n            <img [src]=\"environment.assetsPath + 'assets/img/c2.png'\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n\n\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_2\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    \n\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_2\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCP')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCP'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa Premier <sup>(1)</sup></b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n\n\n            </div>\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCP')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCP')\">Choisir</a>\n        </div>\n\n    </div>\n\n\n    <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('CCM')\" [ngClass]=\"{'active':cardType=='CCM','expanded':showAdvantage == 'CCM','no_border_bottom':showAdvantage}\">\n        <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n        <div class=\"pricing-container--body\">\n            <img [src]=\"environment.assetsPath + 'assets/img/c3.png'\" alt=\"\">\n            <div class=\"pricing-table__title\">Carte Visa Classic <sup>(1)</sup></div>\n            <div class=\"pricing-table__description\">Tout simplement internationale</div>\n\n\n            <div class=\"pricing-table__price\">45 <sup>€/an</sup></div>\n\n            <div class=\"panel mt20\">\n                <div class=\"panel__title\">Type de débit <sup>(3)</sup></div>\n                <div class=\"panel__detail\">\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_3\" value=\"dd\" label=\"Débit différé\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                    <div class=\"mb10\">\n                        <pib-radioButton name=\"rb_3\" value=\"di\" label=\"Débit immédiat\" [(ngModel)]=\"debitCreditCard\"></pib-radioButton>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"pricing-container\">\n\n\n            <a class=\"more\" (click)=\"showAdvantageOf($event,'CCM')\">Découvrir les avantages</a>\n            <div *ngIf=\"showAdvantage == 'CCM'\" class=\"is-displayed-mobile\">\n                <div>\n                    <b>Carte Visa MaterCard <sup>(1)</sup></b>\n                </div>\n                <div>\n                    <b>Avantages</b>\n                </div>\n                <br><br>\n                <ul class=\"list-dots\">\n                    <li>Vos paiements en France et à l’étranger</li>\n                    <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n                    <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n                </ul>\n                <br>\n                <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n                <br><br>\n                <ul class=\"ordered-list\">\n                    <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n                    <li>(2) Tarif en vigueur au 01/07/2016.</li>\n                    <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n                </ul>\n            </div>\n\n            <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('CCM')\" *ngIf=\"!showAdvantage\">Choisir</a>\n            <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('CCM')\">Choisir</a>\n        </div>\n\n    </div>\n</div>\n<div class=\"card__detail\" *ngIf=\"showAdvantage\">\n    <div *ngIf=\"showAdvantage == 'CCC'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa Classic (1)</b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'CCP'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa Premier <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'CCM'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>Carte Visa MaterCard <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>Avantages</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>Vos paiements en France et à l’étranger</li>\n            <li>Vos retraits gratuits dans tous les distributeurs HSBC à travers le monde(3)</li>\n            <li>Des assurances et assistances incluses lors de vos déplacements, et ce dès la souscription</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">Téléchargez notre brochure comparative des cartes</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) Souscription sous réserve d’acceptation de la banque. Voir les conditions prévues au contrat disponibles sur www.hsbc.fr.</li>\n            <li>(2) Tarif en vigueur au 01/07/2016.</li>\n            <li>(3) Des commissions sont néanmoins susceptibles d’être perçues par la banque locale dans certains pays.</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> Fermer</a>\n    </div>\n    <div class=\"clearfix\">\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCC')\" [attr.disabled]=\"showAdvantage == 'CCC'?null:true\">Choisir</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCP')\" [attr.disabled]=\"showAdvantage == 'CCP'?null:true\">Choisir</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('CCM')\" [attr.disabled]=\"showAdvantage == 'CCM'?null:true\">Choisir</a>\n        </div>\n    </div>\n</div>\n\n<div class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" [(ngModel)]=\"checked\" binary=\"true\" [label]=\"'Je ne souhaite pas souscrire à une carte bancaire.'\"></pib-checkbox>\n</div>\n\n\n<div class=\"mt10\">\n    <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n</div>"
 
 /***/ }),
 
 /***/ 884:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    E-Signer votre contrat\n</div>\n<hr/>\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--12 no-padding\">\n        <div class=\"mt10 panel--alert\">\n            <i class=\"icon icon-circle-info\"></i>Pour signer electroniquement votre contrat, verifiez le document ci-dessous, <strong>cochez la case d'acceptation</strong> et <strong>siasissez le code reçu par SMS</strong>. Ce code à usage unique sécurise\n            votre signature éléctronique.\n        </div>\n        <embed src=\"assets/img/hsbc.pdf\" width=\"100%\" height=\"500px\" />\n\n        <div class=\"form__group full mt40\">\n            <pib-checkbox label=\"En cochant cette case, je reconnais avoir pris connaissance, préalablement à la signature du contrat, de la présente demande d’ouverture de compte valant conditions particulières, des dispositions générales et des dispositions contractuelles spécifiques à chacun des contrats souscrits dans la présente convention incluant notamment les conditions générales de la convention de compte, la notice d’information d’HSBC Volassur, les conditions générales applicables aux  principales opérations des particuliers également intitulées “Tarification Particuliers”, le guide de la mobilité et des conditions de commercialisation à distance de la présente convention.\"\n                binary=\"true\"></pib-checkbox>\n        </div>\n\n\n        <hr>\n        <div class=\"form__group mt20\">\n            <div class=\"panel clearfix sms-code\">\n\n                Code reçu par SMS\n                <div class=\"sms-code__field\">\n                    <pib-text-field placeholder=\"Code\"></pib-text-field>\n                </div>\n            </div>\n        </div>\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"Signer votre contrat\" class=\"btn--primary f-right\">\n            </button>\n\n        <div class=\"btn--\"></div>\n\n\n        <hr class=\"bottom-hr\" />\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    E-Signer votre contrat\n</div>\n<hr/>\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--12 no-padding\">\n        <div class=\"mt10 panel--alert\">\n            <i class=\"icon icon-circle-info\"></i>Pour signer electroniquement votre contrat, verifiez le document ci-dessous, <strong>cochez la case d'acceptation</strong> et <strong>siasissez le code reçu par SMS</strong>. Ce code à usage unique sécurise\n            votre signature éléctronique.\n        </div>\n        <embed [src]=\"environment.assetsPath + 'assets/img/hsbc.pdf'\" width=\"100%\" height=\"500px\" />\n\n        <div class=\"form__group full mt40\">\n            <pib-checkbox label=\"En cochant cette case, je reconnais avoir pris connaissance, préalablement à la signature du contrat, de la présente demande d’ouverture de compte valant conditions particulières, des dispositions générales et des dispositions contractuelles spécifiques à chacun des contrats souscrits dans la présente convention incluant notamment les conditions générales de la convention de compte, la notice d’information d’HSBC Volassur, les conditions générales applicables aux  principales opérations des particuliers également intitulées “Tarification Particuliers”, le guide de la mobilité et des conditions de commercialisation à distance de la présente convention.\"\n                binary=\"true\"></pib-checkbox>\n        </div>\n\n\n        <hr>\n        <div class=\"form__group mt20\">\n            <div class=\"panel clearfix sms-code\">\n\n                Code reçu par SMS\n                <div class=\"sms-code__field\">\n                    <pib-text-field placeholder=\"Code\"></pib-text-field>\n                </div>\n            </div>\n        </div>\n        <button pibButton type=\"button\" (click)=\"next()\" label=\"Signer votre contrat\" class=\"btn--primary f-right\">\n            </button>\n\n        <div class=\"btn--\"></div>\n\n\n        <hr class=\"bottom-hr\" />\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n\n    </div>\n</div>"
 
 /***/ }),
 
 /***/ 885:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.tax_infos'|translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.tax_num_country'|translate}} <i class=\"icon icon-circle-help\"></i></div>\n            <pib-dropdown \n              [options]=\"fiscalPays\" \n              [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence\"\n              [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceError\" \n              messageType=\"ERROR\" \n              [stepSubmitted]=\"stepSubmitted\"\n              (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidence()\"\n              ></pib-dropdown>\n        </div>\n        <div class=\"panel panel--form\" style=\"position:relative;\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence && _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence !== 'FR'\" >\n            <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CH' \" class=\"mt10 mb10\">\n                      <a (click)=\"openModalTaxWhere(1)\" class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumber($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                ></pib-text-field>\n            </div>\n            <div class=\"form__group full\">\n                <pib-checkbox \n                  [label]=\"'hsbc-main.tax_num_no_have'\" \n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError = null;\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                  binary=\"true\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-checkbox>\n            </div>\n\n            <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\">\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif A\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-radioButton>\n              </div>\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif C\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                      ></pib-radioButton>\n              </div>\n              \n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif B\"></pib-radioButton>\n              </div>\n\n              <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError\">\n                  <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError | translate}}\n              </div>\n\n              <pib-text-area \n                *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption === 'Motif B'\"\n                [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIF\"\n                placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                messageType= \"ERROR\"\n                (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                [stepSubmitted]=\"stepSubmitted\"\n                [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFError\"\n                ></pib-text-area>\n\n\n            </div>\n\n        </div>\n\n        <div style=\"position:relative;\">\n          <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 1\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[0]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                  [options]=\"fiscalPays\" \n                  [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwoError\" \n                  messageType=\"ERROR\" \n                  [stepSubmitted]=\"stepSubmitted\"\n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceTwo()\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo\"></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberTwo($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                ></pib-text-field>\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwo\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwoError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n\n\n            <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 2\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[1]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                    [options]=\"fiscalPays\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree\"\n                    [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThreeError\" \n                    messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceThree()\"\n                    ></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberThree($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                ></pib-text-field>\n\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThree\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThreeError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n            <div>\n                <a (click)=\"AddFiscalPays()\" *ngIf=\"fiscalpaysAdd.length < 2\" class=\"add-link\" >{{'hsbc-main.tax_num_country_add'|translate}}</a>\n                <!-- <a (click)=\"removeLastPays()\" class=\"btn--delete\" style=\"margin-left: 12px\" *ngIf=\"fiscalpaysAdd.length >0\">Annuler</a> -->\n                 <a class=\"cancel-link\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\" (click)=\"removeLastPays()\" *ngIf=\"fiscalpaysAdd.length >0\" ><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n            </div>\n        </div>\n\n        <pib-modal #modalTaxWhere>\n          <div class=\"modal-content\">\n            <div class=\"modal-title\">{{'hsbc-main.tax_num_where_title' | translate}}</div>\n            <p>\n              {{'hsbc-main.tax_num_where_'+msgWhereCountry | translate}}\n            </p>\n            <br>\n            <img *ngIf=\"msgWhereCountry\" [src]=\"'../../assets/img/NIF-'+msgWhereCountry+'.jpg'\" alt=\"\">\n          </div>\n        </pib-modal>\n\n        \n        \n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.tax_infos'|translate}}\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n\n<div class=\"clearfix mt40\">\n    <div class=\"grid__col--8 no-padding\">\n        <div class=\"form__group\">\n            <div class=\"form__label\">{{'hsbc-main.tax_num_country'|translate}} <i class=\"icon icon-circle-help\"></i></div>\n            <pib-dropdown \n              [options]=\"fiscalPays\" \n              [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence\"\n              [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceError\" \n              messageType=\"ERROR\" \n              [stepSubmitted]=\"stepSubmitted\"\n              (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidence()\"\n              ></pib-dropdown>\n        </div>\n        <div class=\"panel panel--form\" style=\"position:relative;\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence && _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence !== 'FR'\" >\n            <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidence === 'CH' \" class=\"mt10 mb10\">\n                      <a (click)=\"openModalTaxWhere(1)\" class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumber($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                ></pib-text-field>\n            </div>\n            <div class=\"form__group full\">\n                <pib-checkbox \n                  [label]=\"'hsbc-main.tax_num_no_have'\" \n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumber = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberError = null;\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\"\n                  binary=\"true\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-checkbox>\n            </div>\n\n            <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumber\">\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif A\"\n                  (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                  ></pib-radioButton>\n              </div>\n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif C\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                      ></pib-radioButton>\n              </div>\n              \n              <div class=\"form__group full\">\n                  <pib-radioButton name=\"rb_1\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption\" value=\"Motif B\"></pib-radioButton>\n              </div>\n\n              <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError\">\n                  <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionError | translate}}\n              </div>\n\n              <pib-text-area \n                *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOption === 'Motif B'\"\n                [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIF\"\n                placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                messageType= \"ERROR\"\n                (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOption()\"\n                [stepSubmitted]=\"stepSubmitted\"\n                [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFError\"\n                ></pib-text-area>\n\n\n            </div>\n\n        </div>\n\n        <div style=\"position:relative;\">\n          <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 1\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[0]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                  [options]=\"fiscalPays\" \n                  [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwoError\" \n                  messageType=\"ERROR\" \n                  [stepSubmitted]=\"stepSubmitted\"\n                  (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceTwo()\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo\"></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceTwo === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberTwo($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                ></pib-text-field>\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwo = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberTwoError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberTwo\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwoError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionTwo === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwo\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionTwo()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFTwoError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n\n\n            <div class=\"panel panel--form\" *ngIf=\"fiscalpaysAdd.length >= 2\">\n              <div class=\"form__group\">\n                  <div class=\"form__label\">{{numbersInLetters[1]|translate}} {{'hsbc-main.countries'|translate}}</div>\n                  \n                  <pib-dropdown \n                    [options]=\"fiscalPays\" \n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree\"\n                    [message]=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThreeError\" \n                    messageType=\"ERROR\" \n                    [stepSubmitted]=\"stepSubmitted\"\n                    (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.validateCountryOfTaxResidenceThree()\"\n                    ></pib-dropdown>\n              </div>\n              <div class=\"form__group full\">\n                <div class=\"form__label\">\n                    {{'hsbc-main.tax_num'|translate}} {{'hsbc-main.countries'|translate}}\n                    <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AT' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'BE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CA' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'AE' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'US' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'HK' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'GB' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'SG' || _sharedModelService.model.informations.situation.taxInformation.countryOfTaxResidenceThree === 'CH' \" class=\"mt10 mb10\">\n                      <a class=\"underlined\">{{'hsbc-main.tax_num_where'|translate}}</a>\n                    </div>\n                </div>\n \n                <pib-text-field \n                  placeholder=\"{{'hsbc-main.tax_num'|translate}}\" \n                  messageType= \"ERROR\"\n                  (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateTaxIdentificationNumberThree($event)\"\n                  [stepSubmitted]=\"stepSubmitted\"\n                  [message]= \"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError\"\n                  [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree\"\n                  [disabled]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                ></pib-text-field>\n\n                </div>\n                <div class=\"form__group full\">\n                    <pib-checkbox \n                      [label]=\"'hsbc-main.tax_num_no_have'\" \n                      (onChange)=\"_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThree = null;_sharedModelService.model.informations.situation.taxInformation.taxIdentificationNumberThreeError = null;\"\n                      [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\"\n                      binary=\"true\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-checkbox>\n                </div>\n\n                <div *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.hasNoTaxIdentificationNumberThree\">\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"nofFiscal\" [label]=\"'Votre pays de résidence fiscale n‘attribue pas de numéro d’identification fiscale à ses résidents.'\" [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif A\"\n                      (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                      ></pib-radioButton>\n                  </div>\n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotRequired\" [label]=\"'Le numéro d’identification fiscale n’est pas requis (à noter : sélectionner cette raison seulement si les autorités du pays de résidence fiscale renseigné ci-dessus n’imposent pas de le divulguer)'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif C\"\n                          (onClick)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                          ></pib-radioButton>\n                  </div>\n                  \n                  <div class=\"form__group full\">\n                      <pib-radioButton name=\"rb_2\" value=\"fiscalNotAccessible\" [label]=\"'vous ne pouvez pas obtenir de numéro d’identification fiscale pour une autre raison (si vous sélectionnez ce motif, vous devrez expliquer dans la zone suivante pourquoi vous ne pouvez pas obtenir de numéro d’identification fiscale).'\"\n                          [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree\" value=\"Motif B\"></pib-radioButton>\n                  </div>\n\n                  <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError\">\n                      <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThreeError | translate}}\n                  </div>\n\n                  <pib-text-area \n                    *ngIf=\"_sharedModelService.model.informations.situation.taxInformation.noTaxIdentificationNumberOptionThree === 'Motif B'\"\n                    [(ngModel)]=\"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThree\"\n                    placeholder=\"{{'hsbc-main.motif'|translate}}\"\n                    messageType= \"ERROR\"\n                    (keyup)=\"_sharedModelService.model.informations.situation.taxInformation.validateNoTaxIdentificationNumberOptionThree()\"\n                    [stepSubmitted]=\"stepSubmitted\"\n                    [message]= \"_sharedModelService.model.informations.situation.taxInformation.reasonAbsenceNIFThreeError\"\n                    ></pib-text-area>\n\n                </div>\n\n              \n            </div>\n            <div>\n                <a (click)=\"AddFiscalPays()\" *ngIf=\"fiscalpaysAdd.length < 2\" class=\"add-link\" >{{'hsbc-main.tax_num_country_add'|translate}}</a>\n                <!-- <a (click)=\"removeLastPays()\" class=\"btn--delete\" style=\"margin-left: 12px\" *ngIf=\"fiscalpaysAdd.length >0\">Annuler</a> -->\n                 <a class=\"cancel-link\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\" (click)=\"removeLastPays()\" *ngIf=\"fiscalpaysAdd.length >0\" ><i class=\"icon icon-delete\"></i> {{'hsbc-main.annuler'|translate}}</a>\n            </div>\n        </div>\n\n        <pib-modal #modalTaxWhere>\n          <div class=\"modal-content\">\n            <div class=\"modal-title\">{{'hsbc-main.tax_num_where_title' | translate}}</div>\n            <p>\n              {{'hsbc-main.tax_num_where_'+msgWhereCountry | translate}}\n            </p>\n            <br>\n            <img *ngIf=\"msgWhereCountry\" [src]=\"environment.assetsPath + 'assets/img/NIF-'+msgWhereCountry+'.jpg'\" alt=\"\">\n          </div>\n        </pib-modal>\n\n        \n        \n        <button pibButton type=\"button\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n                    </button>\n\n        <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n\n        <hr class=\"bottom-hr\"/>\n\n        <div class=\"f-right bottom-help\">\n            <i class=\"icon icon-circle-help\"></i> {{'hsbc-main.help' | translate}}\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
 /***/ 886:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\"> \n    Préférence pour le suivi de votre compte\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"follow-account\">\n    <div class=\"grid__col--6\">\n        <span class=\"follow-account__logo\">\n            <img src=\"assets/img/phone.png\">\n        </span>\n        <div class=\"follow-account__title\">L'agence direct</div>\n        \n        <div class=\"follow-account__body\">\n            <p>\n                Vous choisissez l’agence HSBC à distance pour réaliser toutes vos opérations sans vous déplacer.\n            </p>\n            <p>\n                Vous disposez d’un conseiller qui s’adapte à votre agenda avec des horaires élargis par messagerie sécurisée et par téléphone : de 8h00 à 22h00 du lundi au vendredi et le samedi de 9h à 17h30.\n            </p>\n        </div>\n\n        <button pibButton type=\"button\" (click)=\"next('di_agency')\" class=\"btn--tertiary full\" label=\"Choisir\"></button>\n    </div>\n    <div class=\"grid__col--6\" style=\"padding-left: 17px;\">\n        <span class=\"follow-account__logo\">\n            <img src=\"assets/img/location.png\">\n        </span>\n        <div class=\"follow-account__title\">L'agence physique la plus proche</div>\n        \n        <div class=\"follow-account__body\" style=\"margin-bottom:27px;\">\n            <p>\n                Vous choisissez l’agence HSBC la plus proche de chez vous ou de votre lieu de travail.\n            </p>\n            <p>\n                Vous bénéficiez d’un conseiller disponible pour vous recevoir en agence.\n            </p>\n            <a class=\"underlined\">Choisissez votre agence </a><i  class=\"icon icon-chevron-right-small\" style=\"color: #DA0010\"></i>\n        </div>\n       \n        <button pibButton type=\"button\" (click)=\"next('ph_agency')\" class=\"btn--tertiary full\" label=\"Choisir\"></button>\n    </div>\n</div>\n\n<div>\n    <div class=\"grid__col--6 \">\n        <a (click)=\"goBack() \" class=\"btn--back \">{{'hsbc-main.retour'|translate}}</a>\n    </div>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\"> \n    Préférence pour le suivi de votre compte\n    <div class=\"FEF__subtitle\">\n        {{'hsbc-main.tout_champs_obligatoires' | translate}}\n    </div>\n</div>\n<hr/>\n<div class=\"follow-account\">\n    <div class=\"grid__col--6\">\n        <span class=\"follow-account__logo\">\n            <img [src]=\"environment.assetsPath + 'assets/img/phone.png'\">\n        </span>\n        <div class=\"follow-account__title\">L'agence direct</div>\n        \n        <div class=\"follow-account__body\">\n            <p>\n                Vous choisissez l’agence HSBC à distance pour réaliser toutes vos opérations sans vous déplacer.\n            </p>\n            <p>\n                Vous disposez d’un conseiller qui s’adapte à votre agenda avec des horaires élargis par messagerie sécurisée et par téléphone : de 8h00 à 22h00 du lundi au vendredi et le samedi de 9h à 17h30.\n            </p>\n        </div>\n\n        <button pibButton type=\"button\" (click)=\"next('di_agency')\" class=\"btn--tertiary full\" label=\"Choisir\"></button>\n    </div>\n    <div class=\"grid__col--6\" style=\"padding-left: 17px;\">\n        <span class=\"follow-account__logo\">\n            <img [src]=\"environment.assetsPath + 'assets/img/location.png'\">\n        </span>\n        <div class=\"follow-account__title\">L'agence physique la plus proche</div>\n        \n        <div class=\"follow-account__body\" style=\"margin-bottom:27px;\">\n            <p>\n                Vous choisissez l’agence HSBC la plus proche de chez vous ou de votre lieu de travail.\n            </p>\n            <p>\n                Vous bénéficiez d’un conseiller disponible pour vous recevoir en agence.\n            </p>\n            <a class=\"underlined\">Choisissez votre agence </a><i  class=\"icon icon-chevron-right-small\" style=\"color: #DA0010\"></i>\n        </div>\n       \n        <button pibButton type=\"button\" (click)=\"next('ph_agency')\" class=\"btn--tertiary full\" label=\"Choisir\"></button>\n    </div>\n</div>\n\n<div>\n    <div class=\"grid__col--6 \">\n        <a (click)=\"goBack() \" class=\"btn--back \">{{'hsbc-main.retour'|translate}}</a>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -12397,16 +12422,17 @@ module.exports = "<div class=\"mt10 FEF__title sub\"> Votre offre\n    <div clas
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(906);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(54);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountriesDataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12417,6 +12443,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -12445,7 +12472,7 @@ var CountriesDataService = (function () {
         else {
             if (lang == 'fr') {
                 return new Promise(function (resolve, reject) {
-                    _this.http.get("./assets/data/countries_fr.json")
+                    _this.http.get(__WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].assetsPath + "assets/data/countries_fr.json")
                         .subscribe(function (data) {
                         _this.__data = data.json();
                         _this.__data_loaded = true;
@@ -12455,7 +12482,7 @@ var CountriesDataService = (function () {
             }
             else {
                 return new Promise(function (resolve, reject) {
-                    _this.http.get("./assets/data/countries.json")
+                    _this.http.get(__WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].assetsPath + "assets/data/countries.json")
                         .subscribe(function (data) {
                         _this.__data = data.json();
                         _this.__data_loaded = true;
@@ -12475,7 +12502,7 @@ var CountriesDataService = (function () {
         else {
             if (lang == 'fr') {
                 return new Promise(function (resolve, reject) {
-                    _this.http.get("./assets/data/countries_fr.json")
+                    _this.http.get(__WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].assetsPath + "assets/data/countries_fr.json")
                         .subscribe(function (data) {
                         _this.__data = data.json();
                         _this.__data_loaded = true;
@@ -12486,7 +12513,7 @@ var CountriesDataService = (function () {
             }
             else {
                 return new Promise(function (resolve, reject) {
-                    _this.http.get("./assets/data/countries.json")
+                    _this.http.get(__WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].assetsPath + "assets/data/countries.json")
                         .subscribe(function (data) {
                         _this.__data = data.json();
                         _this.__data_loaded = true;
@@ -12568,7 +12595,7 @@ var CountriesDataService = (function () {
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13103,7 +13130,7 @@ var UsefulDataService = (function () {
 /***/ 952:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(555);
+module.exports = __webpack_require__(556);
 
 
 /***/ })
