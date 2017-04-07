@@ -11418,41 +11418,45 @@ var Offer = (function () {
             hasErrors = true;
         }
         if (!this.noIntendToTransactInternationally) {
-            if (!this.validateEmitTransactInternationallyCountryOne()) {
-                hasErrors = true;
+            if (this.intendToEmitTransactInternationally) {
+                if (!this.validateEmitTransactInternationallyCountryOne()) {
+                    hasErrors = true;
+                }
+                if (!this.validateEmitTransactInternationallyCountryTwo()) {
+                    hasErrors = true;
+                }
+                if (!this.validateEmitTransactInternationallyCountryThree()) {
+                    hasErrors = true;
+                }
+                if (!this.validateEmitTransactInternationallyCount()) {
+                    hasErrors = true;
+                }
+                if (!this.validateEmitTransactInternationallyReason()) {
+                    hasErrors = true;
+                }
+                if (!this.validateEmitTransactInternationallyAmount()) {
+                    hasErrors = true;
+                }
             }
-            if (!this.validateEmitTransactInternationallyCountryTwo()) {
-                hasErrors = true;
-            }
-            if (!this.validateEmitTransactInternationallyCountryThree()) {
-                hasErrors = true;
-            }
-            if (!this.validateEmitTransactInternationallyCount()) {
-                hasErrors = true;
-            }
-            if (!this.validateEmitTransactInternationallyReason()) {
-                hasErrors = true;
-            }
-            if (!this.validateEmitTransactInternationallyAmount()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyCountryOne()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyCountryTwo()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyCountryThree()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyCount()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyReason()) {
-                hasErrors = true;
-            }
-            if (!this.validateReceiveTransactInternationallyAmount()) {
-                hasErrors = true;
+            if (this.intendToReceiveTransactInternationally) {
+                if (!this.validateReceiveTransactInternationallyCountryOne()) {
+                    hasErrors = true;
+                }
+                if (!this.validateReceiveTransactInternationallyCountryTwo()) {
+                    hasErrors = true;
+                }
+                if (!this.validateReceiveTransactInternationallyCountryThree()) {
+                    hasErrors = true;
+                }
+                if (!this.validateReceiveTransactInternationallyCount()) {
+                    hasErrors = true;
+                }
+                if (!this.validateReceiveTransactInternationallyReason()) {
+                    hasErrors = true;
+                }
+                if (!this.validateReceiveTransactInternationallyAmount()) {
+                    hasErrors = true;
+                }
             }
         }
         return !hasErrors;
