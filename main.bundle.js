@@ -9121,7 +9121,7 @@ var PibTextArea = (function () {
     PibTextArea = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
             selector: 'pib-text-area',
-            template: "\n    <div class=\"form-group\" [class.has-error]=\"hasErrors()\"\n      [pibTooltip]=\"tooltipText\"\n      [tooltipPosition]=\"tooltipPosition\">\n      <label class=\"form__label\" [attr.for]=\"name\" *ngIf=\"label\">{{label}}</label>\n      <div style=\"position: relative;\">\n       <i [class]=\"'icon '+iconClass\"   *ngIf=\"showIcon\"\n          [ngClass] = \"{'left-icon':iconPlace == 'LEFT','right-icon':iconPlace == 'RIGHT'}\"\n          [style]=\"iconStyle\"></i>\n       <textarea [class]=\"'form__input '+inputClass\"\n              [ngClass]=\"{'input-left-icon':showIcon && iconPlace == 'LEFT',\n                          'input-right-icon': showIcon && iconPlace == 'RIGHT',\n                          'form__input--error':messageType == 'ERROR' && hasErrors(),\n                          'form__input--warning':messageType == 'WARNING' && hasErrors(),\n                          'non_resizable_textarea':!resizable\n                        }\"\n              [rows]=\"rows\"\n              [name]=\"name\"\n              [(ngModel)]=\"value\" \n              #inputText = \"ngModel\"\n              [attr.disabled] = \"disabled ? '':null\"\n              [placeholder]=\"placeholder\"\n              (hover)=\"hover.emit($event)\"\n              (focus)=\"focus.emit($event)\"\n              (blur)=\"blur.emit($event)\"></textarea>\n      </div>\n      <div class=\"form__message\" [ngClass] = \"{'form__message--error':messageType == 'ERROR',\n                                              'form__message--warning':messageType == 'WARNING'}\"\n                                  *ngIf=\"hasErrors() && showMessage && (!inputText.pristine || stepSubmitted)\">\n          <i class=\"icon\" [ngClass] = \"{'icon-circle-delete' :messageType == 'ERROR',\n                                        'icon-circle-error': messageType == 'WARNING'}\"></i>\n                                  {{messageTrad}}\n      </div>\n    </div>\n",
+            template: "\n    <div class=\"form-group\" [class.has-error]=\"hasErrors()\"\n      [pibTooltip]=\"tooltipText\"\n      [tooltipPosition]=\"tooltipPosition\">\n      <label class=\"form__label\" [attr.for]=\"name\" *ngIf=\"label\">{{label}}</label>\n      <div style=\"position: relative;\">\n       <i [class]=\"'icon '+iconClass\"   *ngIf=\"showIcon\"\n          [ngClass] = \"{'left-icon':iconPlace == 'LEFT','right-icon':iconPlace == 'RIGHT'}\"\n          [style]=\"iconStyle\"></i>\n       <textarea [class]=\"'form__input '+inputClass\"\n              [ngClass]=\"{'input-left-icon':showIcon && iconPlace == 'LEFT',\n                          'input-right-icon': showIcon && iconPlace == 'RIGHT',\n                          'form__input--error':messageType == 'ERROR' && hasErrors(),\n                          'form__input--warning':messageType == 'WARNING' && hasErrors(),\n                          'non_resizable_textarea':!resizable\n                        }\"\n              [rows]=\"rows\"\n              [name]=\"name\"\n              [(ngModel)]=\"value\" \n              #inputText = \"ngModel\"\n              [attr.disabled] = \"disabled ? '':null\"\n              [placeholder]=\"placeholder\"\n              (hover)=\"hover.emit($event)\"\n              (focus)=\"focus.emit($event)\"\n              (blur)=\"blur.emit($event)\"></textarea>\n      </div>\n      <div class=\"form__message\" [ngClass] = \"{'form__message--error':messageType == 'ERROR' && hasErrors(),\n                                              'form__message--warning':messageType == 'WARNING'}\"\n                                  *ngIf=\"hasErrors() && showMessage && (!inputText.pristine || stepSubmitted)\">\n          <i class=\"icon\" [ngClass] = \"{'icon-circle-delete' :messageType == 'ERROR',\n                                        'icon-circle-error': messageType == 'WARNING'}\"></i>\n                                  {{messageTrad}}\n      </div>\n    </div>\n",
             styles: [
                 "\n      .non_resizable_textarea {resize: none}\n      .left-icon{\n        position: absolute;\n        top: 8px;\n        left: 5px;\n        z-index: 0;\n        pointer-events:none;\n        font-size: 24px;\n      }\n      .right-icon{\n        position: absolute;\n        top: 8px;\n        right: 5px;\n        z-index: 0;\n        pointer-events:none;\n        font-size: 24px;\n      }\n      .input-left-icon{\n        padding-left: 30px;\n      }\n      .input-right-icon{\n        padding-right: 30px;\n      }\n    "
             ],
@@ -11415,28 +11415,22 @@ var Offer = (function () {
     Offer.prototype.validate = function () {
         var hasErrors = false;
         if (!this.validateNoIntendToTransactInternationnally()) {
-            console.log(1);
             hasErrors = true;
         }
         if (!this.noIntendToTransactInternationally) {
             if (!this.validateEmitTransactInternationallyCountryOne()) {
-                console.log(2);
                 hasErrors = true;
             }
             if (!this.validateEmitTransactInternationallyCountryTwo()) {
-                console.log(3);
                 hasErrors = true;
             }
             if (!this.validateEmitTransactInternationallyCountryThree()) {
-                console.log(4);
                 hasErrors = true;
             }
             if (!this.validateEmitTransactInternationallyCount()) {
-                console.log(5);
                 hasErrors = true;
             }
             if (!this.validateEmitTransactInternationallyReason()) {
-                console.log(6);
                 hasErrors = true;
             }
             if (!this.validateEmitTransactInternationallyAmount()) {
