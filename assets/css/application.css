@@ -2899,6 +2899,9 @@ button.close {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0; }
+.steps--underlined__item.holder-step.highlight{
+  border-bottom: 3px solid #da0010;
+}
 
 .steps__item {
   padding-bottom: 17px;
@@ -2908,6 +2911,7 @@ button.close {
     margin-left: 0;
     padding-left: 16px; }
   .steps__item.highlight {
+    
     background: #008580; }
     .steps__item.highlight .steps__title__link {
       color: #fff; }
