@@ -83,6 +83,8 @@
         "error_field_other_country":"Vous avez déjà renseigné des informations pour ce pays",
         "error_field_format":"Le format n'est pas valide",
         "error_field_least_one":"Vous devez choisir au moins une option",
+        "error_field_days_12_60":"Le nombre de jours doit être compris entre 12 et 60 jours",
+        "error_field_days_30_90":"Le nombre de jours doit être compris entre 30 et 90 jours",
         "first":"Premier",
         "second":"Second",
         "third":"Troisième",

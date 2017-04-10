@@ -83,6 +83,8 @@
         "error_field_other_country":"You can't select this country twice.",
         "error_field_format":"Invalid format",
         "error_field_least_one":"Please choose at least one option",
+        "error_field_days_12_60":"The number of days must be between 12 and 60.",
+        "error_field_days_30_90":"The number of days must be between 30 and 90.",
         "first":"First",
         "second":"Second",
         "third":"Third",
