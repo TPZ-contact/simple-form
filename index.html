@@ -15,7 +15,7 @@
     <app-root>
         <style type="text/css">
             #pre-bootstrap {
-                background-color: #FFFFFF;
+                background-color: white;
                 bottom: 0px;
                 left: 0px;
                 position: fixed;
@@ -32,7 +32,7 @@
                 position: absolute;
                 right: 0px;
                 text-align: center;
-                top: 50%;
+                top: 45%;
             }
             
             #pre-bootstrap h1 {
@@ -46,18 +46,54 @@
                 line-height: 14px;
                 margin: 0px 0px 0px 0px;
             }
+
+            .loader,
+            .loader:after {
+              border-radius: 50%;
+              width: 10em;
+              height: 10em;
+            }
+            .loader {
+              margin: 60px auto;
+              font-size: 10px;
+              position: relative;
+              text-indent: -9999em;
+              border-top: 1.1em solid #ededed;
+              border-right: 1.1em solid #ededed;
+              border-bottom: 1.1em solid #ededed;
+              border-left: 1.1em solid #da0010;
+              -webkit-transform: translateZ(0);
+              -ms-transform: translateZ(0);
+              transform: translateZ(0);
+              -webkit-animation: load8 1.1s infinite linear;
+              animation: load8 1.1s infinite linear;
+            }
+            @-webkit-keyframes load8 {
+              0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+              }
+              100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+              }
+            }
+            @keyframes load8 {
+              0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+              }
+              100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+              }
+            }
         </style>
 
         <div id="pre-bootstrap">
             <div class="messaging">
 
-                <h1>
-                    WELCOME HSBC
-                </h1>
-
-                <p>
-                    Please wait
-                </p>
+                <div class="loader">Loading...</div>
 
             </div>
         </div>
