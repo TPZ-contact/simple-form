@@ -458,29 +458,29 @@ var DomHandler = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calendar_component__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calendar_component__ = __webpack_require__(676);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__calendar_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_component__ = __webpack_require__(682);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__slider_component__ = __webpack_require__(683);
 /* unused harmony reexport PibSliderModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(361);
 /* unused harmony reexport PibSideBarModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal_component__ = __webpack_require__(170);
 /* unused harmony reexport PibModalModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timer_component__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__timer_component__ = __webpack_require__(685);
 /* unused harmony reexport PibTimerModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__text_field_component__ = __webpack_require__(242);
 /* unused harmony reexport PibTextFieldModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__checkbox_component__ = __webpack_require__(359);
 /* unused harmony reexport PibCheckboxModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__radio_button_component__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__radio_button_component__ = __webpack_require__(681);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__radio_button_component__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__steps_component__ = __webpack_require__(362);
 /* unused harmony reexport PibStepsModule */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__segment_control_component__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__segment_control_component__ = __webpack_require__(682);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_9__segment_control_component__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dropdown_component__ = __webpack_require__(360);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_10__dropdown_component__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generic_dropdown_component__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__generic_dropdown_component__ = __webpack_require__(679);
 /* unused harmony reexport PibGenericDropdownModule */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__tab_component__ = __webpack_require__(363);
 /* unused harmony reexport PibTabMenuModule */
@@ -2470,7 +2470,7 @@ var PibStepsModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_domhandler__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api__ = __webpack_require__(674);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api__ = __webpack_require__(675);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__common_api__);
 /* unused harmony export TabMenu */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PibTabMenuModule; });
@@ -2998,6 +2998,7 @@ var AccountOpeningValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_shared_model_service__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_local_data_service__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__routing_router_animations__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__custom_polyfills__ = __webpack_require__(387);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AccountTypeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3008,6 +3009,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -3072,12 +3074,15 @@ var AccountTypeComponent = (function () {
      */
     AccountTypeComponent.prototype.next = function () {
         this._sharedModelService.mustSaveData.next(true);
+        var customEvent;
         if (this._sharedModelService.model.accountType === 'individualAccount') {
-            this.router.navigate(['../personal-information']);
+            customEvent = __WEBPACK_IMPORTED_MODULE_8__custom_polyfills__["a" /* CustomPolyfills */].createNewEvent('start-mono-ng');
         }
         else if (this._sharedModelService.model.accountType === 'jointAccount') {
-            this.router.navigate(['../personal-information/1']);
+            customEvent = __WEBPACK_IMPORTED_MODULE_8__custom_polyfills__["a" /* CustomPolyfills */].createNewEvent('start-joint-ng');
         }
+        console.log('=> Event emitted:', customEvent);
+        window.dispatchEvent(customEvent);
     };
     /**
      * Assign the type of the account and move to the next step
@@ -5820,7 +5825,7 @@ var ProofUploadValidationComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_shared_model_service__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_router_state_service__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__routing_router_animations__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__ = __webpack_require__(697);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__custom_polyfills__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_countries_data_service__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_useful_data_service__ = __webpack_require__(71);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecapValidationComponent; });
@@ -6169,7 +6174,7 @@ var RecapValidationComponent = (function () {
     };
     RecapValidationComponent.prototype.editStep = function (step) {
         var _this = this;
-        if (this._sharedModelService.modelHolder.accountType === 'individualAccount') {
+        if (this._sharedModelService.model.accountType === 'individualAccount') {
             var routeStack_1 = ['your-account', 'personal-information', 'personal-information-second-page', 'coordonees', 'professional-situation', 'monthly-income', 'fiscal-information', 'patrimony', 'follow-account', 'your-account', 'card-type', 'card-utilisation'];
             var _loop_1 = function(i) {
                 setTimeout(function () {
@@ -6835,6 +6840,30 @@ var YourAccountComponent = (function () {
 
 /***/ }),
 
+/***/ 387:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPolyfills; });
+var CustomPolyfills = (function () {
+    function CustomPolyfills() {
+    }
+    CustomPolyfills.createNewEvent = function (eventName) {
+        if (typeof (Event) === 'function') {
+            var event = new Event(eventName);
+        }
+        else {
+            var event = document.createEvent('Event');
+            event.initEvent(eventName, true, true);
+        }
+        return event;
+    };
+    return CustomPolyfills;
+}());
+//# sourceMappingURL=custom-polyfills.js.map
+
+/***/ }),
+
 /***/ 54:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6842,7 +6871,7 @@ var YourAccountComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_translate__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(542);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(543);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(906);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
@@ -7047,7 +7076,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 555:
+/***/ 556:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -7056,19 +7085,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 555;
+webpackEmptyContext.id = 556;
 
 
 /***/ }),
 
-/***/ 556:
+/***/ 557:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(642);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(674);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(55);
 
 
@@ -7082,7 +7111,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 672:
+/***/ 673:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7116,20 +7145,20 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 673:
+/***/ 674:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(692);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routing_CreateAccountRouting__ = __webpack_require__(693);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_steps_component__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(672);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__(688);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(687);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(689);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(673);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__header_header_component__ = __webpack_require__(689);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main_component__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_header_state_service__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_fill_data_steps_changer_service__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_shared_model_service__ = __webpack_require__(9);
@@ -7141,7 +7170,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__main_personal_information_personal_informations_component__ = __webpack_require__(378);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_tab_component__ = __webpack_require__(363);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_text_field_component__ = __webpack_require__(242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_text_area_component__ = __webpack_require__(683);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_text_area_component__ = __webpack_require__(684);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_sidebar_component__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_checkbox_component__ = __webpack_require__(359);
@@ -7164,10 +7193,10 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_file_upload_component__ = __webpack_require__(677);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__components_file_upload_component__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__components_drop_down_editable_component__ = __webpack_require__(677);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__components_modal_component__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(691);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pipes_hsbc_time_pipe__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__services_countries_data_service__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__services_useful_data_service__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__environments_environment__ = __webpack_require__(55);
@@ -7322,14 +7351,14 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 674:
+/***/ 675:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=api.js.map
 
 /***/ }),
 
-/***/ 675:
+/***/ 676:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7337,7 +7366,7 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives__ = __webpack_require__(686);
 /* unused harmony export CALENDAR_VALUE_ACCESSOR */
 /* unused harmony export CALENDAR_VALIDATOR */
 /* unused harmony export CalendarComponent */
@@ -8603,7 +8632,7 @@ var PibCalendarModule = (function () {
 
 /***/ }),
 
-/***/ 676:
+/***/ 677:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8869,7 +8898,7 @@ var PibDropDownEditableModule = (function () {
 
 /***/ }),
 
-/***/ 677:
+/***/ 678:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9114,7 +9143,7 @@ var PibFileUploadModule = (function () {
 
 /***/ }),
 
-/***/ 678:
+/***/ 679:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9240,7 +9269,7 @@ var PibGenericDropdownModule = (function () {
 
 /***/ }),
 
-/***/ 679:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9303,7 +9332,7 @@ var PibBrogressBarModule = (function () {
 
 /***/ }),
 
-/***/ 680:
+/***/ 681:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9440,7 +9469,7 @@ var PibRadioButtonModule = (function () {
 
 /***/ }),
 
-/***/ 681:
+/***/ 682:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9633,7 +9662,7 @@ var PibSegmentControlModule = (function () {
 
 /***/ }),
 
-/***/ 682:
+/***/ 683:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10004,7 +10033,7 @@ var PibSliderModule = (function () {
 
 /***/ }),
 
-/***/ 683:
+/***/ 684:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10280,7 +10309,7 @@ var PibTextAreaModule = (function () {
 
 /***/ }),
 
-/***/ 684:
+/***/ 685:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10288,7 +10317,7 @@ var PibTextAreaModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable__ = __webpack_require__(915);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_TimerObservable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progress_bar_component__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__progress_bar_component__ = __webpack_require__(680);
 /* unused harmony export TimerComponent */
 /* unused harmony export PibTimerModule */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10453,13 +10482,13 @@ var PibTimerModule = (function () {
 
 /***/ }),
 
-/***/ 685:
+/***/ 686:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_directive__ = __webpack_require__(365);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__button_directive__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_input_directive__ = __webpack_require__(686);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__text_input_directive__ = __webpack_require__(687);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__text_input_directive__["a"]; });
 
 
@@ -10467,7 +10496,7 @@ var PibTimerModule = (function () {
 
 /***/ }),
 
-/***/ 686:
+/***/ 687:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10523,7 +10552,7 @@ var PibTextInputModule = (function () {
 
 /***/ }),
 
-/***/ 687:
+/***/ 688:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10581,7 +10610,7 @@ var FooterComponent = (function () {
 
 /***/ }),
 
-/***/ 688:
+/***/ 689:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10631,7 +10660,7 @@ var HeaderComponent = (function () {
 
 /***/ }),
 
-/***/ 689:
+/***/ 690:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10746,7 +10775,7 @@ var MainComponent = (function () {
 
 /***/ }),
 
-/***/ 690:
+/***/ 691:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13060,7 +13089,7 @@ var ProofOfIdentity = (function () {
 
 /***/ }),
 
-/***/ 691:
+/***/ 692:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13105,7 +13134,7 @@ var HsbcTimePipe = (function () {
 
 /***/ }),
 
-/***/ 692:
+/***/ 693:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13132,10 +13161,10 @@ var HsbcTimePipe = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_upload_proof_tax_notice_upload_proof_tax_notice_component__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__main_proof_upload_validation_proof_upload_validation_component__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__main_account_opening_validation_account_opening_validation_component__ = __webpack_require__(366);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_guards_personal_information_guard__ = __webpack_require__(694);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_guards_personal_information_second_page_guard__ = __webpack_require__(695);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_guards_contact_details_guard__ = __webpack_require__(693);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_guards_professional_situation_guard__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_guards_personal_information_guard__ = __webpack_require__(695);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_guards_personal_information_second_page_guard__ = __webpack_require__(696);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_guards_contact_details_guard__ = __webpack_require__(694);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_guards_professional_situation_guard__ = __webpack_require__(697);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreateAccountRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13313,7 +13342,7 @@ var CreateAccountRoutingModule = (function () {
 
 /***/ }),
 
-/***/ 693:
+/***/ 694:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13367,7 +13396,7 @@ var ContactDetailsGuard = (function () {
 
 /***/ }),
 
-/***/ 694:
+/***/ 695:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13431,7 +13460,7 @@ var PersonalInformationGuard = (function () {
 
 /***/ }),
 
-/***/ 695:
+/***/ 696:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13505,7 +13534,7 @@ var PersonalInformationSecondPageGuard = (function () {
 
 /***/ }),
 
-/***/ 696:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13564,30 +13593,6 @@ var ProfessionalSituationGuard = (function () {
     var _a, _b;
 }());
 //# sourceMappingURL=professional-situation-guard.js.map
-
-/***/ }),
-
-/***/ 697:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPolyfills; });
-var CustomPolyfills = (function () {
-    function CustomPolyfills() {
-    }
-    CustomPolyfills.createNewEvent = function (eventName) {
-        if (typeof (Event) === 'function') {
-            var event = new Event(eventName);
-        }
-        else {
-            var event = document.createEvent('Event');
-            event.initEvent(eventName, true, true);
-        }
-        return event;
-    };
-    return CustomPolyfills;
-}());
-//# sourceMappingURL=custom-polyfills.js.map
 
 /***/ }),
 
@@ -14653,236 +14658,236 @@ module.exports = module.exports.toString();
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 424,
-	"./af.js": 424,
-	"./ar": 431,
-	"./ar-dz": 425,
-	"./ar-dz.js": 425,
-	"./ar-kw": 426,
-	"./ar-kw.js": 426,
-	"./ar-ly": 427,
-	"./ar-ly.js": 427,
-	"./ar-ma": 428,
-	"./ar-ma.js": 428,
-	"./ar-sa": 429,
-	"./ar-sa.js": 429,
-	"./ar-tn": 430,
-	"./ar-tn.js": 430,
-	"./ar.js": 431,
-	"./az": 432,
-	"./az.js": 432,
-	"./be": 433,
-	"./be.js": 433,
-	"./bg": 434,
-	"./bg.js": 434,
-	"./bn": 435,
-	"./bn.js": 435,
-	"./bo": 436,
-	"./bo.js": 436,
-	"./br": 437,
-	"./br.js": 437,
-	"./bs": 438,
-	"./bs.js": 438,
-	"./ca": 439,
-	"./ca.js": 439,
-	"./cs": 440,
-	"./cs.js": 440,
-	"./cv": 441,
-	"./cv.js": 441,
-	"./cy": 442,
-	"./cy.js": 442,
-	"./da": 443,
-	"./da.js": 443,
-	"./de": 446,
-	"./de-at": 444,
-	"./de-at.js": 444,
-	"./de-ch": 445,
-	"./de-ch.js": 445,
-	"./de.js": 446,
-	"./dv": 447,
-	"./dv.js": 447,
-	"./el": 448,
-	"./el.js": 448,
-	"./en-au": 449,
-	"./en-au.js": 449,
-	"./en-ca": 450,
-	"./en-ca.js": 450,
-	"./en-gb": 451,
-	"./en-gb.js": 451,
-	"./en-ie": 452,
-	"./en-ie.js": 452,
-	"./en-nz": 453,
-	"./en-nz.js": 453,
-	"./eo": 454,
-	"./eo.js": 454,
-	"./es": 456,
-	"./es-do": 455,
-	"./es-do.js": 455,
-	"./es.js": 456,
-	"./et": 457,
-	"./et.js": 457,
-	"./eu": 458,
-	"./eu.js": 458,
-	"./fa": 459,
-	"./fa.js": 459,
-	"./fi": 460,
-	"./fi.js": 460,
-	"./fo": 461,
-	"./fo.js": 461,
-	"./fr": 464,
-	"./fr-ca": 462,
-	"./fr-ca.js": 462,
-	"./fr-ch": 463,
-	"./fr-ch.js": 463,
-	"./fr.js": 464,
-	"./fy": 465,
-	"./fy.js": 465,
-	"./gd": 466,
-	"./gd.js": 466,
-	"./gl": 467,
-	"./gl.js": 467,
-	"./gom-latn": 468,
-	"./gom-latn.js": 468,
-	"./he": 469,
-	"./he.js": 469,
-	"./hi": 470,
-	"./hi.js": 470,
-	"./hr": 471,
-	"./hr.js": 471,
-	"./hu": 472,
-	"./hu.js": 472,
-	"./hy-am": 473,
-	"./hy-am.js": 473,
-	"./id": 474,
-	"./id.js": 474,
-	"./is": 475,
-	"./is.js": 475,
-	"./it": 476,
-	"./it.js": 476,
-	"./ja": 477,
-	"./ja.js": 477,
-	"./jv": 478,
-	"./jv.js": 478,
-	"./ka": 479,
-	"./ka.js": 479,
-	"./kk": 480,
-	"./kk.js": 480,
-	"./km": 481,
-	"./km.js": 481,
-	"./kn": 482,
-	"./kn.js": 482,
-	"./ko": 483,
-	"./ko.js": 483,
-	"./ky": 484,
-	"./ky.js": 484,
-	"./lb": 485,
-	"./lb.js": 485,
-	"./lo": 486,
-	"./lo.js": 486,
-	"./lt": 487,
-	"./lt.js": 487,
-	"./lv": 488,
-	"./lv.js": 488,
-	"./me": 489,
-	"./me.js": 489,
-	"./mi": 490,
-	"./mi.js": 490,
-	"./mk": 491,
-	"./mk.js": 491,
-	"./ml": 492,
-	"./ml.js": 492,
-	"./mr": 493,
-	"./mr.js": 493,
-	"./ms": 495,
-	"./ms-my": 494,
-	"./ms-my.js": 494,
-	"./ms.js": 495,
-	"./my": 496,
-	"./my.js": 496,
-	"./nb": 497,
-	"./nb.js": 497,
-	"./ne": 498,
-	"./ne.js": 498,
-	"./nl": 500,
-	"./nl-be": 499,
-	"./nl-be.js": 499,
-	"./nl.js": 500,
-	"./nn": 501,
-	"./nn.js": 501,
-	"./pa-in": 502,
-	"./pa-in.js": 502,
-	"./pl": 503,
-	"./pl.js": 503,
-	"./pt": 505,
-	"./pt-br": 504,
-	"./pt-br.js": 504,
-	"./pt.js": 505,
-	"./ro": 506,
-	"./ro.js": 506,
-	"./ru": 507,
-	"./ru.js": 507,
-	"./sd": 508,
-	"./sd.js": 508,
-	"./se": 509,
-	"./se.js": 509,
-	"./si": 510,
-	"./si.js": 510,
-	"./sk": 511,
-	"./sk.js": 511,
-	"./sl": 512,
-	"./sl.js": 512,
-	"./sq": 513,
-	"./sq.js": 513,
-	"./sr": 515,
-	"./sr-cyrl": 514,
-	"./sr-cyrl.js": 514,
-	"./sr.js": 515,
-	"./ss": 516,
-	"./ss.js": 516,
-	"./sv": 517,
-	"./sv.js": 517,
-	"./sw": 518,
-	"./sw.js": 518,
-	"./ta": 519,
-	"./ta.js": 519,
-	"./te": 520,
-	"./te.js": 520,
-	"./tet": 521,
-	"./tet.js": 521,
-	"./th": 522,
-	"./th.js": 522,
-	"./tl-ph": 523,
-	"./tl-ph.js": 523,
-	"./tlh": 524,
-	"./tlh.js": 524,
-	"./tr": 525,
-	"./tr.js": 525,
-	"./tzl": 526,
-	"./tzl.js": 526,
-	"./tzm": 528,
-	"./tzm-latn": 527,
-	"./tzm-latn.js": 527,
-	"./tzm.js": 528,
-	"./uk": 529,
-	"./uk.js": 529,
-	"./ur": 530,
-	"./ur.js": 530,
-	"./uz": 532,
-	"./uz-latn": 531,
-	"./uz-latn.js": 531,
-	"./uz.js": 532,
-	"./vi": 533,
-	"./vi.js": 533,
-	"./x-pseudo": 534,
-	"./x-pseudo.js": 534,
-	"./yo": 535,
-	"./yo.js": 535,
-	"./zh-cn": 536,
-	"./zh-cn.js": 536,
-	"./zh-hk": 537,
-	"./zh-hk.js": 537,
-	"./zh-tw": 538,
-	"./zh-tw.js": 538
+	"./af": 425,
+	"./af.js": 425,
+	"./ar": 432,
+	"./ar-dz": 426,
+	"./ar-dz.js": 426,
+	"./ar-kw": 427,
+	"./ar-kw.js": 427,
+	"./ar-ly": 428,
+	"./ar-ly.js": 428,
+	"./ar-ma": 429,
+	"./ar-ma.js": 429,
+	"./ar-sa": 430,
+	"./ar-sa.js": 430,
+	"./ar-tn": 431,
+	"./ar-tn.js": 431,
+	"./ar.js": 432,
+	"./az": 433,
+	"./az.js": 433,
+	"./be": 434,
+	"./be.js": 434,
+	"./bg": 435,
+	"./bg.js": 435,
+	"./bn": 436,
+	"./bn.js": 436,
+	"./bo": 437,
+	"./bo.js": 437,
+	"./br": 438,
+	"./br.js": 438,
+	"./bs": 439,
+	"./bs.js": 439,
+	"./ca": 440,
+	"./ca.js": 440,
+	"./cs": 441,
+	"./cs.js": 441,
+	"./cv": 442,
+	"./cv.js": 442,
+	"./cy": 443,
+	"./cy.js": 443,
+	"./da": 444,
+	"./da.js": 444,
+	"./de": 447,
+	"./de-at": 445,
+	"./de-at.js": 445,
+	"./de-ch": 446,
+	"./de-ch.js": 446,
+	"./de.js": 447,
+	"./dv": 448,
+	"./dv.js": 448,
+	"./el": 449,
+	"./el.js": 449,
+	"./en-au": 450,
+	"./en-au.js": 450,
+	"./en-ca": 451,
+	"./en-ca.js": 451,
+	"./en-gb": 452,
+	"./en-gb.js": 452,
+	"./en-ie": 453,
+	"./en-ie.js": 453,
+	"./en-nz": 454,
+	"./en-nz.js": 454,
+	"./eo": 455,
+	"./eo.js": 455,
+	"./es": 457,
+	"./es-do": 456,
+	"./es-do.js": 456,
+	"./es.js": 457,
+	"./et": 458,
+	"./et.js": 458,
+	"./eu": 459,
+	"./eu.js": 459,
+	"./fa": 460,
+	"./fa.js": 460,
+	"./fi": 461,
+	"./fi.js": 461,
+	"./fo": 462,
+	"./fo.js": 462,
+	"./fr": 465,
+	"./fr-ca": 463,
+	"./fr-ca.js": 463,
+	"./fr-ch": 464,
+	"./fr-ch.js": 464,
+	"./fr.js": 465,
+	"./fy": 466,
+	"./fy.js": 466,
+	"./gd": 467,
+	"./gd.js": 467,
+	"./gl": 468,
+	"./gl.js": 468,
+	"./gom-latn": 469,
+	"./gom-latn.js": 469,
+	"./he": 470,
+	"./he.js": 470,
+	"./hi": 471,
+	"./hi.js": 471,
+	"./hr": 472,
+	"./hr.js": 472,
+	"./hu": 473,
+	"./hu.js": 473,
+	"./hy-am": 474,
+	"./hy-am.js": 474,
+	"./id": 475,
+	"./id.js": 475,
+	"./is": 476,
+	"./is.js": 476,
+	"./it": 477,
+	"./it.js": 477,
+	"./ja": 478,
+	"./ja.js": 478,
+	"./jv": 479,
+	"./jv.js": 479,
+	"./ka": 480,
+	"./ka.js": 480,
+	"./kk": 481,
+	"./kk.js": 481,
+	"./km": 482,
+	"./km.js": 482,
+	"./kn": 483,
+	"./kn.js": 483,
+	"./ko": 484,
+	"./ko.js": 484,
+	"./ky": 485,
+	"./ky.js": 485,
+	"./lb": 486,
+	"./lb.js": 486,
+	"./lo": 487,
+	"./lo.js": 487,
+	"./lt": 488,
+	"./lt.js": 488,
+	"./lv": 489,
+	"./lv.js": 489,
+	"./me": 490,
+	"./me.js": 490,
+	"./mi": 491,
+	"./mi.js": 491,
+	"./mk": 492,
+	"./mk.js": 492,
+	"./ml": 493,
+	"./ml.js": 493,
+	"./mr": 494,
+	"./mr.js": 494,
+	"./ms": 496,
+	"./ms-my": 495,
+	"./ms-my.js": 495,
+	"./ms.js": 496,
+	"./my": 497,
+	"./my.js": 497,
+	"./nb": 498,
+	"./nb.js": 498,
+	"./ne": 499,
+	"./ne.js": 499,
+	"./nl": 501,
+	"./nl-be": 500,
+	"./nl-be.js": 500,
+	"./nl.js": 501,
+	"./nn": 502,
+	"./nn.js": 502,
+	"./pa-in": 503,
+	"./pa-in.js": 503,
+	"./pl": 504,
+	"./pl.js": 504,
+	"./pt": 506,
+	"./pt-br": 505,
+	"./pt-br.js": 505,
+	"./pt.js": 506,
+	"./ro": 507,
+	"./ro.js": 507,
+	"./ru": 508,
+	"./ru.js": 508,
+	"./sd": 509,
+	"./sd.js": 509,
+	"./se": 510,
+	"./se.js": 510,
+	"./si": 511,
+	"./si.js": 511,
+	"./sk": 512,
+	"./sk.js": 512,
+	"./sl": 513,
+	"./sl.js": 513,
+	"./sq": 514,
+	"./sq.js": 514,
+	"./sr": 516,
+	"./sr-cyrl": 515,
+	"./sr-cyrl.js": 515,
+	"./sr.js": 516,
+	"./ss": 517,
+	"./ss.js": 517,
+	"./sv": 518,
+	"./sv.js": 518,
+	"./sw": 519,
+	"./sw.js": 519,
+	"./ta": 520,
+	"./ta.js": 520,
+	"./te": 521,
+	"./te.js": 521,
+	"./tet": 522,
+	"./tet.js": 522,
+	"./th": 523,
+	"./th.js": 523,
+	"./tl-ph": 524,
+	"./tl-ph.js": 524,
+	"./tlh": 525,
+	"./tlh.js": 525,
+	"./tr": 526,
+	"./tr.js": 526,
+	"./tzl": 527,
+	"./tzl.js": 527,
+	"./tzm": 529,
+	"./tzm-latn": 528,
+	"./tzm-latn.js": 528,
+	"./tzm.js": 529,
+	"./uk": 530,
+	"./uk.js": 530,
+	"./ur": 531,
+	"./ur.js": 531,
+	"./uz": 533,
+	"./uz-latn": 532,
+	"./uz-latn.js": 532,
+	"./uz.js": 533,
+	"./vi": 534,
+	"./vi.js": 534,
+	"./x-pseudo": 535,
+	"./x-pseudo.js": 535,
+	"./yo": 536,
+	"./yo.js": 536,
+	"./zh-cn": 537,
+	"./zh-cn.js": 537,
+	"./zh-hk": 538,
+	"./zh-hk.js": 538,
+	"./zh-tw": 539,
+	"./zh-tw.js": 539
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -14955,7 +14960,7 @@ module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.card_uti
 /***/ 883:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.card_type_title' | translate}}\n    <div class=\"FEF__subtitle\">\n         {{'hsbc-main.card_type_caption' | translate}}\n    </div>\n</div>\n<hr/>\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item holder-step\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">\n      {{_sharedModelService.model.informations.person.lastName.toUpperCase()}} {{_sharedModelService.model.informations.person.firstName.toUpperCase()}}\n    </span></a>\n  </li>\n  <li class=\"steps--underlined__item holder-step disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{_sharedModelService.modelHolder.informations.person.lastName.toUpperCase()}} {{_sharedModelService.modelHolder.informations.person.firstName.toUpperCase()}}</span></a>\n  </li>\n</ul> \n<br/>\n\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\" class=\"clearfix mt40 front\">\n\n        <div *ngIf=\"!_sharedModelService.model.informations.account.creditCard.noIntendCard\" class=\"pricing-table clearfix mt40\">\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Visa Classic')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Visa Classic','expanded':showAdvantage == 'Visa Classic','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.model.informations.account.creditCard.recommendedTypeCard === 'Visa Classic'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c1.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vc'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">8,10 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  value=\"CBI\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Visa Classic' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Visa Classic')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vc_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Classic')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Classic')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Visa Premier')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Visa Premier','expanded':showAdvantage == 'Visa Premier','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.model.informations.account.creditCard.recommendedTypeCard === 'Visa Premier'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c2.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            \n\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Visa Premier' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Visa Premier')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n\n\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Premier')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Premier')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Gold Mastercard')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Gold Mastercard','expanded':showAdvantage == 'Gold Mastercard','no_border_bottom':showAdvantage}\">\n                <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c3.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Gold Mastercard' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Gold Mastercard')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Gold Mastercard')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Gold Mastercard')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n        </div>\n      </div>\n\n      <div  [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" class=\"clearfix mt40 back\">\n        <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" class=\"pricing-table clearfix mt40\">\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Visa Classic')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Classic','expanded':showAdvantage == 'Visa Classic','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.recommendedTypeCard === 'Visa Classic'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c1.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vc'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">8,10 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  value=\"CBI\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Classic' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Visa Classic')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vc_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Classic')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Classic')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Visa Premier')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Premier','expanded':showAdvantage == 'Visa Premier','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.recommendedTypeCard === 'Visa Premier'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c2.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            \n\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Premier' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Visa Premier')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n\n\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Premier')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Premier')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Gold Mastercard')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Gold Mastercard','expanded':showAdvantage == 'Gold Mastercard','no_border_bottom':showAdvantage}\">\n                <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c3.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Gold Mastercard' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Gold Mastercard')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Gold Mastercard')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Gold Mastercard')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n        </div>\n\n      </div>\n\n\n    </div>\n  </div>\n\n\n\n\n<div class=\"card__detail\" *ngIf=\"showAdvantage\">\n    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n\n            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vc_desc_a2'|translate}} (3)</li>\n            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n            \n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div class=\"clearfix\">\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Visa Classic')\" [attr.disabled]=\"showAdvantage == 'Visa Classic'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Visa Premier')\" [attr.disabled]=\"showAdvantage == 'Visa Premier'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Gold Mastercard')\" [attr.disabled]=\"showAdvantage == 'Gold Mastercard'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n    </div>\n</div>\n\n<div [hidden]=\"internalStep !== 1 || hideStep\" class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" \n      [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.noIntendCard\" \n      binary=\"true\" \n      label=\"{{'hsbc-main.card_type_no'|translate}}\"\n      (onChange)=\"reinitCard()\"\n      ></pib-checkbox>\n\n      <button pibButton type=\"button\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.noIntendCard\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n      </button>\n</div>\n\n<div [hidden]=\"internalStep !== 2 || hideStep\" class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" \n      [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" \n      binary=\"true\" \n      label=\"{{'hsbc-main.card_type_no'|translate}}\"\n      (onChange)=\"reinitCardHolder()\"\n      ></pib-checkbox>\n\n      <button pibButton type=\"button\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n      </button>\n</div>\n\n\n<div class=\"mt10\">\n    <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n</div>"
+module.exports = "<div class=\"mt10 FEF__title sub\">\n    {{'hsbc-main.card_type_title' | translate}}\n    <div class=\"FEF__subtitle\">\n         {{'hsbc-main.card_type_caption' | translate}}\n    </div>\n</div>\n<hr/>\n<ul *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" role=\"tablist\">\n  <li class=\"steps--underlined__item holder-step\" [ngClass]=\"{'highlight': internalStep === 1}\" >\n    <a (click)=\"loadInternalStep(1)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">\n      {{_sharedModelService.model.informations.person.lastName.toUpperCase()}} {{_sharedModelService.model.informations.person.firstName.toUpperCase()}}\n    </span></a>\n  </li>\n  <li class=\"steps--underlined__item holder-step disabled\" [ngClass]=\"{'highlight': internalStep === 2}\">\n    <a (click)=\"loadInternalStep(2)\" class=\"steps__title__link is-hidden-mobile\" ><span class=\"steps__title\">{{_sharedModelService.modelHolder.informations.person.lastName.toUpperCase()}} {{_sharedModelService.modelHolder.informations.person.firstName.toUpperCase()}}</span></a>\n  </li>\n</ul> \n<br/>\n\n<div class=\"flip-container\" >\n  <div class=\"flipper\">\n    <div [@holderTransition]=\"holderTransitionState\" [hidden]=\"internalStep !== 1 || hideStep\" class=\"clearfix mt40 front\">\n\n        <div *ngIf=\"!_sharedModelService.model.informations.account.creditCard.noIntendCard\" class=\"pricing-table clearfix mt40\">\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Visa Classic')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Visa Classic','expanded':showAdvantage == 'Visa Classic','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.model.informations.account.creditCard.recommendedTypeCard === 'Visa Classic'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c1.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vc'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">8,10 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  value=\"CBI\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Visa Classic' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Visa Classic')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vc_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Classic')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Classic')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Visa Premier')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Visa Premier','expanded':showAdvantage == 'Visa Premier','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.model.informations.account.creditCard.recommendedTypeCard === 'Visa Premier'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c2.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            \n\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Visa Premier' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Visa Premier')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n\n\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Premier')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Premier')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardType('Gold Mastercard')\" [ngClass]=\"{'active':_sharedModelService.model.informations.account.creditCard.typeCard=='Gold Mastercard','expanded':showAdvantage == 'Gold Mastercard','no_border_bottom':showAdvantage}\">\n                <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c3.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.model.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.model.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.vcDebitTypeError && _sharedModelService.model.informations.account.creditCard.typeCard=='Gold Mastercard' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.model.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOf($event,'Gold Mastercard')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Gold Mastercard')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Gold Mastercard')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n        </div>\n      </div>\n\n      <div  [@holderTransition]=\"internalStep === 2 ? holderTransitionState : null\"  *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" class=\"clearfix mt40 back\">\n        <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" class=\"pricing-table clearfix mt40\">\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Visa Classic')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Classic','expanded':showAdvantage == 'Visa Classic','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.recommendedTypeCard === 'Visa Classic'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c1.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vc'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">8,10 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_1\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  value=\"CBI\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Classic' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Visa Classic')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vc_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Classic')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Classic')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Visa Premier')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Premier','expanded':showAdvantage == 'Visa Premier','no_border_bottom':showAdvantage}\">\n                <div \n                *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.recommendedTypeCard === 'Visa Premier'\"\n                class=\"pricing-table__recommanded pricing-container\">{{'hsbc-main.card_type_recommended' | translate}}</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c2.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            \n\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_2\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Visa Premier' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Visa Premier')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n\n\n                    </div>\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Visa Premier')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Visa Premier')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n\n\n            <div class=\"grid__col--4 pricing-table__item\" (click)=\"creditCardTypeHolder('Gold Mastercard')\" [ngClass]=\"{'active':_sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Gold Mastercard','expanded':showAdvantage == 'Gold Mastercard','no_border_bottom':showAdvantage}\">\n                <div class=\"pricing-table__recommanded pricing-container\">&nbsp;</div>\n\n                <div class=\"pricing-container--body\">\n                    <img [src]=\"environment.assetsPath + 'assets/img/c3.png'\" alt=\"\">\n                    <div class=\"pricing-table__title\">{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></div>\n                    <div class=\"pricing-table__description\">{{'hsbc-main.card_type_inter'|translate}}</div>\n\n\n                    <div *ngIf=\"_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">14,45 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n                    <div *ngIf=\"!_sharedModelService.modelHolder.informations.account.offer.hSBCHexagonConvention\" class=\"pricing-table__price\">134 <sup>{{'hsbc-main.card_type_tar_label'|translate}}</sup> <sup>(2)</sup></div>\n\n                    <div class=\"panel mt20\">\n                        <div class=\"panel__title\">{{'hsbc-main.card_type_cbt' | translate}} <sup>(3)</sup></div>\n                        <div class=\"panel__detail\">\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  label=\"{{'hsbc-main.card_type_cbd' | translate}}\" \n                                  value=\"CBD\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"mb10\">\n                                <pib-radioButton \n                                  name=\"rb_3\" \n                                  value=\"CBI\" \n                                  label=\"{{'hsbc-main.card_type_cbi' | translate}}\" \n                                  [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitType\"\n                                  (onClick)=\"_sharedModelService.modelHolder.informations.account.creditCard.validateCardDebit()\"\n                                ></pib-radioButton>\n                            </div>\n                            <div class=\"form__message form__message--error\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError && _sharedModelService.modelHolder.informations.account.creditCard.typeCard=='Gold Mastercard' && (stepSubmitted || dirty)\">\n                                <i class=\"icon icon-circle-delete\"></i> {{_sharedModelService.modelHolder.informations.account.creditCard.vcDebitTypeError | translate}}\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"pricing-container\">\n\n\n                    <a class=\"more\" (click)=\"showAdvantageOfHolder($event,'Gold Mastercard')\">{{'hsbc-main.card_type_advantages_d'|translate}}</a>\n                    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-displayed-mobile\">\n                        <div>\n                            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n                        </div>\n                        <div>\n                            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n                        </div>\n                        <br><br>\n                        <ul class=\"list-dots\">\n                            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n                            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n                            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n                        </ul>\n                        <br>\n                        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n                        <br><br>\n                        <ul class=\"ordered-list\">\n                            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n                            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n                            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n                        </ul>\n                    </div>\n\n                    <a class=\"btn--tertiary full is-hidden-mobile\" (click)=\"next('Gold Mastercard')\" *ngIf=\"!showAdvantage\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                    <a class=\"btn--tertiary full is-displayed-mobile\" (click)=\"next('Gold Mastercard')\">{{'hsbc-main.card_type_choose'|translate}}</a>\n                </div>\n\n            </div>\n        </div>\n\n      </div>\n\n\n    </div>\n  </div>\n\n\n\n\n<div class=\"card__detail\" *ngIf=\"showAdvantage\">\n    <div *ngIf=\"showAdvantage == 'Visa Classic'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_vc'|translate}} (1)</b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n\n            <li>{{'hsbc-main.vc_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vc_desc_a2'|translate}} (3)</li>\n            <li>{{'hsbc-main.vc_desc_a3'|translate}}</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'Visa Premier'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_vp'|translate}} <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>{{'hsbc-main.vp_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a5'|translate}}</li>\n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div *ngIf=\"showAdvantage == 'Gold Mastercard'\" class=\"is-hidden-mobile\" style=\"position:relative;\">\n        <div>\n            <b>{{'hsbc-main.card_type_gm'|translate}} <sup>(1)</sup></b>\n        </div>\n        <div>\n            <b>{{'hsbc-main.card_type_advantages'|translate}}</b>\n        </div>\n        <br><br>\n        <ul class=\"list-dots\">\n            <li>{{'hsbc-main.gm_desc_a1'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a2'|translate}}<sup>(3)</sup></li>\n            <li>{{'hsbc-main.vp_desc_a3'|translate}}</li>\n            <li>{{'hsbc-main.vp_desc_a4'|translate}}</li>\n            \n        </ul>\n        <br>\n        <a class=\"underlined\">{{'hsbc-main.card_type_dl'|translate}}</a>\n        <br><br>\n        <ul class=\"ordered-list\">\n            <li>(1) {{'hsbc-main.vc_desc_a4'|translate}}</li>\n            <li>(2) {{'hsbc-main.vc_desc_a5'|translate}}</li>\n            <li>(3) {{'hsbc-main.vc_desc_a6'|translate}}</li>\n        </ul>\n\n        <a class=\"cancel-link\" (click)=\"closeAdvantages()\" style=\"right: 25px;text-align: right;bottom: 27px;top: initial;left:initial;\"><i class=\"icon icon-delete\"></i> {{'hsbc-main.card_type_close'|translate}}</a>\n    </div>\n    <div class=\"clearfix\">\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Visa Classic')\" [attr.disabled]=\"showAdvantage == 'Visa Classic'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Visa Premier')\" [attr.disabled]=\"showAdvantage == 'Visa Premier'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n        <div *ngIf=\"showAdvantage\" class=\"grid__col--4 is-hidden-mobile\" style=\"padding-left: 23px;padding-right: 23px;width: calc(100%/3);\">\n            <a class=\"btn--tertiary is-hidden-mobile full\" *ngIf=\"showAdvantage\" (click)=\"next('Gold Mastercard')\" [attr.disabled]=\"showAdvantage == 'Gold Mastercard'?null:true\">{{'hsbc-main.card_type_choose'|translate}}</a>\n        </div>\n    </div>\n</div>\n\n<div [hidden]=\"internalStep !== 1 || hideStep\" class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" \n      [(ngModel)]=\"_sharedModelService.model.informations.account.creditCard.noIntendCard\" \n      binary=\"true\" \n      label=\"{{'hsbc-main.card_type_no'|translate}}\"\n      (onChange)=\"reinitCard()\"\n      ></pib-checkbox>\n\n      <button pibButton type=\"button\" *ngIf=\"_sharedModelService.model.informations.account.creditCard.noIntendCard\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n      </button>\n</div>\n\n<div *ngIf=\"_sharedModelService.model.accountType === 'jointAccount'\" [hidden]=\"internalStep !== 2 || hideStep\" class=\"mt35\">\n    <pib-checkbox name=\"cb_3\" \n      [(ngModel)]=\"_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" \n      binary=\"true\" \n      label=\"{{'hsbc-main.card_type_no'|translate}}\"\n      (onChange)=\"reinitCardHolder()\"\n      ></pib-checkbox>\n\n      <button pibButton type=\"button\" *ngIf=\"_sharedModelService.modelHolder.informations.account.creditCard.noIntendCard\" (click)=\"next()\" label=\"{{'hsbc-main.suivant' | translate}}\" class=\"btn--primary f-right\">\n      </button>\n</div>\n\n\n<div class=\"mt10\">\n    <a (click)=\"goBack()\" class=\"btn--back\">{{'hsbc-main.retour'|translate}}</a>\n</div>"
 
 /***/ }),
 
@@ -15076,7 +15081,7 @@ module.exports = "<div class=\"mt10 FEF__title sub\">\n    Transmettez-nous vos 
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(690);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__model_Model__ = __webpack_require__(691);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__local_data_service__ = __webpack_require__(171);
@@ -15176,7 +15181,7 @@ module.exports = "<div class=\"mt10 FEF__title sub\"> {{'hsbc-main.your_account_
 /***/ 952:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(556);
+module.exports = __webpack_require__(557);
 
 
 /***/ })
