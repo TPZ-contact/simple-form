@@ -13880,49 +13880,48 @@ var FollowAccountGuard = (function () {
         this.router = router;
     }
     FollowAccountGuard.prototype.canActivate = function (route, state) {
-        return true;
-        // try{
-        //   let step = parseInt(route.params['internalStep']);
-        //   if(this._sharedModelService.model.accountType === 'individualAccount' && this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate){
-        //      if(step){
-        //        this.router.navigate(['follow-account']);
-        //        return false
-        //      }
-        //     return true;
-        //   }
-        //   else if(this._sharedModelService.model.accountType === 'jointAccount'){
-        //     if(step){
-        //       this.router.navigate(['follow-account']);
-        //       return false;
-        //     }
-        //     else {
-        //       if(this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyValidate && !this._sharedModelService.model.informations.situation.patrimony.mustValidateMutual){
-        //         return true;  
-        //       }
-        //       else if(this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.model.informations.situation.patrimony.mustValidateMutual && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyMutualValidate){
-        //         return true;  
-        //       }
-        //       else {
-        //         if(this._sharedModelService.model.informations.situation.patrimony.isPatrimonyMutualValidate){
-        //           this.router.navigate(['patrimony/3']);
-        //           return false;  
-        //         }
-        //         else {
-        //            this.router.navigate(['patrimony/2']);
-        //             return false;  
-        //         }
-        //       }
-        //     }
-        //   }
-        //   else {
-        //     this.router.navigate(['patrimony']);
-        //     return false;
-        //   }
-        // }
-        // catch (e){
-        //   this.router.navigate(['patrimony']);
-        //   return false;
-        // }
+        try {
+            var step = parseInt(route.params['internalStep']);
+            if (this._sharedModelService.model.accountType === 'individualAccount' && this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate) {
+                if (step) {
+                    this.router.navigate(['follow-account']);
+                    return false;
+                }
+                return true;
+            }
+            else if (this._sharedModelService.model.accountType === 'jointAccount') {
+                if (step) {
+                    this.router.navigate(['follow-account']);
+                    return false;
+                }
+                else {
+                    if (this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyValidate && !this._sharedModelService.model.informations.situation.patrimony.mustValidateMutual) {
+                        return true;
+                    }
+                    else if (this._sharedModelService.model.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyValidate && this._sharedModelService.model.informations.situation.patrimony.mustValidateMutual && this._sharedModelService.modelHolder.informations.situation.patrimony.isPatrimonyMutualValidate) {
+                        return true;
+                    }
+                    else {
+                        if (this._sharedModelService.model.informations.situation.patrimony.isPatrimonyMutualValidate) {
+                            this.router.navigate(['patrimony/3']);
+                            return false;
+                        }
+                        else {
+                            this.router.navigate(['patrimony/2']);
+                            return false;
+                        }
+                    }
+                }
+            }
+            else {
+                this.router.navigate(['patrimony']);
+                return false;
+            }
+        }
+        catch (e) {
+            this.router.navigate(['patrimony']);
+            return false;
+        }
     };
     FollowAccountGuard = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Injectable */])(), 
