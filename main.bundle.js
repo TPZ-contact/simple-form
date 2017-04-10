@@ -12857,7 +12857,6 @@ var CreditCard = (function () {
             case 'Visa Classic':
                 if (!this.vcDebitType) {
                     this.vcDebitTypeError = REQUIRED;
-                    console.log('ERROR');
                     return false;
                 }
                 else {
@@ -12866,8 +12865,8 @@ var CreditCard = (function () {
                     return true;
                 }
             case 'Visa Premier':
-                if (!this.vpDebitType) {
-                    this.vpDebitTypeError = REQUIRED;
+                if (!this.vcDebitType) {
+                    this.vcDebitTypeError = REQUIRED;
                     return false;
                 }
                 else {
@@ -12876,7 +12875,7 @@ var CreditCard = (function () {
                     return true;
                 }
             case 'Gold Mastercard':
-                if (!this.gmDebitType) {
+                if (!this.vcDebitType) {
                     this.gmDebitTypeError = REQUIRED;
                     return false;
                 }
