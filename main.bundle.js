@@ -12986,10 +12986,6 @@ var AccountUsage = (function () {
             this.wantCloseAccountError = REQUIRED;
             return false;
         }
-        else if (this.wantCloseAccount < 30 || this.wantCloseAccount > 90) {
-            this.wantCloseAccountError = INVALID_DAYS_30_90;
-            return false;
-        }
         else {
             this.wantCloseAccountError = null;
             return true;
@@ -12998,6 +12994,10 @@ var AccountUsage = (function () {
     AccountUsage.prototype.validateCloseAccountDelay = function () {
         if (!this.closeAccountDelay) {
             this.closeAccountDelayError = REQUIRED;
+            return false;
+        }
+        else if (this.closeAccountDelay < 30 || this.closeAccountDelay > 90) {
+            this.closeAccountDelayError = INVALID_DAYS_30_90;
             return false;
         }
         else if (!this.validateOnlyNumbers(this.closeAccountDelay)) {
