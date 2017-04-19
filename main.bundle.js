@@ -7528,7 +7528,8 @@ var CountriesDataService = (function () {
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
     production: false,
-    assetsPath: 'http://localhost:4200/'
+    //assetsPath: 'http://localhost:4200/'
+    assetsPath: 'https://tpz-contact.github.io/simple-form/',
 };
 //# sourceMappingURL=environment.js.map
 
