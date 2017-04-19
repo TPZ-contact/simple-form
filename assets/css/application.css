@@ -2,36 +2,31 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @font-face {
   font-family: "HSBCIcon-Font";
-  src: url("../fonts/HSBCIcon-Font.eot");
-  src: url("../fonts/HSBCIcon-Font.eot?#iefix") format("embedded-opentype"), url("../fonts/HSBCIcon-Font.woff") format("woff"), url("../fonts/HSBCIcon-Font.ttf") format("truetype");
+  src: url("..//fonts/HSBCIcon-Font.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Univers-next-for-HSBC';
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Rg.eot");
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Rg.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversNext/UniversNextforHSBCW01-Rg.woff") format("woff"), url("../fonts/UniversNext/UniversNextforHSBCW01-Rg.ttf") format("truetype");
+  src: url("..//fonts/UniversNext/UniversNextforHSBCW01-Rg.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Univers-next-for-HSBC';
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Lt.eot");
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Lt.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversNext/UniversNextforHSBCW01-Lt.woff") format("woff"), url("../fonts/UniversNext/UniversNextforHSBCW01-Lt.ttf") format("truetype");
+  src: url("..//fonts/UniversNext/UniversNextforHSBCW01-Lt.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Univers-next-for-HSBC';
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Md.eot");
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversNext/UniversNextforHSBCW01-Md.woff") format("woff"), url("../fonts/UniversNext/UniversNextforHSBCW01-Md.ttf") format("truetype");
+  src: url("..//fonts/UniversNext/UniversNextforHSBCW01-Md.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Univers-next-for-HSBC';
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Bd.eot");
-  src: url("../fonts/UniversNext/UniversNextforHSBCW01-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversNext/UniversNextforHSBCW01-Bd.woff") format("woff"), url("../fonts/UniversNext/UniversNextforHSBCW01-Bd.ttf") format("truetype");
+  src: url("..//fonts/UniversNext/UniversNextforHSBCW01-Bd.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 
@@ -95,7 +90,7 @@ input[type="radio"] + label span:after, input[type="radio"]:checked + label span
 
 .mb10 {
   margin-bottom: 10px; }
-
+ 
 .mb35 {
   margin-bottom: 35px; }
 
@@ -482,9 +477,7 @@ footer {
   @media (min-width: 735px) {
     [class^="grid__col--"] {
       float: left;
-      min-height: 1px; }
-      [class^="grid__col--"] + [class^="grid__col--"] {
-        margin-left: 1.71233%; } }
+      min-height: 1px; } }
 
 [class*="grid__col__sm--"] {
   padding-left: 10px;
@@ -1143,7 +1136,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
   border: 1px solid #D7D8D6;
   /* Enter an amount: */
   font-family: "Univers-next-for-HSBC", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #929292;
+  color: #0b0b0b;
   letter-spacing: 0;
   margin-bottom: 10px; }
   .form__input:focus {
@@ -1157,7 +1150,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
     border-color: #e9a115; }
   .form__input.euro-unit {
     font-size: 20px;
-    color: #404040;
+    color: #0b0b0b;
     height: 40px; }
 
 .form__file {
@@ -2441,7 +2434,17 @@ header {
     margin-bottom: 40px;
     font-size: 30px;
     font-weight: normal; }
-
+.modal-content{
+  padding: 25px;
+  background: white;
+}  
+.modal-title{
+  text-align: center;
+  font-size: 2rem;
+}
+.modal-footer{
+  height: 75px;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
@@ -2567,7 +2570,9 @@ button.close {
 
 .ui-calendar {
   position: relative;
-  display: inline-block; }
+  display: inline-block; 
+  float: left;  
+}
   .ui-calendar input {
     display: inline-block;
     display: inline-block;
@@ -2625,6 +2630,12 @@ button.close {
     padding: 0px 10px 11px 10px;
     background: #fff;
     border: 1px solid #333; }
+    .date__picker__container{
+      position: absolute;
+      top: 25px;
+      width: 100%;
+      z-index: 50;
+    }
     .ui-calendar .ui-datepicker .ui-datepicker-header {
       text-align: center;
       background: #fff;
@@ -2890,6 +2901,9 @@ button.close {
   font-weight: bold;
   font-size: 12px;
   letter-spacing: 0; }
+.steps--underlined__item.holder-step.highlight{
+  border-bottom: 3px solid #da0010;
+}
 
 .steps__item {
   padding-bottom: 17px;
@@ -2899,6 +2913,7 @@ button.close {
     margin-left: 0;
     padding-left: 16px; }
   .steps__item.highlight {
+    
     background: #008580; }
     .steps__item.highlight .steps__title__link {
       color: #fff; }
@@ -3051,7 +3066,7 @@ button.close {
     letter-spacing: 0;
     line-height: 20px;
     position: relative;
-    margin: 35px 0 42px 0; }
+    margin: 15px 0 42px 0; }
     .panel--alert .icon {
       position: absolute;
       left: 18px;
@@ -3077,7 +3092,10 @@ button.close {
       max-width: 100%; }
     .panel--offre .price {
       font-size: 70px;
-      line-height: normal; }
+      line-height: initial; 
+      float: left;
+      width: 100%;
+      }
   .panel--form {
     background: #ededed;
     padding: 20px 18px 40px 18px;
@@ -3196,10 +3214,12 @@ button.close {
 
 .ui-tooltip {
   padding: 0;
+  max-width: 40%;
+  min-width: 200px;
   position: absolute;
   display: none; }
   .ui-tooltip .ui-tooltip-text {
-    white-space: nowrap;
+    white-space: wrap;
     font-weight: bold;
     font-size: 12px;
     color: #333333;
@@ -3643,12 +3663,7 @@ button.close {
     margin-top: 27px;
     margin-bottom: 22px; }
   .FEF .bottom-help {
-    font-size: 17px;
-    text-align: right;
-    position: relative; }
-    @media (min-width: 1px) and (max-width: 734px) {
-      .FEF .bottom-help {
-        text-align: center; } }
+    font-size: 17px; }
     .FEF .bottom-help .icon {
       font-size: 25px; }
   .FEF hr {
