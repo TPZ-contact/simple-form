@@ -1644,8 +1644,13 @@ var ScrollService = (function () {
         var badFields = window.document.getElementsByClassName('form__input--error');
         var top = window.pageYOffset;
         if (badFields[0]) {
-            console.log('====> bad field 0', badFields[0]);
-            this.scrollTo(badFields[0].getBoundingClientRect().top + document.body.scrollTop - 50, 1000);
+            var inputId = 'input_error_' + Date.now().toString();
+            if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
+                badFields[0].scrollIntoView();
+            }
+            else {
+                this.scrollTo(badFields[0].getBoundingClientRect().top + document.body.scrollTop - 50, 1000);
+            }
         }
     };
     ScrollService = __decorate([
@@ -7789,9 +7794,8 @@ var SharedModelService = (function () {
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
     production: false,
-    //assetsPath: 'http://localhost:4200/',
+    assetsPath: 'http://localhost:4200/',
     pingPath: '/1/2/mobile15/system-maintenance',
-    assetsPath: 'https://tpz-contact.github.io/simple-form/',
 };
 //# sourceMappingURL=environment.js.map
 
