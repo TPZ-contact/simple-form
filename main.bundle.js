@@ -1644,6 +1644,7 @@ var ScrollService = (function () {
         var badFields = window.document.getElementsByClassName('form__input--error');
         var top = window.pageYOffset;
         if (badFields[0]) {
+            console.log('====> bad field 0', badFields[0]);
             this.scrollTo(badFields[0].getBoundingClientRect().top + document.body.scrollTop - 50, 1000);
         }
     };
