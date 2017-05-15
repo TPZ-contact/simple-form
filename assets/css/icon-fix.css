@@ -1,0 +1,304 @@
+/*
+.icon{
+	font-family: "Arial";
+}
+
+.icon:before{
+	content: "";
+}*/
+
+.icon-document:before {
+    content: "\e021";
+    color: transparent;
+    background: url(../img/icons/svg/document.svg) no-repeat;
+    background-size: 100%;
+    background-position-y: -5px;
+}
+.icon-circle-help:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -468px -1033px;
+    background-size: 1063px 1834px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+ .icon-circle-help-solid:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -510px -113px;
+    background-size: 1063px 1834px;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+
+ }
+
+ .icon-chevron-down:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -926px -67px;
+    background-size: 1063px 1834px;
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+ }
+
+ .icon-chevron-up:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -926px -59px;
+    background-size: 1063px 1834px;
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+ }
+
+ .icon-circle-delete:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -271px -1282px;
+    background-size: 1063px 1834px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+ }
+
+ .icon-circle-info:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -175px -1035px;
+    background-size: 1063px 1834px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+ }
+
+ .icon-delete:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -82px -290px;
+    background-size: 1063px 1834px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+
+ }
+
+ .btn--back:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -858px -172px;
+    background-size: 1063px 1834px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+
+ }
+
+.ui-calendar button.ui-button-icon-only .fa:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -224px -1033px;
+    background-size: 1063px 1834px;
+    width: 19px;
+    height: 18px;
+    display: block;
+
+}
+
+
+.icon-chevron-double-left:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -78px -141px;
+    background-size: 1063px 1834px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.icon-chevron-left:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -229px -141px;
+    background-size: 1063px 1834px;
+    width: 13px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.icon-chevron-double-right:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -127px -141px;
+    background-size: 1063px 1834px;
+    width: 21px;
+    height: 20px;
+    display: inline-block;
+}
+
+.icon-chevron-right:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -279px -141px;
+    background-size: 1063px 1834px;
+    width: 13px;
+    height: 20px;
+    display: inline-block;
+}
+
+.ui-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-prev-year {
+    top: 6px;
+    padding-right: 2px;
+}
+
+.ui-calendar .ui-datepicker .ui-datepicker-header .ui-datepicker-next-year {
+    padding-left: : 2px;
+    top: 7px;
+}
+
+.icon-chevron-right-small:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -898px -172px;
+    background-size: 1063px 1834px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+}
+
+.pricing-table__item .more:after{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -898px -60px;
+    background-size: 1063px 1834px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -322px -1223px;
+    background-size: 1063px 1834px;
+    width: 15px;
+    height: 11px;
+    top: 5px;
+}
+
+.panel--checkbox [type="checkbox"]:not(:checked) + label:after, .panel--checkbox [type="checkbox"]:checked + label:after {
+    top: 2px;
+    left: 6px;
+}
+
+.icon-phone:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -507px -1026px;
+    background-size: 1063px 1834px;
+    width: 44px;
+    height: 33px;
+    display: inline-block;
+
+}
+
+.ui-state-active .icon-phone:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -507px -1212px;
+    background-size: 1063px 1834px;
+    width: 44px;
+    height: 33px;
+    display: inline-block;
+
+}
+
+.icon-message:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -596px -1026px;
+    background-size: 1063px 1834px;
+    width: 42px;
+    height: 31px;
+    display: inline-block;
+}
+
+.ui-state-active .icon-message:before {
+    content: " ";
+    background: url('../img/icons.png') -596px -1212px;
+    background-size: 1063px 1834px;
+    width: 42px;
+    height: 31px;
+    display: inline-block;
+}
+
+.icon-edit:before{
+    content: " ";
+    background: url('../img/icons.png') no-repeat -842px -752px;
+    background-size: 1063px 1834px;
+    width: 16px;
+    height: 16px;
+    display: inline-block; 
+}
+
+/* Step titles icons*/
+.steps__title .icon-fast-track:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -74px -967px;
+    background-size: 1063px 1834px;
+    width: 22px;
+    height: 26px;
+    display: inline-block;
+}
+
+.steps__title .icon-edit:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -803px -720px;
+    background-size: 1063px 1834px;
+    width: 21px;
+    height: 21px;
+    display: inline-block;  
+}
+
+.steps__title .icon-download:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat no-repeat -754px -717px;
+    background-size: 1063px 1834px;
+    width: 20px;
+    height: 21px;
+    display: inline-block; 
+}
+
+.steps__title .icon-accounts:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -126px -972px;
+    background-size: 1063px 1834px;
+    width: 22px;
+    height: 17px;
+    display: inline-block; 
+}
+
+/* Footer icons */
+.footer__icon .icon-phone:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -611px -1538px;
+    background-size: 1063px 1834px;
+    width: 16px;
+    height: 16px;
+    display: inline-block; 
+}
+
+.footer__icon .icon-chat:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -656px -1539px;
+    background-size: 1063px 1834px;
+    width: 16px;
+    height: 13px;
+    display: inline-block; 
+}
+
+.footer__icon .icon-chat:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -656px -1539px;
+    background-size: 1063px 1834px;
+    width: 16px;
+    height: 13px;
+    display: inline-block; 
+}
+
+.footer__icon .icon-location:before {
+    content: " ";
+    background: url('../img/icons.png') no-repeat -706px -1538px;
+    background-size: 1063px 1834px;
+    width: 11px;
+    height: 16px;
+    display: inline-block; 
+}
+
