@@ -1147,7 +1147,7 @@ h2, .headline-secondary, .headline-secondary--grouped {
 .form__label {
   display: block;
   margin-bottom: 6px; }
-.form__label.required:after, .required:after { 
+.form__label.required:after, .required:after, span.asterisk:after { 
     color: #DA0010;
     content: ' *';
     display:inline;
@@ -1309,6 +1309,8 @@ h2, .headline-secondary, .headline-secondary--grouped {
   position: relative; }
   .form__group.full {
     max-width: 100%; }
+  .form__group.cancel__block {
+    max-width: 530px; }
   .form__group.large-mb {
     margin-bottom: 35px; }
 
@@ -1851,7 +1853,10 @@ code[class*="language-"], pre[class*="language-"] {
   text-decoration: underline;
       display: block;
     clear: left; }
-
+.cancel-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
 .cancel-link {
       margin: 20px 0;
     /*width: 100%;
@@ -1864,7 +1869,7 @@ code[class*="language-"], pre[class*="language-"] {
     top: auto;
     left: auto;
     margin-left: 20px;*/
-    font-weight: 400;
+    font-weight: bold;
     font-size: 14px;
     color: #404040;
     /*min-width: 100px;
@@ -2398,7 +2403,12 @@ header {
       font-weight: 100;
       color: #4D6474;
       position: relative; }
-
+      .customSegment.form__group {
+        max-width: 422px;
+      }
+.customSegment .ui-selectbutton--underlined .ui-button {
+  width: 210px!important;
+}
 .ui-selectbutton {
   display: inline-block; }
   .ui-selectbutton .ui-button {
@@ -2825,7 +2835,7 @@ button.close {
           font-size: 12px;
           line-height: 37px; }
           .ui-calendar .ui-datepicker table tbody tr td .ui-state-default {
-            color: #4A4A4A; }
+            color: #4A4A4A;text-decoration: none!important; }
           .ui-calendar .ui-datepicker table tbody tr td.ui-datepicker-other-month .ui-state-default {
             color: #CED2D2; }
           .ui-calendar .ui-datepicker table tbody tr td.ui-datepicker-today {
@@ -3165,7 +3175,7 @@ button.close {
     padding-left: 5px; }
   .steps--withicon__item .steps__title {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0;
     text-decoration: none!important;
     font-weight: 100; }
@@ -3576,26 +3586,7 @@ button.close {
     float: left;
     width: 100%;
     }
-    .pricing-table__item .more:after {
-      width: 13px;
-      height: 13px;
-      content: "\f057";
-      font-family: "HSBCIcon-Font";
-      font-weight: 100;
-      display: inline-block;
-      position: relative;
-      right: -5px;
-      top: 2px; }
-    .pricing-table__item .more.moreExpand:after {
-      width: 13px;
-      height: 13px;
-      content: "\f055";
-      font-family: "HSBCIcon-Font";
-      font-weight: 100;
-      display: inline-block;
-      position: relative;
-      right: -5px;
-      top: 2px; }
+    
 .pricing-table__description {
   height: 30px;
   min-height: 30px;

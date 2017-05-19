@@ -485,3 +485,24 @@
 
 .icon-youtube:before {
   content: "\e059"; }
+
+.pricing-table__item .more:after {
+    width: 13px;
+    height: 13px;
+    content: "\f057";
+    font-family: "HSBCIcon-Font";
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    right: -5px;
+    top: 2px; }
+  .pricing-table__item .more.moreExpand:after {
+    width: 13px;
+    height: 13px;
+    content: "\f055";
+    font-family: "HSBCIcon-Font";
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    right: -5px;
+    top: 2px; }
